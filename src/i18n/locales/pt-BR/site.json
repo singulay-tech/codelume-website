@@ -198,9 +198,6 @@
   },
   "footer": {
     "description": "Um app de papéis de parede animados para macOS, com reprodução fluida.",
-    "tools": {
-      "title": "Tecnologias"
-    },
     "legal": {
       "title": "Informações legais",
       "terms": "Termos de uso",

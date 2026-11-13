@@ -1,18 +1,6 @@
 {
   "brand": "CODELUME",
   "description": "macOS용 네이티브 동적 월페이퍼 앱으로, 부드러운 재생·낮은 리소스 사용·세련된 데스크톱 경험에 집중합니다.",
-  "tools": {
-    "title": "핵심 기술 스택",
-    "items": [
-      "Supabase",
-      "Cloudflare",
-      "Swift",
-      "SwiftUI",
-      "AVFoundation",
-      "SpriteKit",
-      "SQLite"
-    ]
-  },
   "links": {
     "appStore": "https://apps.apple.com/us/app/%E7%A0%81%E9%95%9C/id6751061329?mt=12",
     "email": "codelume@163.com",

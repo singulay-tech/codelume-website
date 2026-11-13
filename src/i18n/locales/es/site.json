@@ -198,9 +198,6 @@
   },
   "footer": {
     "description": "Una app de fondos animados para macOS con reproducción fluida.",
-    "tools": {
-      "title": "Tecnologías"
-    },
     "legal": {
       "title": "Información legal",
       "terms": "Condiciones de uso",

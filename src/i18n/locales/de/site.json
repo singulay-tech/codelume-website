@@ -198,9 +198,6 @@
   },
   "footer": {
     "description": "Eine macOS-App für dynamische Wallpaper mit flüssiger Wiedergabe.",
-    "tools": {
-      "title": "Technologien"
-    },
     "legal": {
       "title": "Rechtliches",
       "terms": "Nutzungsbedingungen",

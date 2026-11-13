@@ -5,14 +5,13 @@ import { useTranslation } from 'react-i18next'
 
 export function Footer() {
   const { t } = useTranslation(['footer', 'common'])
-  const tools = t('tools.items', { returnObjects: true }) as string[]
 
   return (
     <footer className="relative border-t border-foreground/10 pb-6 pt-10 text-foreground sm:pt-12">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-[1.3fr_0.8fr_1fr] md:gap-x-8 lg:gap-x-12">
+        <div className="grid gap-8 sm:grid-cols-[1fr_auto] lg:gap-x-12">
           {/* 徽标与描述 */}
-          <div className="col-span-2 min-w-0 md:col-span-1">
+          <div className="min-w-0">
             <div>
               <div className="mb-3 flex items-center gap-2.5">
                 <img src="/codelume-icon.svg" alt="" width="32" height="32" className="size-8 shrink-0" />
@@ -73,7 +72,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* 我们使用的工具区 */}
+          {/* 法律与政策 */}
           <div className="min-w-0">
             <h2 className="mb-3 text-sm font-semibold leading-6 text-foreground">{t('legal.title')}</h2>
             <ul className="space-y-1 text-sm">
@@ -98,18 +97,6 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-
-          <div className="min-w-0">
-            <div>
-              <h2 className="mb-3 text-sm font-semibold leading-6 text-foreground">{t('tools.title')}</h2>
-
-              <ul className="flex flex-wrap gap-x-4 gap-y-1.5 text-sm leading-6 text-foreground/80">
-                {tools.map((tool) => (
-                  <li key={tool}>{tool}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
 

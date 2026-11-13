@@ -1,18 +1,6 @@
 {
   "brand": "CODELUME",
   "description": "一款原生 macOS 动态壁纸应用，专注于流畅播放、低资源占用和精致的桌面体验。",
-  "tools": {
-    "title": "核心技术栈",
-    "items": [
-      "Supabase",
-      "Cloudflare",
-      "Swift",
-      "SwiftUI",
-      "AVFoundation",
-      "SpriteKit",
-      "SQLite"
-    ]
-  },
   "links": {
     "appStore": "https://apps.apple.com/us/app/%E7%A0%81%E9%95%9C/id6751061329?mt=12",
     "email": "codelume@163.com",
