@@ -36,7 +36,7 @@ export function DownloadPage() {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          <article className="flex flex-col rounded-2xl border border-[#e7dbfa] bg-[linear-gradient(145deg,#f7f2ff,#fff_65%)] p-5 text-[#221a31] shadow-sm sm:p-7">
+          <article className="flex flex-col rounded-2xl border card-surface-lavender p-5 text-[#221a31] shadow-sm sm:p-7">
             <div className="flex items-center gap-3">
               <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#e7d9fb] text-[#61359c]">
                 <Store size={20} aria-hidden="true" />
@@ -55,7 +55,7 @@ export function DownloadPage() {
             </a>
           </article>
 
-          <article className="flex flex-col rounded-2xl border border-[#f0e0d4] bg-[linear-gradient(145deg,#fff6ee,#fff_65%)] p-5 text-[#302018] shadow-sm sm:p-7">
+          <article className="flex flex-col rounded-2xl border card-surface-peach p-5 text-[#302018] shadow-sm sm:p-7">
             <div className="flex items-center gap-3">
               <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#fae3d3] text-[#974c2b]">
                 <ArrowDownToLine size={20} aria-hidden="true" />

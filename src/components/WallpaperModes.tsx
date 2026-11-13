@@ -46,7 +46,7 @@ export function WallpaperModes() {
         </div>
         <div className="grid gap-5 md:grid-cols-2">
           {modes.map(({ id, demo }) => (
-            <article key={id} className="flex min-w-0 flex-col rounded-3xl border border-border/70 bg-card p-5 text-card-foreground shadow-sm sm:p-7">
+            <article key={id} className={`flex min-w-0 flex-col rounded-3xl border p-5 text-card-foreground shadow-sm sm:p-7 ${id === 'native' ? 'card-surface-peach' : 'card-surface-lavender'}`}>
               <div className="flex items-center gap-3">
                 {id === 'native' ? (
                   <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#DCEAF7] text-[#234E73]">

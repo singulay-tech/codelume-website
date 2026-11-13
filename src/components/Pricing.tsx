@@ -70,7 +70,7 @@ export function Pricing() {
 
         <div className="grid gap-5 md:grid-cols-2 md:gap-y-0">
           {plans.map(({ id, Icon, accent }) => (
-            <article key={id} style={{ gridRow: `span ${planRows}` }} className={`grid min-w-0 rounded-3xl border bg-card p-6 text-card-foreground shadow-sm sm:p-8 md:grid-rows-subgrid ${id === 'pro' ? 'border-[#a68ad8]/60' : 'border-border/70'}`}>
+            <article key={id} style={{ gridRow: `span ${planRows}` }} className={`grid min-w-0 rounded-3xl border p-6 text-card-foreground shadow-sm sm:p-8 md:grid-rows-subgrid ${id === 'pro' ? 'card-surface-lavender' : 'card-surface-peach'}`}>
               <div className="flex items-center gap-3">
                 <span className={`grid size-11 shrink-0 place-items-center rounded-xl ${accent}`}>
                   <Icon size={21} aria-hidden="true" />

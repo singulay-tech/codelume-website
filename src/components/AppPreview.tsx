@@ -14,7 +14,7 @@ export function AppPreview() {
         <h2 id="app-preview-title" className="mb-4 text-center text-2xl font-semibold tracking-tight sm:text-3xl">
           {title}
         </h2>
-        <div className="relative aspect-[1920/1246] overflow-hidden rounded-2xl border border-border/70 bg-card shadow-sm sm:rounded-3xl">
+        <div className="relative aspect-[1920/1246] overflow-hidden rounded-2xl border card-surface-lavender shadow-sm sm:rounded-3xl">
           <WallpaperDemoVideo src={recording} poster={poster} label={title} />
         </div>
       </div>

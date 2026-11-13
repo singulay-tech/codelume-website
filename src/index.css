@@ -98,6 +98,18 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@layer components {
+  .card-surface-lavender {
+    border-color: #e7dbfa;
+    background: linear-gradient(145deg, #f7f2ff, #fff 65%);
+  }
+
+  .card-surface-peach {
+    border-color: #f0e0d4;
+    background: linear-gradient(145deg, #fff6ee, #fff 65%);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

@@ -43,14 +43,14 @@ export function SystemWallpapers() {
         </div>
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-2">
-          {wallpaperTypes.map((type) => {
+          {wallpaperTypes.map((type, index) => {
             const { id, preview } = type
             const title = t(`systemWallpapers.${id}.title`)
 
             return (
               <article
                 key={id}
-                className="grid min-w-0 grid-rows-[auto_1fr] overflow-hidden rounded-3xl border border-border/70 bg-card text-card-foreground shadow-sm"
+                className={`grid min-w-0 grid-rows-[auto_1fr] overflow-hidden rounded-3xl border text-card-foreground shadow-sm ${index % 2 === 0 ? 'card-surface-lavender' : 'card-surface-peach'}`}
               >
                 <div className="relative grid aspect-video w-full place-items-center overflow-hidden bg-muted">
                   {!preview ? (
