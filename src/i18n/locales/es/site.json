@@ -121,8 +121,24 @@
       }
     },
     "community": {
-      "title": "Comunidad",
-      "pending": "La comunidad estará disponible pronto."
+      "title": "Código abierto",
+      "projects": "Proyectos de Codelume",
+      "closedSource": "Código no publicado",
+      "openSourceDescription": "Publicaremos gradualmente el código fuente de los proyectos de Codelume. Cualquier persona podrá revisarlo y enviarnos sugerencias.",
+      "sourceStatus": "Estado del código",
+      "sourceAddress": "Repositorio",
+      "sourceUnavailable": "Aún sin publicar",
+      "descriptions": {
+        "Codelume": "La aplicación de fondos de Codelume para macOS.",
+        "CodelumeBundle": "Una biblioteca Swift para leer, editar y validar paquetes de fondos.",
+        "CodelumeStudio": "Un estudio para crear y editar fondos de Codelume.",
+        "CodelumeSaver": "Un salvapantallas para macOS que reproduce vídeos y paquetes de Codelume.",
+        "CodelumeEngine": "Un proyecto de motor destinado a renderizar y reproducir fondos.",
+        "CodelumeShared": "Componentes Swift compartidos entre los proyectos de Codelume.",
+        "codelume-backend": "Servicios de cuenta, biblioteca de fondos y archivos de Codelume.",
+        "codelume-skills": "Habilidades para agentes de programación en los proyectos de Codelume.",
+        "codelume-website": "El sitio web oficial de Codelume."
+      }
     },
     "pricing": {
       "title": "Versiones",

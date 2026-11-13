@@ -80,8 +80,24 @@
     }
   },
   "community": {
-    "title": "社区",
-    "pending": "社区即将上线。"
+    "title": "开源",
+    "projects": "码镜项目",
+    "closedSource": "暂未开源",
+    "openSourceDescription": "我们会逐步公开码镜各项目的源代码，欢迎大家查阅、监督并提出建议。",
+    "sourceStatus": "开源状态",
+    "sourceAddress": "开源地址",
+    "sourceUnavailable": "暂未公开",
+    "descriptions": {
+      "Codelume": "码镜 macOS 壁纸应用。",
+      "CodelumeBundle": "用于读取、编辑和验证壁纸资源包的 Swift 库。",
+      "CodelumeStudio": "用于创作与编辑壁纸的码镜工坊。",
+      "CodelumeSaver": "可播放视频和码镜壁纸包的 macOS 屏保。",
+      "CodelumeEngine": "为码镜壁纸渲染和播放预留的引擎项目。",
+      "CodelumeShared": "码镜项目共用的 Swift 组件。",
+      "codelume-backend": "为码镜提供账号、壁纸库和文件服务。",
+      "codelume-skills": "供开发代理使用的码镜项目技能。",
+      "codelume-website": "码镜官方网站。"
+    }
   },
   "pricing": {
     "title": "版本",

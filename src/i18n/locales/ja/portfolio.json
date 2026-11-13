@@ -80,8 +80,24 @@
     }
   },
   "community": {
-    "title": "コミュニティ",
-    "pending": "コミュニティは近日公開予定です。"
+    "title": "オープンソース",
+    "projects": "Codelumeのプロジェクト",
+    "closedSource": "ソース未公開",
+    "openSourceDescription": "Codelumeの各プロジェクトのソースコードを順次公開します。コードの確認やご意見をお待ちしています。",
+    "sourceStatus": "公開状況",
+    "sourceAddress": "リポジトリ",
+    "sourceUnavailable": "未公開",
+    "descriptions": {
+      "Codelume": "macOS向けの壁紙アプリ。",
+      "CodelumeBundle": "壁紙バンドルを読み込み、編集、検証するSwiftライブラリ。",
+      "CodelumeStudio": "Codelumeの壁紙を制作・編集するツール。",
+      "CodelumeSaver": "動画と壁紙バンドルを再生できるmacOSスクリーンセーバー。",
+      "CodelumeEngine": "壁紙の描画と再生を担う予定のエンジンプロジェクト。",
+      "CodelumeShared": "Codelumeのプロジェクトで共用するSwiftコンポーネント。",
+      "codelume-backend": "アカウント、壁紙ライブラリ、ファイルを扱うサービス。",
+      "codelume-skills": "開発エージェント向けのCodelumeプロジェクト用スキル。",
+      "codelume-website": "Codelumeの公式サイト。"
+    }
   },
   "pricing": {
     "title": "エディション",

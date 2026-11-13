@@ -80,8 +80,24 @@
     }
   },
   "community": {
-    "title": "Community",
-    "pending": "The community is coming soon."
+    "title": "Open source",
+    "projects": "Codelume projects",
+    "closedSource": "Source not yet public",
+    "openSourceDescription": "We’ll publish the source code for Codelume’s projects gradually. Everyone is welcome to review the code and share feedback.",
+    "sourceStatus": "Source status",
+    "sourceAddress": "Source repository",
+    "sourceUnavailable": "Not published yet",
+    "descriptions": {
+      "Codelume": "The Codelume wallpaper app for macOS.",
+      "CodelumeBundle": "A Swift library for reading, editing, and validating wallpaper bundles.",
+      "CodelumeStudio": "A studio for creating and editing Codelume wallpapers.",
+      "CodelumeSaver": "A macOS screen saver for videos and Codelume wallpaper bundles.",
+      "CodelumeEngine": "A planned engine project for rendering and playing Codelume wallpapers.",
+      "CodelumeShared": "Swift components shared across Codelume projects.",
+      "codelume-backend": "Account, wallpaper library, and file services for Codelume.",
+      "codelume-skills": "Codelume project skills for coding agents.",
+      "codelume-website": "The official Codelume website."
+    }
   },
   "pricing": {
     "title": "Editions",

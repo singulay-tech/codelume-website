@@ -80,8 +80,24 @@
     }
   },
   "community": {
-    "title": "社群",
-    "pending": "社群即將上線。"
+    "title": "開源",
+    "projects": "碼鏡專案",
+    "closedSource": "暫未開源",
+    "openSourceDescription": "我們會逐步公開碼鏡各專案的原始碼，歡迎大家查閱、檢視並提出建議。",
+    "sourceStatus": "開源狀態",
+    "sourceAddress": "開源網址",
+    "sourceUnavailable": "暫未公開",
+    "descriptions": {
+      "Codelume": "碼鏡 macOS 壁紙應用程式。",
+      "CodelumeBundle": "用於讀取、編輯和驗證壁紙資源包的 Swift 函式庫。",
+      "CodelumeStudio": "用於創作與編輯壁紙的碼鏡工坊。",
+      "CodelumeSaver": "可播放影片和碼鏡壁紙包的 macOS 螢幕保護程式。",
+      "CodelumeEngine": "為碼鏡壁紙算繪和播放預留的引擎專案。",
+      "CodelumeShared": "碼鏡專案共用的 Swift 元件。",
+      "codelume-backend": "為碼鏡提供帳號、壁紙庫和檔案服務。",
+      "codelume-skills": "供開發代理使用的碼鏡專案技能。",
+      "codelume-website": "碼鏡官方網站。"
+    }
   },
   "pricing": {
     "title": "版本",

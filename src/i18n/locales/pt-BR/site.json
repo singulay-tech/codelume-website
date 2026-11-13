@@ -121,8 +121,24 @@
       }
     },
     "community": {
-      "title": "Comunidade",
-      "pending": "A comunidade chega em breve."
+      "title": "Código aberto",
+      "projects": "Projetos do Codelume",
+      "closedSource": "Código não publicado",
+      "openSourceDescription": "Vamos publicar aos poucos o código-fonte dos projetos do Codelume. Qualquer pessoa poderá revisar o código e enviar sugestões.",
+      "sourceStatus": "Status do código",
+      "sourceAddress": "Repositório",
+      "sourceUnavailable": "Ainda não publicado",
+      "descriptions": {
+        "Codelume": "O aplicativo de papéis de parede Codelume para macOS.",
+        "CodelumeBundle": "Uma biblioteca Swift para ler, editar e validar pacotes de papéis de parede.",
+        "CodelumeStudio": "Um estúdio para criar e editar papéis de parede do Codelume.",
+        "CodelumeSaver": "Um protetor de tela do macOS que reproduz vídeos e pacotes do Codelume.",
+        "CodelumeEngine": "Um projeto de motor para renderizar e reproduzir papéis de parede.",
+        "CodelumeShared": "Componentes Swift compartilhados pelos projetos do Codelume.",
+        "codelume-backend": "Serviços de conta, biblioteca e arquivos do Codelume.",
+        "codelume-skills": "Habilidades para agentes de programação nos projetos do Codelume.",
+        "codelume-website": "O site oficial do Codelume."
+      }
     },
     "pricing": {
       "title": "Versões",
