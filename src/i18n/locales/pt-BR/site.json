@@ -1,0 +1,179 @@
+{
+  "common": {
+    "siteTitle": "Codelume — App de papéis de parede para Mac",
+    "language": "Idioma",
+    "followSystem": "Seguir o sistema"
+  },
+  "navigation": {
+    "brand": "Codelume",
+    "work": "Codelume",
+    "about": "Papéis de parede e colaboração",
+    "workshop": "Codelume Studio",
+    "help": "Ajuda"
+  },
+  "hero": {
+    "title": "Um novo papel de parede para seu Mac",
+    "subtitle": "Defina papéis de parede nativos do Mac ou descubra outros formatos no Codelume.",
+    "cta": {
+      "download": "Baixar Codelume para Mac"
+    },
+    "editionNote": "A versão padrão é gratuita. A versão Pro oferece mais recursos.",
+    "video": {
+      "unsupported": "Seu navegador não oferece suporte a vídeos.",
+      "select": "Mostrar o papel de parede {{number}}"
+    }
+  },
+  "portfolio": {
+    "badge": "Codelume",
+    "latestProject": "A apresentação pode ser diferente da versão atual.",
+    "featured": {
+      "title": "Codelume",
+      "details": {
+        "industry": {
+          "label": "Gerenciamento de telas",
+          "value": "Reprodução em várias telas, controles individuais, pausa e silenciamento"
+        },
+        "style": {
+          "label": "Papéis de parede locais",
+          "value": "Exportação offline, importação e edição"
+        },
+        "tone": {
+          "label": "Galeria de papéis de parede",
+          "value": "Explore, baixe e envie suas criações"
+        },
+        "format": {
+          "label": "Protetor de tela",
+          "value": "Protetores personalizados e reprodução na tela bloqueada"
+        },
+        "settings": {
+          "label": "Preferências",
+          "value": "Idioma, tema, inicialização e reprodução"
+        }
+      }
+    },
+    "features": {
+      "title": "Recursos",
+      "intro": "Escolha um papel de parede ou gerencie uma lista de reprodução para cada tela.",
+      "native": {
+        "title": "Papéis de parede nativos do Mac",
+        "description": "Escolha uma imagem ou um vídeo no Codelume e deixe o macOS gerenciar o papel de parede."
+      },
+      "extended": {
+        "title": "Papéis de parede do Codelume",
+        "description": "Encontre vídeos, imagens e cenas personalizáveis na galeria."
+      },
+      "displays": {
+        "title": "Várias telas",
+        "description": "Escolha um papel de parede e uma lista de reprodução para cada tela."
+      },
+      "playlists": {
+        "title": "Listas de reprodução",
+        "description": "Adicione seus favoritos a uma lista para alterná-los na área de trabalho."
+      }
+    }
+  },
+  "workshop": {
+    "badge": "Codelume Studio",
+    "teaser": {
+      "title": "Codelume Studio",
+      "cta": "Baixar Codelume Studio",
+      "details": {
+        "visual": {
+          "label": "Edição visual",
+          "value": "Edite cenas, ajuste propriedades e veja o resultado ao vivo"
+        },
+        "nodes": {
+          "label": "Nós",
+          "value": "Imagens, formas, vídeos, texto e áudio"
+        },
+        "animation": {
+          "label": "Animação",
+          "value": "Movimento, escala, transições e sequências de quadros"
+        },
+        "particles": {
+          "label": "Partículas",
+          "value": "Partículas estáticas e dinâmicas com parâmetros ajustáveis"
+        },
+        "shader": {
+          "label": "Shaders",
+          "value": "Controle preciso por código"
+        }
+      },
+      "versionNote": "Os recursos podem variar conforme a versão."
+    }
+  },
+  "aboutUs": {
+    "badge": "Papéis de parede e colaboração",
+    "title": "Papéis de parede e colaboração",
+    "highlights": {
+      "hub": {
+        "title": "Criadores e galeria",
+        "description": "Explore nossa seleção e envie suas criações por e-mail."
+      },
+      "formats": {
+        "title": "Formatos compatíveis",
+        "description": "Exporte papéis de parede do Codelume Studio no formato .bundle."
+      },
+      "community": {
+        "title": "Novidades",
+        "description": "Veja novos papéis de parede e atualizações no Douyin."
+      },
+      "rights": {
+        "title": "Direitos e atribuição",
+        "description": "Envie um e-mail se tiver dúvidas sobre direitos ou atribuição."
+      }
+    }
+  },
+  "footer": {
+    "description": "Um app de papéis de parede animados para macOS, com reprodução fluida.",
+    "tools": {
+      "title": "Tecnologias"
+    },
+    "legal": {
+      "title": "Informações legais",
+      "terms": "Termos de uso",
+      "privacy": "Política de privacidade",
+      "ugc": "Diretrizes de publicação"
+    },
+    "tagline": "Feito para macOS",
+    "labels": {
+      "appStore": "Codelume na App Store",
+      "email": "Enviar e-mail ao Codelume",
+      "douyin": "Codelume no Douyin"
+    }
+  },
+  "help": {
+    "title": "Ajuda e documentação",
+    "back": "Voltar ao início",
+    "docBack": "Central de ajuda",
+    "docNavToc": "Nesta página",
+    "protocolLocaleNote": "A especificação abaixo está em chinês.",
+    "logoAlt": "Codelume",
+    "categories": {
+      "app": {
+        "title": "Codelume",
+        "description": "Instale e use o Codelume e resolva problemas."
+      },
+      "wallpaperProtocol": {
+        "title": "Protocolo de papéis de parede",
+        "description": "Estrutura de arquivos .bundle e convenções de recursos."
+      },
+      "studio": {
+        "title": "Codelume Studio",
+        "description": "Crie e exporte papéis de parede com o Codelume Studio."
+      }
+    }
+  },
+  "legal": {
+    "logoAlt": "Codelume",
+    "back": "Voltar ao início",
+    "docNavToc": "Nesta página",
+    "relatedTitle": "Informações legais",
+    "versionLabel": "Versão",
+    "docTitles": {
+      "terms": "Termos de uso",
+      "privacy": "Política de privacidade",
+      "ugc": "Diretrizes de publicação"
+    }
+  }
+}

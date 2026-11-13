@@ -9,5 +9,6 @@
   "close": "닫기",
   "back": "뒤로",
   "next": "다음",
-  "language": "언어"
+  "language": "언어",
+  "followSystem": "시스템 언어 따르기"
 }

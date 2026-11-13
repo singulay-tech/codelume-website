@@ -9,5 +9,6 @@
   "close": "閉じる",
   "back": "戻る",
   "next": "次へ",
-  "language": "言語"
+  "language": "言語",
+  "followSystem": "システム設定に従う"
 }

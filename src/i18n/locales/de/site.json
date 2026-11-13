@@ -1,0 +1,179 @@
+{
+  "common": {
+    "siteTitle": "Codelume — Wallpaper-App für Mac",
+    "language": "Sprache",
+    "followSystem": "Systemsprache verwenden"
+  },
+  "navigation": {
+    "brand": "Codelume",
+    "work": "Codelume",
+    "about": "Wallpaper & Zusammenarbeit",
+    "workshop": "Codelume Studio",
+    "help": "Hilfe"
+  },
+  "hero": {
+    "title": "Ein neues Wallpaper für deinen Mac",
+    "subtitle": "Verwende native Mac-Wallpaper oder entdecke weitere Wallpaper-Formate in Codelume.",
+    "cta": {
+      "download": "Codelume für Mac laden"
+    },
+    "editionNote": "Die Standardversion ist kostenlos. Pro bietet weitere Funktionen.",
+    "video": {
+      "unsupported": "Dein Browser unterstützt keine Videos.",
+      "select": "Wallpaper {{number}} anzeigen"
+    }
+  },
+  "portfolio": {
+    "badge": "Codelume",
+    "latestProject": "Die Darstellung kann von der aktuellen Version abweichen.",
+    "featured": {
+      "title": "Codelume",
+      "details": {
+        "industry": {
+          "label": "Bildschirmverwaltung",
+          "value": "Mehrere Bildschirme, individuelle Steuerung, Pause und Stummschaltung"
+        },
+        "style": {
+          "label": "Lokale Wallpaper",
+          "value": "Offline-Export, Import und Bearbeitung"
+        },
+        "tone": {
+          "label": "Wallpaper-Galerie",
+          "value": "Stöbern, herunterladen und eigene Werke einreichen"
+        },
+        "format": {
+          "label": "Bildschirmschoner",
+          "value": "Eigene Bildschirmschoner und Wiedergabe auf dem Sperrbildschirm"
+        },
+        "settings": {
+          "label": "Einstellungen",
+          "value": "Sprache, Design, Autostart und Wiedergabe"
+        }
+      }
+    },
+    "features": {
+      "title": "Funktionen",
+      "intro": "Wähle ein Wallpaper oder verwalte eine Wiedergabeliste für jeden Bildschirm.",
+      "native": {
+        "title": "Native Mac-Wallpaper",
+        "description": "Wähle in Codelume ein Bild oder Video. macOS verwaltet das Wallpaper."
+      },
+      "extended": {
+        "title": "Codelume-Wallpaper",
+        "description": "Entdecke Videos, Bilder und anpassbare Szenen in der Galerie."
+      },
+      "displays": {
+        "title": "Mehrere Bildschirme",
+        "description": "Wähle Wallpaper und Wiedergabeliste für jeden Bildschirm einzeln."
+      },
+      "playlists": {
+        "title": "Wallpaper-Wiedergabelisten",
+        "description": "Sammle deine Favoriten und zeige sie abwechselnd auf dem Desktop an."
+      }
+    }
+  },
+  "workshop": {
+    "badge": "Codelume Studio",
+    "teaser": {
+      "title": "Codelume Studio",
+      "cta": "Codelume Studio laden",
+      "details": {
+        "visual": {
+          "label": "Visuelle Bearbeitung",
+          "value": "Szenen bearbeiten, Eigenschaften ändern und Vorschau anzeigen"
+        },
+        "nodes": {
+          "label": "Knoten",
+          "value": "Bilder, Formen, Videos, Texte und Audio"
+        },
+        "animation": {
+          "label": "Animation",
+          "value": "Bewegung, Skalierung, Überblendung und Bildfolgen"
+        },
+        "particles": {
+          "label": "Partikel",
+          "value": "Statische und dynamische Partikel, einstellbare Parameter"
+        },
+        "shader": {
+          "label": "Shader",
+          "value": "Präzise Steuerung per Code"
+        }
+      },
+      "versionNote": "Der Funktionsumfang kann je nach Version variieren."
+    }
+  },
+  "aboutUs": {
+    "badge": "Wallpaper & Zusammenarbeit",
+    "title": "Wallpaper & Zusammenarbeit",
+    "highlights": {
+      "hub": {
+        "title": "Kreative und Wallpaper-Galerie",
+        "description": "Entdecke unsere Auswahl und reiche deine Werke per E-Mail ein."
+      },
+      "formats": {
+        "title": "Unterstützte Formate",
+        "description": "Exportiere Wallpaper aus Codelume Studio als .bundle."
+      },
+      "community": {
+        "title": "Neuigkeiten",
+        "description": "Neue Wallpaper und Updates findest du auf Douyin."
+      },
+      "rights": {
+        "title": "Rechte und Urheberschaft",
+        "description": "Bei Fragen zu Rechten oder Namensnennung erreichst du uns per E-Mail."
+      }
+    }
+  },
+  "footer": {
+    "description": "Eine macOS-App für dynamische Wallpaper mit flüssiger Wiedergabe.",
+    "tools": {
+      "title": "Technologien"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutz",
+      "ugc": "Richtlinien für Nutzerinhalte"
+    },
+    "tagline": "Für macOS entwickelt",
+    "labels": {
+      "appStore": "Codelume im App Store",
+      "email": "Codelume per E-Mail kontaktieren",
+      "douyin": "Codelume auf Douyin"
+    }
+  },
+  "help": {
+    "title": "Hilfe und Dokumentation",
+    "back": "Zurück zur Startseite",
+    "docBack": "Hilfeübersicht",
+    "docNavToc": "Auf dieser Seite",
+    "protocolLocaleNote": "Die folgende Spezifikation ist auf Chinesisch.",
+    "logoAlt": "Codelume",
+    "categories": {
+      "app": {
+        "title": "Codelume",
+        "description": "Codelume installieren, verwenden und Fehler beheben."
+      },
+      "wallpaperProtocol": {
+        "title": "Wallpaper-Protokoll",
+        "description": "Aufbau von .bundle-Dateien und Konventionen für Ressourcen."
+      },
+      "studio": {
+        "title": "Codelume Studio",
+        "description": "Wallpaper mit Codelume Studio erstellen und exportieren."
+      }
+    }
+  },
+  "legal": {
+    "logoAlt": "Codelume",
+    "back": "Zurück zur Startseite",
+    "docNavToc": "Auf dieser Seite",
+    "relatedTitle": "Rechtliches",
+    "versionLabel": "Version",
+    "docTitles": {
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutz",
+      "ugc": "Richtlinien für Nutzerinhalte"
+    }
+  }
+}

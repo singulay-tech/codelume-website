@@ -1,95 +1,72 @@
-'use client'
-
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Globe } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import {
-  ENABLE_LANGUAGE_SWITCHER,
   fallbackLng,
-  supportedLngs,
+  getLanguagePreference,
   languageNames,
-  type SupportedLanguage,
+  languageStorageKey,
+  supportedLngs,
 } from '@/i18n/config'
 import { cn } from '@/lib/utils'
 
 export type LanguageSwitcherVariant = 'onDarkVideo' | 'onSurface'
 
-type LanguageSwitcherProps = {
-  /** Hero 全屏视频上用 onDarkVideo；浅色页面（如 /help）用 onSurface */
-  variant?: LanguageSwitcherVariant
-}
-
-export function LanguageSwitcher({ variant = 'onDarkVideo' }: LanguageSwitcherProps) {
-  const { i18n } = useTranslation()
-
-  if (!ENABLE_LANGUAGE_SWITCHER) {
-    return null
-  }
-  const resolved = (i18n.resolvedLanguage || i18n.language || fallbackLng) as string
-  const base = resolved.split('-')[0] as SupportedLanguage
-  const currentLang = (
-    supportedLngs.includes(resolved as SupportedLanguage)
-      ? resolved
-      : supportedLngs.includes(base)
-        ? base
-        : fallbackLng
-  ) as SupportedLanguage
-
-  const handleLanguageChange = (lng: SupportedLanguage) => {
-    // Persist explicit user choice so it wins over auto-detection on reload.
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem('i18nextLng', lng)
-    }
-    i18n.changeLanguage(lng)
-  }
-
+export function LanguageSwitcher({ variant = 'onDarkVideo' }: { variant?: LanguageSwitcherVariant }) {
+  const { t, i18n } = useTranslation('common')
+  const [preference, setPreference] = useState(() => getLanguagePreference() ?? 'system')
+  const currentLanguage = supportedLngs.find((language) => language === i18n.resolvedLanguage) ?? fallbackLng
   const isSurface = variant === 'onSurface'
+
+  function changeLanguage(value: string) {
+    setPreference(value)
+    try {
+      if (value === 'system') window.localStorage.removeItem(languageStorageKey)
+      else window.localStorage.setItem(languageStorageKey, value)
+    } catch {
+      // Apply the choice for this visit when storage is unavailable.
+    }
+
+    void i18n.changeLanguage(value === 'system' ? undefined : value)
+  }
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button
           type="button"
-          aria-label="Language"
+          aria-label={`${t('language')} · ${languageNames[currentLanguage]}`}
           className={cn(
-            'p-3 rounded-full gentle-animation cursor-pointer',
+            'inline-flex min-h-11 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 text-xs font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:gap-2 sm:px-3 sm:text-sm',
             isSurface
-              ? 'border border-border bg-card text-foreground shadow-sm hover:bg-muted'
-              : 'glass-effect text-white hover:bg-white/20'
+              ? 'border-border bg-card text-foreground hover:bg-muted'
+              : 'border-white/40 bg-black/35 text-white backdrop-blur-sm hover:bg-black/60'
           )}
         >
-          <Globe className="w-4 h-4" />
+          <Globe className="size-4 shrink-0" aria-hidden="true" />
+          <span lang={currentLanguage}>{languageNames[currentLanguage]}</span>
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent
-        align="end"
-        className={
-          isSurface
-            ? 'bg-popover text-popover-foreground border-border'
-            : 'bg-black/90 backdrop-blur-xl border-white/10'
-        }
-      >
-        {supportedLngs.map((lng) => (
-          <DropdownMenuItem
-            key={lng}
-            onClick={() => handleLanguageChange(lng)}
-            className={cn(
-              'cursor-pointer',
-              isSurface
-                ? 'hover:bg-muted focus:bg-muted text-popover-foreground'
-                : 'text-white hover:bg-white/10',
-              !isSurface && currentLang === lng ? 'bg-white/20' : '',
-              isSurface && currentLang === lng ? 'bg-muted font-medium' : ''
-            )}
-          >
-            {languageNames[lng]}
-          </DropdownMenuItem>
-        ))}
+      <DropdownMenuContent align="end" className="z-[130] min-w-44">
+        <DropdownMenuRadioGroup value={preference} onValueChange={changeLanguage}>
+          <DropdownMenuRadioItem value="system" className="min-h-9 cursor-pointer">
+            {t('followSystem')}
+          </DropdownMenuRadioItem>
+          <DropdownMenuSeparator />
+          {supportedLngs.map((language) => (
+            <DropdownMenuRadioItem key={language} value={language} lang={language} className="min-h-9 cursor-pointer">
+              {languageNames[language]}
+            </DropdownMenuRadioItem>
+          ))}
+        </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
   )

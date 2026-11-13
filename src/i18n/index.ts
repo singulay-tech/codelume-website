@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
-import { defaultNS, ENABLE_LANGUAGE_SWITCHER, fallbackLng, supportedLngs } from './config'
+import { defaultNS, fallbackLng, getLanguagePreference, languageStorageKey, normalizeLanguage, supportedLngs } from './config'
 
 // English language packs
 import enCommon from './locales/en/common.json'
@@ -75,7 +75,16 @@ import koWorkshop from './locales/ko/workshop.json'
 import koHelp from './locales/ko/help.json'
 import koErrors from './locales/ko/errors.json'
 
+import fr from './locales/fr/site.json'
+import de from './locales/de/site.json'
+import es from './locales/es/site.json'
+import ptBR from './locales/pt-BR/site.json'
+
 const resources = {
+  fr,
+  de,
+  es,
+  'pt-BR': ptBR,
   en: {
     common: enCommon,
     navigation: enNavigation,
@@ -153,9 +162,7 @@ const resources = {
   },
 } as const
 
-if (ENABLE_LANGUAGE_SWITCHER) {
-  i18n.use(LanguageDetector)
-}
+i18n.use(LanguageDetector)
 
 i18n.on('languageChanged', (lng) => {
   if (typeof document !== 'undefined') {
@@ -166,12 +173,10 @@ i18n.on('languageChanged', (lng) => {
 
 i18n.use(initReactI18next).init({
     resources,
-    lng: ENABLE_LANGUAGE_SWITCHER ? undefined : 'zh',
-    fallbackLng: ENABLE_LANGUAGE_SWITCHER ? fallbackLng : 'zh',
+    fallbackLng,
     supportedLngs: [...supportedLngs],
     // Resolve zh-TW before falling back to its base language.
     load: 'all',
-    nonExplicitSupportedLngs: true,
     defaultNS,
     ns: [
       'common',
@@ -193,27 +198,22 @@ i18n.use(initReactI18next).init({
       escapeValue: false // React already handles XSS
     },
 
-    detection: ENABLE_LANGUAGE_SWITCHER
-      ? {
-          order: ['localStorage', 'navigator', 'htmlTag'],
-          caches: ['localStorage'],
-          lookupLocalStorage: 'i18nextLng',
-          convertDetectedLanguage: (lng) => {
-            if (lng.startsWith('zh-TW') || lng.startsWith('zh-Hant') || lng.startsWith('zh-HK')) {
-              return 'zh-TW'
-            }
-            if (lng.startsWith('zh-CN') || lng.startsWith('zh-SG')) {
-              return 'zh'
-            }
-            const base = lng.split('-')[0]
-            return supportedLngs.includes(base as (typeof supportedLngs)[number]) ? base : lng
-          },
-        }
-      : undefined,
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: [],
+      lookupLocalStorage: languageStorageKey,
+      convertDetectedLanguage: normalizeLanguage,
+    },
 
     react: {
       useSuspense: true
     }
   })
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('languagechange', () => {
+    if (!getLanguagePreference()) void i18n.changeLanguage()
+  })
+}
 
 export default i18n

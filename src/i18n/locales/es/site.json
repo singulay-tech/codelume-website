@@ -1,0 +1,179 @@
+{
+  "common": {
+    "siteTitle": "Codelume — App de fondos de pantalla para Mac",
+    "language": "Idioma",
+    "followSystem": "Seguir el sistema"
+  },
+  "navigation": {
+    "brand": "Codelume",
+    "work": "Codelume",
+    "about": "Fondos y colaboración",
+    "workshop": "Codelume Studio",
+    "help": "Ayuda"
+  },
+  "hero": {
+    "title": "Un nuevo fondo de pantalla para tu Mac",
+    "subtitle": "Configura fondos nativos de Mac o descubre más formatos en Codelume.",
+    "cta": {
+      "download": "Descargar Codelume para Mac"
+    },
+    "editionNote": "La versión estándar es gratuita. Pro ofrece más funciones.",
+    "video": {
+      "unsupported": "Tu navegador no admite vídeos.",
+      "select": "Mostrar el fondo {{number}}"
+    }
+  },
+  "portfolio": {
+    "badge": "Codelume",
+    "latestProject": "La presentación puede variar respecto a la versión actual.",
+    "featured": {
+      "title": "Codelume",
+      "details": {
+        "industry": {
+          "label": "Gestión de pantallas",
+          "value": "Reproducción multipantalla, controles por pantalla, pausa y silencio"
+        },
+        "style": {
+          "label": "Fondos locales",
+          "value": "Exportación sin conexión, importación y edición"
+        },
+        "tone": {
+          "label": "Galería de fondos",
+          "value": "Explora, descarga y comparte tus creaciones"
+        },
+        "format": {
+          "label": "Salvapantallas",
+          "value": "Salvapantallas personalizados y reproducción en la pantalla de bloqueo"
+        },
+        "settings": {
+          "label": "Preferencias",
+          "value": "Idioma, tema, inicio automático y reproducción"
+        }
+      }
+    },
+    "features": {
+      "title": "Funciones",
+      "intro": "Elige un fondo o gestiona una lista de reproducción para cada pantalla.",
+      "native": {
+        "title": "Fondos nativos de Mac",
+        "description": "Elige una imagen o un vídeo en Codelume y deja que macOS gestione el fondo."
+      },
+      "extended": {
+        "title": "Fondos de Codelume",
+        "description": "Descubre vídeos, imágenes y escenas personalizables en la galería."
+      },
+      "displays": {
+        "title": "Varias pantallas",
+        "description": "Elige un fondo y una lista de reproducción para cada pantalla."
+      },
+      "playlists": {
+        "title": "Listas de reproducción",
+        "description": "Añade tus favoritos a una lista para que se alternen en el escritorio."
+      }
+    }
+  },
+  "workshop": {
+    "badge": "Codelume Studio",
+    "teaser": {
+      "title": "Codelume Studio",
+      "cta": "Descargar Codelume Studio",
+      "details": {
+        "visual": {
+          "label": "Edición visual",
+          "value": "Edita escenas, ajusta propiedades y usa la vista previa en directo"
+        },
+        "nodes": {
+          "label": "Nodos",
+          "value": "Imágenes, formas, vídeos, texto y audio"
+        },
+        "animation": {
+          "label": "Animación",
+          "value": "Movimiento, escala, fundidos y secuencias"
+        },
+        "particles": {
+          "label": "Partículas",
+          "value": "Partículas estáticas y dinámicas con parámetros ajustables"
+        },
+        "shader": {
+          "label": "Sombreadores",
+          "value": "Control preciso mediante código"
+        }
+      },
+      "versionNote": "Las funciones pueden variar según la versión."
+    }
+  },
+  "aboutUs": {
+    "badge": "Fondos y colaboración",
+    "title": "Fondos y colaboración",
+    "highlights": {
+      "hub": {
+        "title": "Creadores y galería",
+        "description": "Descubre nuestra selección y envíanos tus creaciones por correo."
+      },
+      "formats": {
+        "title": "Formatos compatibles",
+        "description": "Exporta tus fondos desde Codelume Studio en formato .bundle."
+      },
+      "community": {
+        "title": "Novedades",
+        "description": "Encuentra nuevos fondos y actualizaciones en Douyin."
+      },
+      "rights": {
+        "title": "Derechos y atribución",
+        "description": "Escríbenos si tienes dudas sobre derechos o atribución."
+      }
+    }
+  },
+  "footer": {
+    "description": "Una app de fondos animados para macOS con reproducción fluida.",
+    "tools": {
+      "title": "Tecnologías"
+    },
+    "legal": {
+      "title": "Información legal",
+      "terms": "Condiciones de uso",
+      "privacy": "Política de privacidad",
+      "ugc": "Normas de publicación"
+    },
+    "tagline": "Diseñado para macOS",
+    "labels": {
+      "appStore": "Codelume en el App Store",
+      "email": "Contactar con Codelume",
+      "douyin": "Codelume en Douyin"
+    }
+  },
+  "help": {
+    "title": "Ayuda y documentación",
+    "back": "Volver al inicio",
+    "docBack": "Centro de ayuda",
+    "docNavToc": "En esta página",
+    "protocolLocaleNote": "La especificación siguiente está en chino.",
+    "logoAlt": "Codelume",
+    "categories": {
+      "app": {
+        "title": "Codelume",
+        "description": "Instala y usa Codelume, y resuelve problemas."
+      },
+      "wallpaperProtocol": {
+        "title": "Protocolo de fondos",
+        "description": "Estructura de archivos .bundle y convenciones de recursos."
+      },
+      "studio": {
+        "title": "Codelume Studio",
+        "description": "Crea y exporta fondos con Codelume Studio."
+      }
+    }
+  },
+  "legal": {
+    "logoAlt": "Codelume",
+    "back": "Volver al inicio",
+    "docNavToc": "En esta página",
+    "relatedTitle": "Información legal",
+    "versionLabel": "Versión",
+    "docTitles": {
+      "terms": "Condiciones de uso",
+      "privacy": "Política de privacidad",
+      "ugc": "Normas de publicación"
+    }
+  }
+}

@@ -110,14 +110,14 @@ export function Hero() {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <img src="/codelume-icon.svg" alt="" className="h-7 w-7" />
-                <span className="font-bagel bg-[linear-gradient(110deg,#FBB453,#FA884E_24%,#F85374_46%,#8B58F4_73%,#5D9DF6)] bg-clip-text text-base tracking-wider text-transparent sm:text-xl forced-colors:text-[CanvasText]">{t('footer:brand')}</span>
+                <span className="hidden min-[380px]:inline font-bagel bg-[linear-gradient(110deg,#FBB453,#FA884E_24%,#F85374_46%,#8B58F4_73%,#5D9DF6)] bg-clip-text text-base tracking-wider text-transparent sm:text-xl forced-colors:text-[CanvasText]">{t('footer:brand')}</span>
               </div>
             </motion.div>
 
             {/* 导航菜单 */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden xl:flex items-center gap-4 2xl:gap-8">
               <a
                 href="/"
               <a
@@ -168,7 +168,7 @@ export function Hero() {
               {/* 移动端汉堡菜单按钮 */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden glass-effect p-3 rounded-full text-white hover:bg-white/20 active:bg-white/30 gentle-animation cursor-pointer z-[120] relative"
+                className="xl:hidden glass-effect p-3 rounded-full text-white hover:bg-white/20 active:bg-white/30 gentle-animation cursor-pointer z-[120] relative"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -184,7 +184,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden fixed inset-0 bg-black/50 backdrop-blur-md z-[80] cursor-pointer"
+          className="xl:hidden fixed inset-0 bg-black/50 backdrop-blur-md z-[80] cursor-pointer"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
@@ -194,7 +194,7 @@ export function Hero() {
         initial={{ x: '100%' }}
         animate={{ x: isMobileMenuOpen ? '0%' : '100%' }}
         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-        className="md:hidden fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-black/90 backdrop-blur-xl border-l border-white/10 z-[90] mobile-menu-panel pointer-events-auto"
+        className="xl:hidden fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-black/90 backdrop-blur-xl border-l border-white/10 z-[90] mobile-menu-panel pointer-events-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-col h-full">
