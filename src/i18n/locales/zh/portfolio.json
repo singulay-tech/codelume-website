@@ -79,32 +79,47 @@
       ]
     }
   },
-  "pricing": {
-    "title": "码镜定价",
-    "standard": {
-      "title": "普通版",
-      "price": "免费使用",
-      "features": [
-        "导入和播放静态、视频壁纸",
-        "管理主显示器及其播放列表",
-        "本地壁纸库最多 20 张",
-        "浏览和下载社区壁纸"
-      ]
-    },
-    "pro": {
-      "title": "Pro",
-      "price": "付费解锁 · 价格以购买页面为准",
-      "features": [
-        "导入和播放全部壁纸类型，包括场景、景深和网页壁纸",
-        "多显示器独立播放与管理",
-        "解除 20 张的本地壁纸库限制",
-        "导出壁纸包并投稿到壁纸中心"
-      ],
-      "availability": "原生壁纸模式与锁屏壁纸需使用官网版 Pro，并运行 macOS 26 或更高版本。"
-    }
-  },
   "community": {
     "title": "社区",
     "pending": "社区即将上线。"
+  },
+  "pricing": {
+    "title": "版本",
+    "subtitle": "购买 Pro 可支持壁纸存储、后台服务和码镜的持续开发。",
+    "standard": {
+      "title": "普通版",
+      "price": "免费使用，无水印、无广告。日常换壁纸，普通版就够了。"
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "一次性买断，解锁全部功能，体验完整的码镜。具体价格以购买页面为准。"
+    },
+    "groups": {
+      "modes": "壁纸模式",
+      "types": "壁纸类型",
+      "wallpaperFeatures": "壁纸功能"
+    },
+    "supported": "支持",
+    "partiallySupported": "部分支持",
+    "unsupported": "不支持",
+    "features": {
+      "displays": "多屏幕壁纸",
+      "lockScreen": "锁屏壁纸",
+      "playlists": "播放列表",
+      "library": "本地壁纸库",
+      "download": "壁纸下载",
+      "import": "壁纸导入",
+      "upload": "壁纸上传",
+      "export": "壁纸导出",
+      "menuBar": "状态栏管理",
+      "metrics": "系统指标",
+      "frameRate": "非视频动态壁纸帧率限制",
+      "storage": "存储管理",
+      "permissions": "权限管理"
+    },
+    "mainDisplayOnly": "仅主屏幕",
+    "libraryLimit": "最多 20 张",
+    "basicTypesOnly": "仅静态和视频",
+    "websiteOnly": "仅官网版"
   }
 }

@@ -8,7 +8,7 @@
     "appStoreDescription": "透過 Mac App Store 安裝與更新，支援碼鏡的大部分功能。",
     "websiteDescription": "從官網下載安裝套件，另外支援設定 macOS 原生壁紙與鎖定畫面壁紙。",
     "openAppStore": "在 App Store 中開啟",
-    "sharedSubscription": "兩版採用同一套 Pro 訂閱方案，購買與權益驗證由各自通路處理。",
+    "sharedSubscription": "兩版均提供 Pro，購買與權益驗證由各自通路處理。",
     "websiteReason": "這兩項功能需要存取系統壁紙元件，超出 App Store 版的沙盒權限。官網版的原生壁紙由 macOS 管理，切換更流暢，可依需求選擇。",
     "systemRequirements": {
       "title": "系統需求",

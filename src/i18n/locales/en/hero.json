@@ -8,7 +8,7 @@
     "appStoreDescription": "Install and update through the Mac App Store. This edition includes most Codelume features.",
     "websiteDescription": "Download the installer directly to also set native macOS wallpapers and lock screen wallpapers.",
     "openAppStore": "Open in the App Store",
-    "sharedSubscription": "Both editions use the same Pro subscription plan. Purchases and entitlements are handled by each channel.",
+    "sharedSubscription": "Both editions offer Pro. Purchases and entitlements are handled by each channel.",
     "websiteReason": "Both features need access to system wallpaper components beyond what the App Store edition’s sandbox allows. Native wallpapers in the website edition are managed by macOS for smoother transitions. Choose the edition that suits your needs.",
     "systemRequirements": {
       "title": "System requirements",

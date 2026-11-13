@@ -79,32 +79,47 @@
       ]
     }
   },
-  "pricing": {
-    "title": "碼鏡定價",
-    "standard": {
-      "title": "一般版",
-      "price": "免費使用",
-      "features": [
-        "匯入和播放靜態、影片壁紙",
-        "管理主顯示器與其播放清單",
-        "本機壁紙庫最多 20 張",
-        "瀏覽和下載社群壁紙"
-      ]
-    },
-    "pro": {
-      "title": "Pro",
-      "price": "付費解鎖 · 價格以購買頁面為準",
-      "features": [
-        "匯入和播放所有壁紙類型，包括場景、景深和網頁壁紙",
-        "多顯示器獨立播放與管理",
-        "解除本機壁紙庫的 20 張限制",
-        "匯出壁紙包並投稿至壁紙中心"
-      ],
-      "availability": "原生壁紙模式與鎖定畫面壁紙需使用官網版 Pro，並執行 macOS 26 或更新版本。"
-    }
-  },
   "community": {
     "title": "社群",
     "pending": "社群即將上線。"
+  },
+  "pricing": {
+    "title": "版本",
+    "subtitle": "購買 Pro 可支持壁紙儲存、後端服務與碼鏡的持續開發。",
+    "standard": {
+      "title": "一般版",
+      "price": "免費使用，無浮水印、無廣告。日常更換壁紙，一般版就夠了。"
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "一次買斷，解鎖所有功能，完整體驗碼鏡。實際價格以購買頁面為準。"
+    },
+    "groups": {
+      "modes": "壁紙模式",
+      "types": "壁紙類型",
+      "wallpaperFeatures": "壁紙功能"
+    },
+    "supported": "支援",
+    "partiallySupported": "部分支援",
+    "unsupported": "不支援",
+    "features": {
+      "displays": "多螢幕壁紙",
+      "lockScreen": "鎖定畫面壁紙",
+      "playlists": "播放清單",
+      "library": "本機壁紙庫",
+      "download": "下載壁紙",
+      "import": "匯入壁紙",
+      "upload": "上傳壁紙",
+      "export": "匯出壁紙",
+      "menuBar": "選單列管理",
+      "metrics": "系統指標",
+      "frameRate": "非影片動態壁紙幀率限制",
+      "storage": "儲存管理",
+      "permissions": "權限管理"
+    },
+    "mainDisplayOnly": "僅主螢幕",
+    "libraryLimit": "最多 20 張",
+    "basicTypesOnly": "僅靜態與影片",
+    "websiteOnly": "僅官網版"
   }
 }

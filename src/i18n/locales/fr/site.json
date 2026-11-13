@@ -25,7 +25,7 @@
       "appStoreDescription": "Installez et mettez à jour Codelume via le Mac App Store. Cette version inclut la plupart des fonctionnalités.",
       "websiteDescription": "Téléchargez le programme d’installation pour définir aussi des fonds d’écran natifs de macOS et des fonds d’écran de verrouillage.",
       "openAppStore": "Ouvrir dans l’App Store",
-      "sharedSubscription": "Les deux versions proposent le même abonnement Pro. Les achats et les droits d’accès sont gérés par chaque canal.",
+      "sharedSubscription": "Les deux versions proposent Pro. Chaque canal gère les achats et les droits d’accès.",
       "websiteReason": "Ces deux fonctions nécessitent un accès à des composants système que le bac à sable de la version App Store ne permet pas. Dans la version du site officiel, macOS gère les fonds d’écran natifs pour des transitions plus fluides. Choisissez la version adaptée à vos besoins.",
       "systemRequirements": {
         "title": "Configuration requise",
@@ -120,33 +120,48 @@
         ]
       }
     },
-    "pricing": {
-      "title": "Tarifs de Codelume",
-      "standard": {
-        "title": "Standard",
-        "price": "Gratuit",
-        "features": [
-          "Importer et lire des fonds d’écran fixes ou vidéo",
-          "Gérer l’écran principal et sa liste de lecture",
-          "Conserver jusqu’à 20 fonds d’écran locaux",
-          "Parcourir et télécharger les fonds d’écran de la communauté"
-        ]
-      },
-      "pro": {
-        "title": "Pro",
-        "price": "Mise à niveau payante · Prix indiqué à l’achat",
-        "features": [
-          "Importer et lire tous les formats, dont les scènes, les fonds avec profondeur et les fonds web",
-          "Gérer et lire les fonds d’écran séparément sur plusieurs écrans",
-          "Supprimer la limite de 20 fonds d’écran locaux",
-          "Exporter des packs et soumettre des créations à la galerie"
-        ],
-        "availability": "Le mode natif et les fonds d’écran de verrouillage nécessitent Pro dans la version du site officiel, sous macOS 26 ou ultérieur."
-      }
-    },
     "community": {
       "title": "Communauté",
       "pending": "La communauté arrive bientôt."
+    },
+    "pricing": {
+      "title": "Éditions",
+      "subtitle": "Les achats Pro financent le stockage des fonds d’écran, les services backend et le développement de Codelume.",
+      "standard": {
+        "title": "Standard",
+        "price": "Gratuit, sans filigrane ni publicité. Tout le nécessaire pour changer de fond d’écran au quotidien."
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "Un achat unique donne accès à toutes les fonctionnalités de Codelume. Consultez le prix sur l’écran d’achat."
+      },
+      "groups": {
+        "modes": "Modes de fond d’écran",
+        "types": "Types de fonds d’écran",
+        "wallpaperFeatures": "Fonctions de fond d’écran"
+      },
+      "supported": "Pris en charge",
+      "partiallySupported": "Partiellement pris en charge",
+      "unsupported": "Non pris en charge",
+      "features": {
+        "displays": "Fonds d’écran multi-écrans",
+        "lockScreen": "Fonds d’écran de verrouillage",
+        "playlists": "Listes de lecture",
+        "library": "Bibliothèque locale",
+        "download": "Télécharger des fonds d’écran",
+        "import": "Importer des fonds d’écran",
+        "upload": "Publier des fonds d’écran",
+        "export": "Exporter des fonds d’écran",
+        "menuBar": "Gestion de la barre des menus",
+        "metrics": "Indicateurs système",
+        "frameRate": "Limite d’images par seconde pour les fonds animés hors vidéo",
+        "storage": "Gestion du stockage",
+        "permissions": "Gestion des autorisations"
+      },
+      "mainDisplayOnly": "Écran principal uniquement",
+      "libraryLimit": "Jusqu’à 20 fonds d’écran",
+      "basicTypesOnly": "Images fixes et vidéos uniquement",
+      "websiteOnly": "Version du site uniquement"
     }
   },
   "workshop": {

@@ -25,7 +25,7 @@
       "appStoreDescription": "Instala y actualiza Codelume desde la Mac App Store. Esta versión incluye la mayoría de las funciones.",
       "websiteDescription": "Descarga el instalador para configurar también fondos nativos de macOS y fondos de la pantalla de bloqueo.",
       "openAppStore": "Abrir en la App Store",
-      "sharedSubscription": "Ambas versiones ofrecen el mismo plan de suscripción Pro. Cada canal gestiona sus compras y derechos de acceso.",
+      "sharedSubscription": "Ambas versiones ofrecen Pro. Cada canal gestiona sus compras y derechos de acceso.",
       "websiteReason": "Ambas funciones requieren acceso a componentes del sistema que el entorno aislado de la versión de la App Store no permite. En la versión del sitio web, macOS gestiona los fondos nativos para que las transiciones sean más fluidas. Elige la versión que mejor se adapte a tus necesidades.",
       "systemRequirements": {
         "title": "Requisitos del sistema",
@@ -120,33 +120,48 @@
         ]
       }
     },
-    "pricing": {
-      "title": "Precios de Codelume",
-      "standard": {
-        "title": "Estándar",
-        "price": "Gratis",
-        "features": [
-          "Importa y reproduce fondos estáticos y de vídeo",
-          "Gestiona la pantalla principal y su lista de reproducción",
-          "Guarda hasta 20 fondos locales",
-          "Explora y descarga fondos de la comunidad"
-        ]
-      },
-      "pro": {
-        "title": "Pro",
-        "price": "Actualización de pago · Consulta el precio al comprar",
-        "features": [
-          "Importa y reproduce todos los formatos, incluidos escenas, profundidad y fondos web",
-          "Reproduce y gestiona fondos por separado en varias pantallas",
-          "Elimina el límite de 20 fondos locales",
-          "Exporta paquetes y envía tus fondos a la galería"
-        ],
-        "availability": "El modo nativo y los fondos de la pantalla de bloqueo requieren Pro en la versión del sitio web y macOS 26 o posterior."
-      }
-    },
     "community": {
       "title": "Comunidad",
       "pending": "La comunidad estará disponible pronto."
+    },
+    "pricing": {
+      "title": "Versiones",
+      "subtitle": "Las compras de Pro ayudan a financiar el almacenamiento de fondos, los servicios de servidor y el desarrollo de Codelume.",
+      "standard": {
+        "title": "Estándar",
+        "price": "Gratis, sin marcas de agua ni anuncios. Todo lo necesario para cambiar de fondo a diario."
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "Desbloquea todas las funciones de Codelume con un solo pago. Consulta el precio en la pantalla de compra."
+      },
+      "groups": {
+        "modes": "Modos de fondo",
+        "types": "Tipos de fondos",
+        "wallpaperFeatures": "Funciones de fondos"
+      },
+      "supported": "Compatible",
+      "partiallySupported": "Compatible en parte",
+      "unsupported": "No compatible",
+      "features": {
+        "displays": "Fondos en varias pantallas",
+        "lockScreen": "Fondos de la pantalla de bloqueo",
+        "playlists": "Listas de reproducción",
+        "library": "Biblioteca local",
+        "download": "Descargar fondos",
+        "import": "Importar fondos",
+        "upload": "Subir fondos",
+        "export": "Exportar fondos",
+        "menuBar": "Gestión de la barra de menús",
+        "metrics": "Indicadores del sistema",
+        "frameRate": "Límite de fotogramas para fondos animados que no son vídeos",
+        "storage": "Gestión del almacenamiento",
+        "permissions": "Gestión de permisos"
+      },
+      "mainDisplayOnly": "Solo pantalla principal",
+      "libraryLimit": "Hasta 20 fondos",
+      "basicTypesOnly": "Solo imágenes y vídeos",
+      "websiteOnly": "Solo versión del sitio web"
     }
   },
   "workshop": {

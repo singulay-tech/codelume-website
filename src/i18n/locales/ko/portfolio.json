@@ -79,32 +79,47 @@
       ]
     }
   },
-  "pricing": {
-    "title": "Codelume 가격",
-    "standard": {
-      "title": "일반판",
-      "price": "무료 사용",
-      "features": [
-        "정적 및 동영상 배경화면 가져오기와 재생",
-        "주 디스플레이와 재생 목록 관리",
-        "로컬 배경화면 최대 20개",
-        "커뮤니티 배경화면 탐색 및 다운로드"
-      ]
-    },
-    "pro": {
-      "title": "Pro",
-      "price": "유료 업그레이드 · 가격은 구매 화면에서 확인",
-      "features": [
-        "장면, 깊이, 웹 등 모든 배경화면 유형 가져오기와 재생",
-        "여러 디스플레이에서 개별 재생 및 관리",
-        "로컬 배경화면 20개 제한 해제",
-        "배경화면 번들 내보내기 및 허브에 게시"
-      ],
-      "availability": "기본 배경화면 모드와 잠금 화면 배경화면은 macOS 26 이상에서 공식 웹사이트 버전의 Pro가 필요합니다."
-    }
-  },
   "community": {
     "title": "커뮤니티",
     "pending": "커뮤니티를 곧 공개합니다."
+  },
+  "pricing": {
+    "title": "버전",
+    "subtitle": "Pro 구매는 배경화면 저장, 백엔드 서비스와 Codelume의 지속적인 개발을 지원합니다.",
+    "standard": {
+      "title": "일반판",
+      "price": "무료로 사용할 수 있으며 워터마크와 광고가 없습니다. 일상적인 배경화면 설정은 일반판으로 충분합니다."
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "한 번 구매하면 Codelume의 모든 기능을 이용할 수 있습니다. 가격은 구매 화면에서 확인하세요."
+    },
+    "groups": {
+      "modes": "배경화면 모드",
+      "types": "배경화면 유형",
+      "wallpaperFeatures": "배경화면 기능"
+    },
+    "supported": "지원",
+    "partiallySupported": "일부 지원",
+    "unsupported": "미지원",
+    "features": {
+      "displays": "멀티 디스플레이 배경화면",
+      "lockScreen": "잠금 화면 배경화면",
+      "playlists": "재생 목록",
+      "library": "로컬 배경화면 보관함",
+      "download": "배경화면 다운로드",
+      "import": "배경화면 가져오기",
+      "upload": "배경화면 업로드",
+      "export": "배경화면 내보내기",
+      "menuBar": "메뉴 막대 관리",
+      "metrics": "시스템 지표",
+      "frameRate": "동영상 외 동적 배경화면의 프레임률 제한",
+      "storage": "저장 공간 관리",
+      "permissions": "권한 관리"
+    },
+    "mainDisplayOnly": "기본 디스플레이만",
+    "libraryLimit": "최대 20개",
+    "basicTypesOnly": "이미지와 동영상만",
+    "websiteOnly": "공식 웹사이트 버전 전용"
   }
 }

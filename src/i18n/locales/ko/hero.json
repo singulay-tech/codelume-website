@@ -8,7 +8,7 @@
     "appStoreDescription": "Mac App Store에서 설치하고 업데이트할 수 있습니다. Codelume의 대부분의 기능을 지원합니다.",
     "websiteDescription": "공식 웹사이트에서 설치 파일을 다운로드하면 macOS 기본 배경화면과 잠금 화면 배경화면도 설정할 수 있습니다.",
     "openAppStore": "App Store에서 열기",
-    "sharedSubscription": "두 버전 모두 같은 Pro 구독 플랜을 제공합니다. 구매 및 이용 권한 확인은 각 채널에서 처리합니다.",
+    "sharedSubscription": "두 버전 모두 Pro를 제공합니다. 구매 및 이용 권한 확인은 각 채널에서 처리합니다.",
     "websiteReason": "두 기능에는 App Store 버전의 샌드박스에서 허용하지 않는 시스템 배경화면 구성 요소에 대한 접근이 필요합니다. 공식 웹사이트 버전의 기본 배경화면은 macOS가 관리해 더 부드럽게 전환됩니다. 필요에 맞는 버전을 선택하세요.",
     "systemRequirements": {
       "title": "시스템 요구 사항",

@@ -79,32 +79,47 @@
       ]
     }
   },
-  "pricing": {
-    "title": "Codelumeの価格",
-    "standard": {
-      "title": "通常版",
-      "price": "無料",
-      "features": [
-        "静止画と動画の壁紙を読み込んで再生",
-        "メインディスプレイとそのプレイリストを管理",
-        "ローカル壁紙は20件まで",
-        "コミュニティの壁紙を閲覧・ダウンロード"
-      ]
-    },
-    "pro": {
-      "title": "Pro",
-      "price": "有料アップグレード · 価格は購入画面をご確認ください",
-      "features": [
-        "シーン、奥行き、ウェブなど全種類の壁紙を読み込んで再生",
-        "複数のディスプレイで個別に再生・管理",
-        "ローカル壁紙の20件制限を解除",
-        "壁紙パックをエクスポートし、壁紙ハブに投稿"
-      ],
-      "availability": "標準壁紙モードとロック画面の壁紙には、公式サイト版のProとmacOS 26以降が必要です。"
-    }
-  },
   "community": {
     "title": "コミュニティ",
     "pending": "コミュニティは近日公開予定です。"
+  },
+  "pricing": {
+    "title": "エディション",
+    "subtitle": "Proの購入は、壁紙の保存、バックエンドサービス、Codelumeの継続開発を支えます。",
+    "standard": {
+      "title": "通常版",
+      "price": "無料で、透かしや広告はありません。普段の壁紙の変更には通常版で十分です。"
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "買い切りでCodelumeのすべての機能を使えます。価格は購入画面でご確認ください。"
+    },
+    "groups": {
+      "modes": "壁紙モード",
+      "types": "壁紙の種類",
+      "wallpaperFeatures": "壁紙の機能"
+    },
+    "supported": "対応",
+    "partiallySupported": "一部対応",
+    "unsupported": "非対応",
+    "features": {
+      "displays": "マルチディスプレイ壁紙",
+      "lockScreen": "ロック画面の壁紙",
+      "playlists": "プレイリスト",
+      "library": "ローカル壁紙ライブラリ",
+      "download": "壁紙のダウンロード",
+      "import": "壁紙の読み込み",
+      "upload": "壁紙のアップロード",
+      "export": "壁紙の書き出し",
+      "menuBar": "メニューバー管理",
+      "metrics": "システム指標",
+      "frameRate": "動画以外の動く壁紙のフレームレート制限",
+      "storage": "ストレージ管理",
+      "permissions": "権限管理"
+    },
+    "mainDisplayOnly": "メインディスプレイのみ",
+    "libraryLimit": "最大20枚",
+    "basicTypesOnly": "静止画と動画のみ",
+    "websiteOnly": "公式サイト版のみ"
   }
 }

@@ -25,7 +25,7 @@
       "appStoreDescription": "Installation und Updates laufen über den Mac App Store. Diese Version bietet die meisten Codelume-Funktionen.",
       "websiteDescription": "Mit dem direkten Download kannst du auch native macOS-Wallpaper und Sperrbildschirm-Wallpaper festlegen.",
       "openAppStore": "Im App Store öffnen",
-      "sharedSubscription": "Beide Versionen bieten dasselbe Pro-Abo. Käufe und Zugriffsrechte werden über den jeweiligen Vertriebskanal verwaltet.",
+      "sharedSubscription": "Beide Versionen bieten Pro. Käufe und Zugriffsrechte werden über den jeweiligen Vertriebskanal verwaltet.",
       "websiteReason": "Beide Funktionen benötigen Zugriff auf Systemkomponenten, den die Sandbox der App-Store-Version nicht erlaubt. In der Website-Version verwaltet macOS die nativen Wallpaper, damit die Übergänge flüssiger sind. Wähle die Version, die zu deinen Anforderungen passt.",
       "systemRequirements": {
         "title": "Systemanforderungen",
@@ -120,33 +120,48 @@
         ]
       }
     },
-    "pricing": {
-      "title": "Codelume-Preise",
-      "standard": {
-        "title": "Standard",
-        "price": "Kostenlos",
-        "features": [
-          "Statische Wallpaper und Videos importieren und abspielen",
-          "Hauptbildschirm und Wiedergabeliste verwalten",
-          "Bis zu 20 lokale Wallpaper speichern",
-          "Community-Wallpaper entdecken und herunterladen"
-        ]
-      },
-      "pro": {
-        "title": "Pro",
-        "price": "Kostenpflichtiges Upgrade · Preis beim Kauf",
-        "features": [
-          "Alle Wallpaper-Typen importieren und abspielen, darunter Szenen, Tiefeneffekte und Webinhalte",
-          "Wallpaper auf mehreren Bildschirmen unabhängig abspielen und verwalten",
-          "Das Limit von 20 lokalen Wallpapern aufheben",
-          "Wallpaper-Pakete exportieren und in der Galerie einreichen"
-        ],
-        "availability": "Nativer Wallpaper-Modus und Sperrbildschirm-Wallpaper erfordern Pro in der Website-Version und macOS 26 oder neuer."
-      }
-    },
     "community": {
       "title": "Community",
       "pending": "Die Community startet in Kürze."
+    },
+    "pricing": {
+      "title": "Versionen",
+      "subtitle": "Pro-Käufe unterstützen die Wallpaper-Speicherung, die Backend-Dienste und die Weiterentwicklung von Codelume.",
+      "standard": {
+        "title": "Standard",
+        "price": "Kostenlos, ohne Wasserzeichen und Werbung. Alles für den täglichen Wallpaper-Wechsel."
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "Einmal kaufen und alle Funktionen von Codelume freischalten. Den Preis findest du auf der Kaufseite."
+      },
+      "groups": {
+        "modes": "Wallpaper-Modi",
+        "types": "Wallpaper-Typen",
+        "wallpaperFeatures": "Wallpaper-Funktionen"
+      },
+      "supported": "Unterstützt",
+      "partiallySupported": "Teilweise unterstützt",
+      "unsupported": "Nicht unterstützt",
+      "features": {
+        "displays": "Wallpaper auf mehreren Bildschirmen",
+        "lockScreen": "Sperrbildschirm-Wallpaper",
+        "playlists": "Wiedergabelisten",
+        "library": "Lokale Wallpaper-Bibliothek",
+        "download": "Wallpaper herunterladen",
+        "import": "Wallpaper importieren",
+        "upload": "Wallpaper hochladen",
+        "export": "Wallpaper exportieren",
+        "menuBar": "Menüleistenverwaltung",
+        "metrics": "Systemwerte",
+        "frameRate": "Bildratenlimit für animierte Wallpaper ohne Video",
+        "storage": "Speicherverwaltung",
+        "permissions": "Berechtigungsverwaltung"
+      },
+      "mainDisplayOnly": "Nur Hauptbildschirm",
+      "libraryLimit": "Bis zu 20 Wallpaper",
+      "basicTypesOnly": "Nur Standbilder und Videos",
+      "websiteOnly": "Nur Website-Version"
     }
   },
   "workshop": {
