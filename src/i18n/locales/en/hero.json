@@ -1,5 +1,5 @@
 {
-  "title": "A wallpaper app made for macOS",
+  "title": "A new wallpaper for your Mac",
   "cta": {
     "download": "Download Codelume for Mac"
   },
@@ -7,6 +7,6 @@
     "unsupported": "Your browser does not support the video tag.",
     "select": "Show background {{number}}"
   },
-  "subtitle": "Native macOS wallpapers and extended formats from Codelume.",
+  "subtitle": "Set native Mac wallpapers and choose from more wallpaper types in Codelume.",
   "editionNote": "Standard is free to use. Pro offers more features."
 }

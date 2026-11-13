@@ -1,5 +1,5 @@
 {
-  "title": "macOSのための壁紙アプリ",
+  "title": "Macの壁紙を着替えよう",
   "cta": {
     "download": "Mac版Codelumeをダウンロード"
   },
@@ -7,6 +7,6 @@
     "unsupported": "お使いのブラウザは動画タグに対応していません。",
     "select": "背景 {{number}} に切り替える"
   },
-  "subtitle": "macOS標準の壁紙とCodelume独自の壁紙に対応。",
+  "subtitle": "Mac標準の壁紙を設定でき、Codelume独自の壁紙も幅広く選べます。",
   "editionNote": "通常版は無料で使えます。Proではさらに多くの機能が使えます。"
 }

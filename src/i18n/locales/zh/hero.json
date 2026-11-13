@@ -1,5 +1,5 @@
 {
-  "title": "专为 macOS 打造的壁纸应用",
+  "title": "给 Mac 换个壁纸",
   "cta": {
     "download": "下载 Mac 版码镜"
   },
@@ -7,6 +7,6 @@
     "unsupported": "您的浏览器不支持视频播放。",
     "select": "切换到第 {{number}} 张背景"
   },
-  "subtitle": "支持 macOS 原生壁纸和码镜扩展壁纸。",
+  "subtitle": "支持设置 Mac 原生壁纸，同时提供更丰富的扩展壁纸类型",
   "editionNote": "普通版免费使用，Pro 提供更多功能。"
 }
