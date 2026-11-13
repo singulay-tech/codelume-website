@@ -2,7 +2,8 @@
   "common": {
     "siteTitle": "Codelume — Application de fonds d’écran pour Mac",
     "language": "Langue",
-    "followSystem": "Suivre le système"
+    "followSystem": "Suivre le système",
+    "refundPolicy": "Politique de remboursement"
   },
   "navigation": {
     "brand": "Codelume",

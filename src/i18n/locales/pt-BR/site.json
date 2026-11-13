@@ -2,7 +2,8 @@
   "common": {
     "siteTitle": "Codelume — App de papéis de parede para Mac",
     "language": "Idioma",
-    "followSystem": "Seguir o sistema"
+    "followSystem": "Seguir o sistema",
+    "refundPolicy": "Política de reembolso"
   },
   "navigation": {
     "brand": "Codelume",

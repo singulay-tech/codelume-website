@@ -2,7 +2,8 @@
   "common": {
     "siteTitle": "Codelume — Wallpaper-App für Mac",
     "language": "Sprache",
-    "followSystem": "Systemsprache verwenden"
+    "followSystem": "Systemsprache verwenden",
+    "refundPolicy": "Rückerstattungsrichtlinie"
   },
   "navigation": {
     "brand": "Codelume",

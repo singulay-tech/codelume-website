@@ -6,16 +6,15 @@ import { getBundleProtocolNavItems, getMarkdownH1Title } from '@/lib/bundleProto
 import { getLegalMarkdown } from '@/lib/legalMarkdown'
 import {
   isLegalDocKey,
+  LEGAL_DOC_KEYS,
   LEGAL_DOC_VERSION,
+  REFUND_POLICY_VERSION,
   resolveLegalContentLocale,
-  type LegalDocKey,
 } from '@/constants/legalDocs'
-
-const RELATED_KEYS: LegalDocKey[] = ['terms', 'privacy', 'ugc']
 
 export function LegalDocPage() {
   const { docKey = '' } = useParams<{ docKey: string }>()
-  const { t, i18n } = useTranslation(['legal', 'navigation'])
+  const { t, i18n } = useTranslation(['legal', 'navigation', 'common'])
 
   if (!isLegalDocKey(docKey)) {
     return <Navigate to="/" replace />
@@ -38,7 +37,7 @@ export function LegalDocPage() {
           </Link>
           <div className="flex flex-wrap items-center justify-end gap-3 sm:gap-4">
             <span className="text-xs text-muted-foreground">
-              {t('legal:versionLabel')} {LEGAL_DOC_VERSION}
+              {t('legal:versionLabel')} {docKey === 'refund' ? REFUND_POLICY_VERSION : LEGAL_DOC_VERSION}
             </span>
             <LanguageSwitcher variant="onSurface" />
             <Link
@@ -72,7 +71,7 @@ export function LegalDocPage() {
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 {t('legal:relatedTitle')}
               </p>
-              {RELATED_KEYS.map((key) => (
+              {LEGAL_DOC_KEYS.map((key) => (
                 <Link
                   key={key}
                   to={`/legal/${key}`}
@@ -82,7 +81,7 @@ export function LegalDocPage() {
                       : 'block text-muted-foreground hover:text-foreground gentle-animation'
                   }
                 >
-                  {t(`legal:docTitles.${key}`)}
+                  {key === 'refund' ? t('common:refundPolicy') : t(`legal:docTitles.${key}`)}
                 </Link>
               ))}
             </div>

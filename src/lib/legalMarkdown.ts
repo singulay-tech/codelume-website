@@ -5,11 +5,14 @@ import ugcZh from '../../docs/legal/zh/ugc.md?raw'
 import termsEn from '../../docs/legal/en/terms.md?raw'
 import privacyEn from '../../docs/legal/en/privacy.md?raw'
 import ugcEn from '../../docs/legal/en/ugc.md?raw'
+import refundZh from '../../docs/legal/zh/refund.md?raw'
+import refundEn from '../../docs/legal/en/refund.md?raw'
 
 const MARKDOWN_BY_KEY_LOCALE: Record<LegalDocKey, Record<LegalContentLocale, string>> = {
   terms: { zh: termsZh, en: termsEn },
   privacy: { zh: privacyZh, en: privacyEn },
   ugc: { zh: ugcZh, en: ugcEn },
+  refund: { zh: refundZh, en: refundEn },
 }
 
 export function getLegalMarkdown(docKey: LegalDocKey, locale: LegalContentLocale): string {

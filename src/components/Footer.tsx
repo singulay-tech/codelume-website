@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 export function Footer() {
-  const { t } = useTranslation('footer')
+  const { t } = useTranslation(['footer', 'common'])
   const tools = t('tools.items', { returnObjects: true }) as string[]
 
   return (
@@ -90,6 +90,11 @@ export function Footer() {
               <li>
                 <Link to="/legal/ugc" className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                   {t('legal.ugc')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/legal/refund" className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                  {t('common:refundPolicy')}
                 </Link>
               </li>
             </ul>

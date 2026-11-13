@@ -1,5 +1,5 @@
-/** 与后端 policy_documents.content_url 路径一致 */
-export const LEGAL_DOC_KEYS = ['terms', 'privacy', 'ugc'] as const
+/** 官网法律与政策页面 */
+export const LEGAL_DOC_KEYS = ['terms', 'privacy', 'ugc', 'refund'] as const
 
 export type LegalDocKey = (typeof LEGAL_DOC_KEYS)[number]
 
@@ -18,3 +18,4 @@ export function resolveLegalContentLocale(lng: string): LegalContentLocale {
 }
 
 export const LEGAL_DOC_VERSION = '2026.05.18'
+export const REFUND_POLICY_VERSION = '2026.11.13'
