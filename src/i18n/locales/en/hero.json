@@ -4,7 +4,8 @@
     "download": "Download Codelume for Mac"
   },
   "video": {
-    "unsupported": "Your browser does not support the video tag."
+    "unsupported": "Your browser does not support the video tag.",
+    "select": "Show background {{number}}"
   },
   "subtitle": "Native macOS wallpapers and extended formats from Codelume.",
   "editionNote": "Standard is free to use. Pro offers more features."

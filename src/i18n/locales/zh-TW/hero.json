@@ -4,7 +4,8 @@
     "download": "下載 Mac 版碼鏡"
   },
   "video": {
-    "unsupported": "您的浏览器不支持视频播放。"
+    "unsupported": "您的浏览器不支持视频播放。",
+    "select": "切換到第 {{number}} 張背景"
   },
   "subtitle": "支援 macOS 原生壁紙與碼鏡擴充壁紙。",
   "editionNote": "一般版可免費使用，Pro 提供更多功能。"

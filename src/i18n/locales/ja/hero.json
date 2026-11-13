@@ -4,7 +4,8 @@
     "download": "Mac版Codelumeをダウンロード"
   },
   "video": {
-    "unsupported": "お使いのブラウザは動画タグに対応していません。"
+    "unsupported": "お使いのブラウザは動画タグに対応していません。",
+    "select": "背景 {{number}} に切り替える"
   },
   "subtitle": "macOS標準の壁紙とCodelume独自の壁紙に対応。",
   "editionNote": "通常版は無料で使えます。Proではさらに多くの機能が使えます。"
