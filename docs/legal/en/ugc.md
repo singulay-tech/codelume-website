@@ -2,7 +2,7 @@
 
 **Version: 2026.05.18**  
 **Effective date: May 18, 2026**  
-**Operator: Beijing Xingjieli Technology Co., Ltd.** (“we”, “us”, or “our”)
+**Operator: Singulay Technology Co., Ltd.** (“we”, “us”, or “our”)
 
 These guidelines apply when you submit dynamic wallpapers (user-generated content, “UGC”) to Wallpaper Hub through the Codelume app. Before submitting, you must agree to the Terms of Service and Privacy Policy.
 

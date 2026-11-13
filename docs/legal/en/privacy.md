@@ -2,7 +2,7 @@
 
 **Version: 2026.05.18**  
 **Effective date: May 18, 2026**  
-**Operator: Beijing Xingjieli Technology Co., Ltd.** (“we”, “us”, or “our”)
+**Operator: Singulay Technology Co., Ltd.** (“we”, “us”, or “our”)
 
 We value your privacy. This policy explains how Codelume and related online services collect, use, store, and protect your information.
 
