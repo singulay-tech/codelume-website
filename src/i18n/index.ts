@@ -202,7 +202,7 @@ i18n.use(initReactI18next).init({
             return supportedLngs.includes(base as (typeof supportedLngs)[number]) ? base : lng
           },
         }
-      : false,
+      : undefined,
 
     react: {
       useSuspense: true
