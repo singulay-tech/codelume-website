@@ -157,13 +157,20 @@ if (ENABLE_LANGUAGE_SWITCHER) {
   i18n.use(LanguageDetector)
 }
 
+i18n.on('languageChanged', (lng) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = lng
+    document.title = i18n.t('common:siteTitle')
+  }
+})
+
 i18n.use(initReactI18next).init({
     resources,
     lng: ENABLE_LANGUAGE_SWITCHER ? undefined : 'zh',
     fallbackLng: ENABLE_LANGUAGE_SWITCHER ? fallbackLng : 'zh',
     supportedLngs: [...supportedLngs],
-    // Normalize region variants (e.g. ja-JP -> ja) to avoid falling back to English.
-    load: 'languageOnly',
+    // Resolve zh-TW before falling back to its base language.
+    load: 'all',
     nonExplicitSupportedLngs: true,
     defaultNS,
     ns: [
@@ -208,12 +215,5 @@ i18n.use(initReactI18next).init({
       useSuspense: true
     }
   })
-
-// Keep <html lang="..."> in sync with the active language.
-i18n.on('languageChanged', (lng) => {
-  if (typeof document !== 'undefined') {
-    document.documentElement.lang = lng
-  }
-})
 
 export default i18n
