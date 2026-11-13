@@ -68,34 +68,41 @@
       }
     },
     "systemWallpapers": {
-      "title": "Types de fonds d’écran",
+      "title": "Types",
+      "subtitle": "Des images fixes aux pages web interactives, Codelume offre plusieurs façons de personnaliser votre bureau. Choisissez un type de fond d’écran adapté aux performances de votre Mac.",
       "still": {
         "title": "Fonds d’écran fixes",
-        "description": "Définissez un fond d’écran fixe de Codelume comme fond du bureau macOS.",
-        "basic": "Fonction de base"
+        "performance": "Performances optimales, sans consommation de ressources supplémentaire",
+        "description": "Définissez un fond d’écran fixe de Codelume comme fond du bureau macOS."
       },
       "video": {
         "title": "Fonds d’écran vidéo",
-        "description": "Lisez une vidéo en continu sur le bureau. Vous pouvez aussi la convertir en fond d’écran natif de macOS qui ralentit jusqu’à s’arrêter au retour de l’économiseur d’écran. Ce mode nécessite la version du site officiel et macOS 26 ou ultérieur.",
+        "performance": "Faible charge de décodage, expérience optimale",
+        "description": "Lisez une vidéo en boucle sur le bureau ou convertissez-la en fond d’écran lié à l’économiseur d’écran.",
+        "requirements": "La transition nécessite la version du site officiel et macOS 26 ou ultérieur.",
         "example": "猫伴画姬"
       },
       "scene": {
         "title": "Scènes animées",
+        "performance": "Framework natif de macOS, hautes performances et utilisation accrue des ressources",
         "description": "Créés avec SpriteKit, les fonds d’écran de scène prennent en charge plusieurs calques, des shaders et des animations. Les éléments peuvent réagir aux mouvements et aux clics de la souris."
       },
       "depth": {
         "title": "Fonds d’écran avec profondeur",
+        "status": "Développement et optimisation en cours",
         "description": "Le premier plan et l’arrière-plan donnent du relief à l’image."
       },
       "web": {
         "title": "Fonds d’écran web",
+        "performance": "Flexibilité maximale, utilisation accrue des ressources",
         "description": "Affichez du contenu web, des animations et des informations en direct sur le bureau."
       }
     },
     "wallpaperModes": {
-      "title": "Modes de fond d’écran",
+      "title": "Modes",
+      "subtitle": "Codelume propose deux modes de fond d’écran. Comparez-les ci-dessous.",
       "native": {
-        "title": "Fonds d’écran natifs de macOS",
+        "title": "Fonds d’écran système",
         "points": [
           "macOS gère le fond d’écran du bureau.",
           "Prend en charge les images fixes et la transition depuis un économiseur d’écran animé.",

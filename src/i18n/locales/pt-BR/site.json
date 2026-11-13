@@ -68,34 +68,41 @@
       }
     },
     "systemWallpapers": {
-      "title": "Tipos de papel de parede",
+      "title": "Tipos",
+      "subtitle": "De imagens estáticas a páginas interativas, o Codelume oferece diferentes formas de personalizar sua área de trabalho. Escolha um tipo de papel de parede adequado ao desempenho do seu Mac.",
       "still": {
         "title": "Papéis de parede estáticos",
-        "description": "Defina um papel de parede estático do Codelume diretamente como papel de parede do macOS.",
-        "basic": "Recurso básico"
+        "performance": "Melhor desempenho, sem consumo adicional de recursos",
+        "description": "Defina um papel de parede estático do Codelume diretamente como papel de parede do macOS."
       },
       "video": {
         "title": "Papéis de parede em vídeo",
-        "description": "Reproduza um vídeo continuamente na área de trabalho. Você também pode convertê-lo em um papel de parede nativo do macOS que desacelera até parar ao sair do protetor de tela. O modo nativo exige a versão do site oficial e macOS 26 ou posterior.",
+        "performance": "Baixo uso do decodificador, experiência ideal",
+        "description": "Reproduza um vídeo em loop na área de trabalho ou converta-o em um papel de parede com transição do protetor de tela.",
+        "requirements": "A transição requer a versão do site oficial e macOS 26 ou posterior.",
         "example": "猫伴画姬"
       },
       "scene": {
         "title": "Papéis de parede de cena",
+        "performance": "Framework nativo do macOS, alto desempenho e maior consumo de recursos",
         "description": "Os papéis de parede de cena usam SpriteKit e oferecem suporte a várias camadas, shaders e animações. Os elementos podem reagir aos movimentos e cliques do mouse."
       },
       "depth": {
         "title": "Papéis de parede com profundidade",
+        "status": "Em desenvolvimento e otimização",
         "description": "Camadas em primeiro e segundo plano dão profundidade à imagem."
       },
       "web": {
         "title": "Papéis de parede da web",
+        "performance": "Máxima flexibilidade, maior consumo de recursos",
         "description": "Exiba conteúdo da web, animações e informações em tempo real na área de trabalho."
       }
     },
     "wallpaperModes": {
-      "title": "Modos de papel de parede",
+      "title": "Modos",
+      "subtitle": "O Codelume oferece dois modos de papel de parede. Compare os dois abaixo.",
       "native": {
-        "title": "Papéis de parede nativos do macOS",
+        "title": "Papéis de parede do sistema",
         "points": [
           "O macOS gerencia o papel de parede da área de trabalho.",
           "Aceita imagens estáticas e transições a partir do protetor de tela animado.",

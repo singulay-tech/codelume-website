@@ -68,34 +68,41 @@
       }
     },
     "systemWallpapers": {
-      "title": "Wallpaper-Typen",
+      "title": "Typen",
+      "subtitle": "Von Standbildern bis zu interaktiven Webseiten bietet Codelume verschiedene Möglichkeiten, deinen Schreibtisch zu gestalten. Wähle einen Wallpaper-Typ, der zur Leistung deines Macs passt.",
       "still": {
         "title": "Statische Wallpaper",
-        "description": "Lege ein statisches Wallpaper aus Codelume direkt als macOS-Desktop-Wallpaper fest.",
-        "basic": "Grundfunktion"
+        "performance": "Beste Leistung, ohne zusätzlichen Ressourcenverbrauch",
+        "description": "Lege ein statisches Wallpaper aus Codelume direkt als macOS-Desktop-Wallpaper fest."
       },
       "video": {
         "title": "Video-Wallpaper",
-        "description": "Spiele ein Video durchgehend auf dem Desktop ab. Du kannst es auch in ein natives macOS-Wallpaper umwandeln, das beim Verlassen des Bildschirmschoners langsam zum Stillstand kommt. Der native Modus benötigt die Website-Version und macOS 26 oder neuer.",
+        "performance": "Geringe Decoderlast, bestes Erlebnis",
+        "description": "Spiele ein Video in Endlosschleife auf dem Schreibtisch ab oder wandle es in ein Wallpaper mit Bildschirmschoner-Übergang um.",
+        "requirements": "Der Übergang erfordert die Website-Version und macOS 26 oder neuer.",
         "example": "猫伴画姬"
       },
       "scene": {
         "title": "Szenen-Wallpaper",
+        "performance": "Natives macOS-Framework mit hoher Leistung und höherem Ressourcenverbrauch",
         "description": "Szenen-Wallpaper basieren auf SpriteKit und unterstützen mehrere Ebenen, Shader und Animationen. Elemente können auf Mausbewegungen und Klicks reagieren."
       },
       "depth": {
         "title": "Tiefen-Wallpaper",
+        "status": "Entwicklung und Optimierung laufen",
         "description": "Vorder- und Hintergrundebenen verleihen dem Bild räumliche Tiefe."
       },
       "web": {
         "title": "Web-Wallpaper",
+        "performance": "Maximale Flexibilität, höherer Ressourcenverbrauch",
         "description": "Zeige Webinhalte, Animationen und Live-Informationen auf deinem Desktop an."
       }
     },
     "wallpaperModes": {
-      "title": "Wallpaper-Modi",
+      "title": "Modi",
+      "subtitle": "Codelume unterstützt zwei Wallpaper-Modi. Vergleiche sie unten.",
       "native": {
-        "title": "Native macOS-Wallpaper",
+        "title": "System-Wallpaper",
         "points": [
           "macOS verwaltet dein Desktop-Wallpaper.",
           "Unterstützt Standbilder und Übergänge aus dem animierten Bildschirmschoner.",

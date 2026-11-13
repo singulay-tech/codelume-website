@@ -68,34 +68,41 @@
       }
     },
     "systemWallpapers": {
-      "title": "Tipos de fondos",
+      "title": "Tipos",
+      "subtitle": "Desde imágenes estáticas hasta páginas web interactivas, Codelume ofrece distintas formas de personalizar tu escritorio. Elige un tipo de fondo que se adapte al rendimiento de tu Mac.",
       "still": {
         "title": "Fondos estáticos",
-        "description": "Configura un fondo estático de Codelume directamente como fondo de escritorio de macOS.",
-        "basic": "Función básica"
+        "performance": "Mejor rendimiento, sin consumo adicional de recursos",
+        "description": "Configura un fondo estático de Codelume directamente como fondo de escritorio de macOS."
       },
       "video": {
         "title": "Fondos de vídeo",
-        "description": "Reproduce un vídeo continuamente en el escritorio. También puedes convertirlo en un fondo nativo de macOS que se ralentiza hasta quedar fijo al salir del salvapantallas. El modo nativo requiere la versión del sitio web y macOS 26 o posterior.",
+        "performance": "Bajo uso del decodificador, experiencia óptima",
+        "description": "Reproduce un vídeo en bucle en el escritorio o conviértelo en un fondo con transición desde el salvapantallas.",
+        "requirements": "La transición requiere la versión del sitio web y macOS 26 o posterior.",
         "example": "猫伴画姬"
       },
       "scene": {
         "title": "Fondos de escena",
+        "performance": "Framework nativo de macOS, alto rendimiento y mayor consumo de recursos",
         "description": "Los fondos de escena se crean con SpriteKit y admiten varias capas, sombreadores y animaciones. Los elementos pueden reaccionar al movimiento y a los clics del ratón."
       },
       "depth": {
         "title": "Fondos con profundidad",
+        "status": "En desarrollo y optimización",
         "description": "El primer plano y el fondo dan sensación de profundidad a la imagen."
       },
       "web": {
         "title": "Fondos web",
+        "performance": "Máxima flexibilidad, mayor consumo de recursos",
         "description": "Muestra contenido web, animaciones e información en directo en el escritorio."
       }
     },
     "wallpaperModes": {
-      "title": "Modos de fondo",
+      "title": "Modos",
+      "subtitle": "Codelume admite dos modos de fondo de pantalla. Compáralos a continuación.",
       "native": {
-        "title": "Fondos nativos de macOS",
+        "title": "Fondos de pantalla del sistema",
         "points": [
           "macOS gestiona el fondo del escritorio.",
           "Admite imágenes estáticas y transiciones desde el salvapantallas animado.",

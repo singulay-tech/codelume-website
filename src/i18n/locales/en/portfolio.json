@@ -27,34 +27,41 @@
     }
   },
   "systemWallpapers": {
-    "title": "Wallpaper types",
+    "title": "Types",
+    "subtitle": "From still images to interactive web pages, Codelume brings different experiences to your desktop. Choose a wallpaper type that suits your Mac’s performance.",
     "still": {
       "title": "Still wallpapers",
-      "description": "Set any still wallpaper from Codelume as your macOS desktop wallpaper.",
-      "basic": "Basic feature"
+      "performance": "Best performance, no extra resource usage",
+      "description": "Set any still wallpaper from Codelume as your macOS desktop wallpaper."
     },
     "video": {
       "title": "Video wallpapers",
-      "description": "Keep a video playing on your desktop. You can also convert it to a native macOS wallpaper that slows to a still image when you return from the screen saver. Native mode requires the website edition and macOS 26 or later.",
+      "performance": "Low decoder usage, best experience",
+      "description": "Loop a video on your desktop or convert it to a wallpaper that transitions from the macOS screen saver.",
+      "requirements": "Screen saver integration requires the website edition and macOS 26 or later.",
       "example": "猫伴画姬"
     },
     "scene": {
       "title": "Scene wallpapers",
+      "performance": "Native macOS framework, high performance, higher resource usage",
       "description": "Built with SpriteKit, scene wallpapers support multiple layers, shaders, and animations. Scene elements can respond to mouse movement and clicks."
     },
     "depth": {
       "title": "Depth wallpapers",
+      "status": "Development and optimization in progress",
       "description": "Separate foreground and background layers give the image a sense of depth."
     },
     "web": {
       "title": "Web wallpapers",
+      "performance": "Most flexibility, higher resource usage",
       "description": "Show web content, animations, and live information on your desktop."
     }
   },
   "wallpaperModes": {
-    "title": "Wallpaper modes",
+    "title": "Modes",
+    "subtitle": "Codelume supports two wallpaper modes. See how they compare below.",
     "native": {
-      "title": "Native macOS wallpapers",
+      "title": "System wallpapers",
       "points": [
         "macOS manages your desktop wallpaper.",
         "Supports still wallpapers and animated screen saver transitions.",

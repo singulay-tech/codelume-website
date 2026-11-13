@@ -27,34 +27,41 @@
     }
   },
   "systemWallpapers": {
-    "title": "壁纸类型",
+    "title": "类型",
+    "subtitle": "从静态图片到交互网页，码镜支持多种壁纸，带来不同的桌面体验，根据你电脑的性能合理选择壁纸类型。",
     "still": {
       "title": "静态壁纸",
-      "description": "可将码镜中的静态壁纸直接设为 macOS 桌面壁纸。",
-      "basic": "基础功能"
+      "performance": "性能最优，无额外资源消耗",
+      "description": "可将码镜中的静态壁纸直接设为 macOS 桌面壁纸。"
     },
     "video": {
       "title": "视频壁纸",
-      "description": "让视频在桌面持续播放。视频壁纸还可转换为 macOS 原生屏保联动壁纸，回到桌面时自然减速并定格。原生模式仅官网版支持，需 macOS 26 或更高版本。",
+      "performance": "轻微占用解码器资源，体验最佳",
+      "description": "让视频在桌面循环播放，也可转换为系统屏保联动壁纸。",
+      "requirements": "屏保联动仅官网版支持 · macOS 26 或更新版本",
       "example": "猫伴画姬"
     },
     "scene": {
       "title": "场景壁纸",
+      "performance": "macOS 原生框架，性能优越，资源占用较高",
       "description": "场景壁纸基于 SpriteKit 搭建，支持多图层、着色器和动画。场景元素还能响应鼠标移动和点击，让桌面动起来。"
     },
     "depth": {
       "title": "景深壁纸",
+      "status": "正在优化开发中",
       "description": "利用前景与背景的层次，让画面更有空间感。"
     },
     "web": {
       "title": "网页壁纸",
+      "performance": "自由度最高，资源占用较高",
       "description": "将网页内容呈现在桌面上，可展示动态效果和实时信息。"
     }
   },
   "wallpaperModes": {
-    "title": "壁纸模式",
+    "title": "模式",
+    "subtitle": "码镜支持两种壁纸模式，下方可以对比它们的区别。",
     "native": {
-      "title": "macOS 原生壁纸",
+      "title": "系统壁纸",
       "points": [
         "由 macOS 管理桌面壁纸。",
         "支持静态壁纸和动态屏保联动。",

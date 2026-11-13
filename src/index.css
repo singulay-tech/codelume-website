@@ -35,6 +35,8 @@
   --accent-blue: #2563eb;
   --accent-emerald: #059669;
   --accent-purple: #7c3aed;
+  --brand-gradient-start: #a54d2d;
+  --brand-gradient-end: #6244a1;
   
   --radius: 0.75rem;
 }

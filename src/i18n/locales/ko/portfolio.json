@@ -27,34 +27,41 @@
     }
   },
   "systemWallpapers": {
-    "title": "배경화면 유형",
+    "title": "유형",
+    "subtitle": "정적인 이미지부터 인터랙티브 웹 페이지까지, Codelume의 다양한 배경화면으로 색다른 데스크탑을 경험해 보세요. Mac의 성능에 맞는 배경화면 유형을 선택하세요.",
     "still": {
       "title": "정적 배경화면",
-      "description": "Codelume의 정적 배경화면을 macOS 데스크탑 배경화면으로 바로 설정할 수 있습니다.",
-      "basic": "기본 기능"
+      "performance": "최고 성능, 추가 리소스 사용 없음",
+      "description": "Codelume의 정적 배경화면을 macOS 데스크탑 배경화면으로 바로 설정할 수 있습니다."
     },
     "video": {
       "title": "동영상 배경화면",
-      "description": "데스크탑에서 동영상을 계속 재생합니다. 화면 보호기에서 돌아올 때 서서히 멈추는 macOS 기본 배경화면으로 변환할 수도 있습니다. 기본 모드는 공식 웹사이트 버전과 macOS 26 이상이 필요합니다.",
+      "performance": "디코더 사용량은 낮게, 사용 경험은 최상으로",
+      "description": "데스크탑에서 동영상을 반복 재생하거나 화면 보호기와 연동되는 배경화면으로 변환할 수 있습니다.",
+      "requirements": "화면 보호기 연동에는 공식 웹사이트 버전과 macOS 26 이상이 필요합니다.",
       "example": "猫伴画姬"
     },
     "scene": {
       "title": "장면 배경화면",
+      "performance": "macOS 기본 프레임워크로 높은 성능을 제공하며 리소스 사용량은 높은 편",
       "description": "장면 배경화면은 SpriteKit 기반으로 여러 레이어, 셰이더 및 애니메이션을 지원합니다. 장면 요소는 마우스 움직임과 클릭에 반응할 수 있습니다."
     },
     "depth": {
       "title": "깊이 배경화면",
+      "status": "개발 및 최적화 진행 중",
       "description": "전경과 배경을 나누어 공간감을 표현합니다."
     },
     "web": {
       "title": "웹 배경화면",
+      "performance": "가장 높은 자유도, 리소스 사용량은 높은 편",
       "description": "웹 콘텐츠, 애니메이션, 실시간 정보를 데스크탑에 표시합니다."
     }
   },
   "wallpaperModes": {
-    "title": "배경화면 모드",
+    "title": "모드",
+    "subtitle": "Codelume은 두 가지 배경화면 모드를 지원합니다. 아래에서 차이점을 비교해 보세요.",
     "native": {
-      "title": "macOS 기본 배경화면",
+      "title": "시스템 배경화면",
       "points": [
         "macOS가 데스크톱 배경화면을 관리합니다.",
         "정적 배경화면과 움직이는 화면 보호기 연동을 지원합니다.",

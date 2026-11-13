@@ -27,34 +27,41 @@
     }
   },
   "systemWallpapers": {
-    "title": "壁紙類型",
+    "title": "類型",
+    "subtitle": "從靜態圖片到互動網頁，碼鏡支援多種壁紙，帶來不同的桌面體驗。請依照電腦效能選擇合適的壁紙類型。",
     "still": {
       "title": "靜態壁紙",
-      "description": "可將碼鏡中的靜態壁紙直接設為 macOS 桌面壁紙。",
-      "basic": "基本功能"
+      "performance": "效能最佳，無額外資源消耗",
+      "description": "可將碼鏡中的靜態壁紙直接設為 macOS 桌面壁紙。"
     },
     "video": {
       "title": "影片壁紙",
-      "description": "讓影片在桌面持續播放。影片壁紙也可轉為 macOS 原生螢幕保護程式聯動壁紙，回到桌面時逐漸減速並定格。原生模式僅官網版支援，需 macOS 26 或更新版本。",
+      "performance": "輕微占用解碼器資源，體驗最佳",
+      "description": "讓影片在桌面循環播放，也可轉為系統螢幕保護程式聯動壁紙。",
+      "requirements": "螢幕保護程式聯動僅官網版支援 · macOS 26 或更新版本",
       "example": "貓伴畫姬"
     },
     "scene": {
       "title": "場景壁紙",
+      "performance": "macOS 原生框架，效能優異，資源占用較高",
       "description": "場景壁紙以 SpriteKit 搭建，支援多圖層、著色器和動畫。場景元素還能回應滑鼠移動與點擊，讓桌面動起來。"
     },
     "depth": {
       "title": "景深壁紙",
+      "status": "開發與優化中",
       "description": "利用前景與背景的層次，讓畫面更有空間感。"
     },
     "web": {
       "title": "網頁壁紙",
+      "performance": "自由度最高，資源占用較高",
       "description": "在桌面上呈現網頁內容，可顯示動態效果與即時資訊。"
     }
   },
   "wallpaperModes": {
-    "title": "壁紙模式",
+    "title": "模式",
+    "subtitle": "碼鏡支援兩種壁紙模式，下方可以比較它們的差異。",
     "native": {
-      "title": "macOS 原生壁紙",
+      "title": "系統壁紙",
       "points": [
         "由 macOS 管理桌面壁紙。",
         "支援靜態壁紙與動態螢幕保護程式聯動。",
