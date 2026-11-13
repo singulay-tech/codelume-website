@@ -118,6 +118,30 @@
       "intro": "Transformamos a especificação de pacotes do Codelume em Skills de código aberto. Um agente compatível pode usá-las para transformar suas ideias e recursos em arquivos .bundle verificados e prontos para importar.",
       "repository": "Ver repositório",
       "pending": "Link do repositório em breve"
+    },
+    "pricing": {
+      "title": "Preços do Codelume",
+      "standard": {
+        "title": "Padrão",
+        "price": "Grátis",
+        "features": [
+          "Importe e reproduza papéis de parede estáticos e em vídeo",
+          "Gerencie a tela principal e sua lista de reprodução",
+          "Armazene até 20 papéis de parede locais",
+          "Explore e baixe papéis de parede da comunidade"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "Upgrade pago · Consulte o preço na tela de compra",
+        "features": [
+          "Importe e reproduza todos os formatos, incluindo cenas, profundidade e conteúdo da web",
+          "Reproduza e gerencie papéis de parede separadamente em várias telas",
+          "Remova o limite de 20 papéis de parede locais",
+          "Exporte pacotes e envie suas criações à galeria"
+        ],
+        "availability": "O modo nativo e os papéis de parede da tela bloqueada exigem Pro na versão do site oficial e macOS 26 ou posterior."
+      }
     }
   },
   "workshop": {

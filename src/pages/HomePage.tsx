@@ -3,6 +3,7 @@ import { Hero } from '@/components/Hero'
 import { WallpaperModes } from '@/components/WallpaperModes'
 import { SystemWallpapers } from '@/components/SystemWallpapers'
 import { WallpaperAuthoring } from '@/components/WallpaperAuthoring'
+import { Pricing } from '@/components/Pricing'
 import { Footer } from '@/components/Footer'
 
 export function HomePage() {
@@ -16,6 +17,7 @@ export function HomePage() {
         <WallpaperModes />
         <SystemWallpapers />
         <WallpaperAuthoring />
+        <Pricing />
       </main>
       <Footer />
     </div>

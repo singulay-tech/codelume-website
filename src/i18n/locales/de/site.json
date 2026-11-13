@@ -118,6 +118,30 @@
       "intro": "Aus der Codelume-Spezifikation für Wallpaper-Pakete haben wir Open-Source-Skills erstellt. Damit kann ein kompatibler Agent aus deinen Ideen und Medien geprüfte .bundle-Dateien für Codelume erstellen.",
       "repository": "Repository ansehen",
       "pending": "Repository-Link folgt"
+    },
+    "pricing": {
+      "title": "Codelume-Preise",
+      "standard": {
+        "title": "Standard",
+        "price": "Kostenlos",
+        "features": [
+          "Statische Wallpaper und Videos importieren und abspielen",
+          "Hauptbildschirm und Wiedergabeliste verwalten",
+          "Bis zu 20 lokale Wallpaper speichern",
+          "Community-Wallpaper entdecken und herunterladen"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "Kostenpflichtiges Upgrade · Preis beim Kauf",
+        "features": [
+          "Alle Wallpaper-Typen importieren und abspielen, darunter Szenen, Tiefeneffekte und Webinhalte",
+          "Wallpaper auf mehreren Bildschirmen unabhängig abspielen und verwalten",
+          "Das Limit von 20 lokalen Wallpapern aufheben",
+          "Wallpaper-Pakete exportieren und in der Galerie einreichen"
+        ],
+        "availability": "Nativer Wallpaper-Modus und Sperrbildschirm-Wallpaper erfordern Pro in der Website-Version und macOS 26 oder neuer."
+      }
     }
   },
   "workshop": {

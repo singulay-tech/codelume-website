@@ -118,6 +118,30 @@
       "intro": "Convertimos la especificación de paquetes de Codelume en Skills de código abierto. Un agente compatible puede usarlas para convertir tus ideas y recursos en archivos .bundle verificados y listos para importar.",
       "repository": "Ver repositorio",
       "pending": "Enlace al repositorio próximamente"
+    },
+    "pricing": {
+      "title": "Precios de Codelume",
+      "standard": {
+        "title": "Estándar",
+        "price": "Gratis",
+        "features": [
+          "Importa y reproduce fondos estáticos y de vídeo",
+          "Gestiona la pantalla principal y su lista de reproducción",
+          "Guarda hasta 20 fondos locales",
+          "Explora y descarga fondos de la comunidad"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "Actualización de pago · Consulta el precio al comprar",
+        "features": [
+          "Importa y reproduce todos los formatos, incluidos escenas, profundidad y fondos web",
+          "Reproduce y gestiona fondos por separado en varias pantallas",
+          "Elimina el límite de 20 fondos locales",
+          "Exporta paquetes y envía tus fondos a la galería"
+        ],
+        "availability": "El modo nativo y los fondos de la pantalla de bloqueo requieren Pro en la versión del sitio web y macOS 26 o posterior."
+      }
     }
   },
   "workshop": {

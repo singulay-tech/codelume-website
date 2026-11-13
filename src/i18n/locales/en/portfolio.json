@@ -78,5 +78,29 @@
     "intro": "We turned the Codelume wallpaper bundle specification into open-source Skills. A compatible agent can use them to turn your ideas and assets into checked .bundle files ready to import into Codelume.",
     "repository": "View the repository",
     "pending": "Repository link coming soon"
+  },
+  "pricing": {
+    "title": "Codelume pricing",
+    "standard": {
+      "title": "Standard",
+      "price": "Free to use",
+      "features": [
+        "Import and play still images and videos",
+        "Manage your main display and its playlist",
+        "Store up to 20 local wallpapers",
+        "Browse and download community wallpapers"
+      ]
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "Paid upgrade · See the purchase screen for pricing",
+      "features": [
+        "Import and play all wallpaper types, including scene, depth, and web wallpapers",
+        "Play and manage wallpapers independently on multiple displays",
+        "Remove the 20-wallpaper limit from your local library",
+        "Export wallpaper bundles and submit to the Wallpaper Hub"
+      ],
+      "availability": "Native wallpaper mode and lock screen wallpapers require Pro in the website edition on macOS 26 or later."
+    }
   }
 }
