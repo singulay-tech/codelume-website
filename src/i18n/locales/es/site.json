@@ -3,7 +3,8 @@
     "siteTitle": "Codelume — App de fondos de pantalla para Mac",
     "language": "Idioma",
     "followSystem": "Seguir el sistema",
-    "refundPolicy": "Política de reembolsos"
+    "refundPolicy": "Política de reembolsos",
+    "close": "Cerrar"
   },
   "navigation": {
     "brand": "Codelume",
@@ -34,7 +35,8 @@
     "video": {
       "unsupported": "Tu navegador no admite vídeos.",
       "select": "Mostrar el fondo {{number}}"
-    }
+    },
+    "wallpaperSubmissionNote": "Los fondos seleccionados entre los aportes de la comunidad pueden aparecer en nuestra página de inicio."
   },
   "portfolio": {
     "badge": "Codelume",
@@ -64,24 +66,50 @@
         }
       }
     },
-    "features": {
-      "title": "Funciones",
-      "intro": "Elige un fondo o gestiona una lista de reproducción para cada pantalla.",
+    "systemWallpapers": {
+      "title": "Tipos de fondos",
+      "still": {
+        "title": "Fondos estáticos",
+        "description": "Configura un fondo estático de Codelume directamente como fondo de escritorio de macOS.",
+        "basic": "Función básica"
+      },
+      "video": {
+        "title": "Fondos de vídeo",
+        "description": "Reproduce un vídeo continuamente en el escritorio. También puedes convertirlo en un fondo nativo de macOS que se ralentiza hasta quedar fijo al salir del salvapantallas. El modo nativo requiere la versión del sitio web y macOS 26 o posterior.",
+        "example": "猫伴画姬"
+      },
+      "scene": {
+        "title": "Fondos de escena",
+        "description": "Los fondos de escena se crean con SpriteKit y admiten varias capas, sombreadores y animaciones. Los elementos pueden reaccionar al movimiento y a los clics del ratón."
+      },
+      "depth": {
+        "title": "Fondos con profundidad",
+        "description": "El primer plano y el fondo dan sensación de profundidad a la imagen."
+      },
+      "web": {
+        "title": "Fondos web",
+        "description": "Muestra contenido web, animaciones e información en directo en el escritorio."
+      }
+    },
+    "wallpaperModes": {
+      "title": "Modos de fondo",
       "native": {
-        "title": "Fondos nativos de Mac",
-        "description": "Elige una imagen o un vídeo en Codelume y deja que macOS gestione el fondo."
+        "title": "Fondos nativos de macOS",
+        "points": [
+          "macOS gestiona el fondo del escritorio.",
+          "Admite imágenes estáticas y transiciones desde el salvapantallas animado.",
+          "Al volver al escritorio, la animación se ralentiza hasta quedar fija."
+        ],
+        "availability": "Solo disponible en la versión del sitio web con macOS 26 o posterior. Las restricciones del entorno aislado impiden ofrecer esta función en la versión de la App Store.",
+        "demo": "Demostración simulada"
       },
-      "extended": {
+      "codelume": {
         "title": "Fondos de Codelume",
-        "description": "Descubre vídeos, imágenes y escenas personalizables en la galería."
-      },
-      "displays": {
-        "title": "Varias pantallas",
-        "description": "Elige un fondo y una lista de reproducción para cada pantalla."
-      },
-      "playlists": {
-        "title": "Listas de reproducción",
-        "description": "Añade tus favoritos a una lista para que se alternen en el escritorio."
+        "points": [
+          "Codelume gestiona el fondo del escritorio.",
+          "Admite imágenes, vídeos, escenas, profundidad y contenido web.",
+          "Se integra con el salvapantallas y la animación continúa en el escritorio."
+        ]
       }
     }
   },

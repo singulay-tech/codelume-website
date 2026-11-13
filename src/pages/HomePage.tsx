@@ -1,9 +1,7 @@
 import { AppWaveBackground } from '@/components/AppWaveBackground'
 import { Hero } from '@/components/Hero'
-import { Features } from '@/components/Features'
-import { Portfolio } from '@/components/Portfolio'
-import { WorkshopTeaser } from '@/components/WorkshopTeaser'
-import { AboutUs } from '@/components/AboutUs'
+import { WallpaperModes } from '@/components/WallpaperModes'
+import { SystemWallpapers } from '@/components/SystemWallpapers'
 import { Footer } from '@/components/Footer'
 
 export function HomePage() {
@@ -14,10 +12,8 @@ export function HomePage() {
         <section id="hero" aria-label="Hero section">
           <Hero />
         </section>
-        <Features />
-        <Portfolio />
-        <WorkshopTeaser />
-        <AboutUs />
+        <WallpaperModes />
+        <SystemWallpapers />
       </main>
       <Footer />
     </div>

@@ -62,7 +62,7 @@ export function Hero() {
       <div className="relative isolate grid min-h-[100svh] w-full items-end overflow-hidden bg-black">
         <HeroVideoCarousel />
 
-        <div className="relative z-40 w-full px-5 pb-[60px] pt-28 sm:px-8 lg:px-12">
+        <div className="relative z-40 w-full px-5 pb-12 pt-28 sm:px-8 lg:px-12 lg:pb-[60px]">
           <h1 className="max-w-2xl text-balance font-sans text-[clamp(2rem,4.2vw,3rem)] font-semibold leading-[1.14] tracking-tight text-[#FFF9F4]">
             {t('hero:title')}
           </h1>
@@ -79,6 +79,9 @@ export function Hero() {
           </Link>
           <p className="mt-2.5 max-w-xl text-xs leading-relaxed text-[#CEC6CD]">
             {t('hero:editionNote')}
+          </p>
+          <p className="mt-3 text-right text-xs leading-relaxed text-white/90 [text-shadow:0_1px_3px_#000,0_0_8px_#000] lg:absolute lg:bottom-[60px] lg:right-12 lg:mt-0 lg:max-w-[min(32%,24rem)]">
+            <span aria-hidden="true">* </span>{t('hero:wallpaperSubmissionNote')}
           </p>
         </div>
       </div>
@@ -121,29 +124,17 @@ export function Hero() {
                 {t('navigation:brand')}
               </a>
               <a
-                href="#features"
+                href="#wallpaper-modes"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                {t('portfolio:features.title')}
+                {t('portfolio:wallpaperModes.title')}
               </a>
               <a
-                href="#workshop"
+                href="#system-wallpapers"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                {t('navigation:workshop')}
+                {t('portfolio:systemWallpapers.title')}
               </a>
-              <a
-                href="#about-us"
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
-              >
-                {t('navigation:about')}
-              </a>
-              <Link
-                to="/help"
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
-              >
-                {t('navigation:help')}
-              </Link>
             </div>
 
             {/* 右侧 - 语言切换 + 下载按钮 + 移动菜单 */}
@@ -212,33 +203,19 @@ export function Hero() {
                 {t('navigation:brand')}
               </a>
               <a
-                href="#features"
+                href="#wallpaper-modes"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('portfolio:features.title')}
+                {t('portfolio:wallpaperModes.title')}
               </a>
               <a
-                href="#workshop"
+                href="#system-wallpapers"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation:workshop')}
+                {t('portfolio:systemWallpapers.title')}
               </a>
-              <a
-                href="#about-us"
-                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('navigation:about')}
-              </a>
-              <Link
-                to="/help"
-                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('navigation:help')}
-              </Link>
             </div>
           </div>
         </div>

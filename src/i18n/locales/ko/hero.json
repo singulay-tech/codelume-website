@@ -20,5 +20,6 @@
     "select": "{{number}}번 배경으로 전환"
   },
   "subtitle": "Mac 기본 배경화면을 설정하고 Codelume의 다양한 확장 배경화면 유형을 선택할 수 있습니다.",
-  "editionNote": "일반판은 무료이며, Pro에서는 더 많은 기능을 이용할 수 있습니다."
+  "editionNote": "일반판은 무료이며, Pro에서는 더 많은 기능을 이용할 수 있습니다.",
+  "wallpaperSubmissionNote": "사용자가 올린 배경화면 중 선정된 작품은 공식 홈페이지에 소개될 수 있습니다."
 }

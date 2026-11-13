@@ -20,5 +20,6 @@
     "select": "切换到第 {{number}} 张背景"
   },
   "subtitle": "支持设置 Mac 原生壁纸，同时提供更丰富的扩展壁纸类型",
-  "editionNote": "普通版免费使用，Pro 提供更多功能。"
+  "editionNote": "普通版免费使用，Pro 提供更多功能。",
+  "wallpaperSubmissionNote": "优秀的用户投稿壁纸有机会在官网首页展示。"
 }

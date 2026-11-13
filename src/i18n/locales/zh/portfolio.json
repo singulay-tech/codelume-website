@@ -26,24 +26,50 @@
       }
     }
   },
-  "features": {
-    "title": "功能",
-    "intro": "从设置一张壁纸，到管理每块屏幕的播放列表。",
+  "systemWallpapers": {
+    "title": "壁纸类型",
+    "still": {
+      "title": "静态壁纸",
+      "description": "可将码镜中的静态壁纸直接设为 macOS 桌面壁纸。",
+      "basic": "基础功能"
+    },
+    "video": {
+      "title": "视频壁纸",
+      "description": "让视频在桌面持续播放。视频壁纸还可转换为 macOS 原生屏保联动壁纸，回到桌面时自然减速并定格。原生模式仅官网版支持，需 macOS 26 或更高版本。",
+      "example": "猫伴画姬"
+    },
+    "scene": {
+      "title": "场景壁纸",
+      "description": "场景壁纸基于 SpriteKit 搭建，支持多图层、着色器和动画。场景元素还能响应鼠标移动和点击，让桌面动起来。"
+    },
+    "depth": {
+      "title": "景深壁纸",
+      "description": "利用前景与背景的层次，让画面更有空间感。"
+    },
+    "web": {
+      "title": "网页壁纸",
+      "description": "将网页内容呈现在桌面上，可展示动态效果和实时信息。"
+    }
+  },
+  "wallpaperModes": {
+    "title": "壁纸模式",
     "native": {
-      "title": "Mac 原生壁纸",
-      "description": "用码镜设置静态图片或动态视频，交给 macOS 管理桌面壁纸。"
+      "title": "macOS 原生壁纸",
+      "points": [
+        "由 macOS 管理桌面壁纸。",
+        "支持静态壁纸和动态屏保联动。",
+        "回到桌面后，动态画面逐渐减速并定格。"
+      ],
+      "availability": "仅官网版支持，需 macOS 26 或更高版本。App Store 版受沙盒权限限制，不支持此功能。",
+      "demo": "效果演示"
     },
-    "extended": {
-      "title": "码镜扩展壁纸",
-      "description": "浏览码镜壁纸中心，探索视频、图片和可调节的场景壁纸。"
-    },
-    "displays": {
-      "title": "多显示器",
-      "description": "分别为每块屏幕选择壁纸和播放列表。"
-    },
-    "playlists": {
-      "title": "壁纸播放列表",
-      "description": "把喜欢的壁纸加入列表，让它们轮流出现在桌面上。"
+    "codelume": {
+      "title": "码镜壁纸",
+      "points": [
+        "由码镜管理桌面壁纸。",
+        "支持静态、视频、场景、景深和网页壁纸。",
+        "支持屏保联动，动态壁纸回到桌面后继续播放。"
+      ]
     }
   }
 }

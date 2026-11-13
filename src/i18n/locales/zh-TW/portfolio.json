@@ -26,24 +26,50 @@
       }
     }
   },
-  "features": {
-    "title": "功能",
-    "intro": "從設定一張壁紙，到管理每個顯示器的播放清單。",
+  "systemWallpapers": {
+    "title": "壁紙類型",
+    "still": {
+      "title": "靜態壁紙",
+      "description": "可將碼鏡中的靜態壁紙直接設為 macOS 桌面壁紙。",
+      "basic": "基本功能"
+    },
+    "video": {
+      "title": "影片壁紙",
+      "description": "讓影片在桌面持續播放。影片壁紙也可轉為 macOS 原生螢幕保護程式聯動壁紙，回到桌面時逐漸減速並定格。原生模式僅官網版支援，需 macOS 26 或更新版本。",
+      "example": "貓伴畫姬"
+    },
+    "scene": {
+      "title": "場景壁紙",
+      "description": "場景壁紙以 SpriteKit 搭建，支援多圖層、著色器和動畫。場景元素還能回應滑鼠移動與點擊，讓桌面動起來。"
+    },
+    "depth": {
+      "title": "景深壁紙",
+      "description": "利用前景與背景的層次，讓畫面更有空間感。"
+    },
+    "web": {
+      "title": "網頁壁紙",
+      "description": "在桌面上呈現網頁內容，可顯示動態效果與即時資訊。"
+    }
+  },
+  "wallpaperModes": {
+    "title": "壁紙模式",
     "native": {
-      "title": "Mac 原生壁紙",
-      "description": "用碼鏡設定靜態圖片或動態影片，交由 macOS 管理桌面壁紙。"
+      "title": "macOS 原生壁紙",
+      "points": [
+        "由 macOS 管理桌面壁紙。",
+        "支援靜態壁紙與動態螢幕保護程式聯動。",
+        "回到桌面後，動態畫面會逐漸減速並定格。"
+      ],
+      "availability": "僅官網版支援，需 macOS 26 或更新版本。App Store 版受沙盒權限限制，不支援此功能。",
+      "demo": "效果示意"
     },
-    "extended": {
-      "title": "碼鏡擴充壁紙",
-      "description": "瀏覽碼鏡壁紙中心，探索影片、圖片和可調整的場景壁紙。"
-    },
-    "displays": {
-      "title": "多顯示器",
-      "description": "為每個顯示器分別選擇壁紙與播放清單。"
-    },
-    "playlists": {
-      "title": "壁紙播放清單",
-      "description": "把喜歡的壁紙加入清單，讓它們輪流出現在桌面上。"
+    "codelume": {
+      "title": "碼鏡壁紙",
+      "points": [
+        "由碼鏡管理桌面壁紙。",
+        "支援靜態、影片、場景、景深和網頁壁紙。",
+        "支援螢幕保護程式聯動，動態壁紙回到桌面後會繼續播放。"
+      ]
     }
   }
 }

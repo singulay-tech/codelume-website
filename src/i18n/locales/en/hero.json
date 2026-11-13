@@ -20,5 +20,6 @@
     "select": "Show background {{number}}"
   },
   "subtitle": "Set native Mac wallpapers and choose from more wallpaper types in Codelume.",
-  "editionNote": "Standard is free to use. Pro offers more features."
+  "editionNote": "Standard is free to use. Pro offers more features.",
+  "wallpaperSubmissionNote": "Selected community wallpapers may be featured on our homepage."
 }

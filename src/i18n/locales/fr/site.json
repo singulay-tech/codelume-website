@@ -3,7 +3,8 @@
     "siteTitle": "Codelume — Application de fonds d’écran pour Mac",
     "language": "Langue",
     "followSystem": "Suivre le système",
-    "refundPolicy": "Politique de remboursement"
+    "refundPolicy": "Politique de remboursement",
+    "close": "Fermer"
   },
   "navigation": {
     "brand": "Codelume",
@@ -34,7 +35,8 @@
     "video": {
       "unsupported": "Votre navigateur ne prend pas en charge la vidéo.",
       "select": "Afficher le fond d’écran {{number}}"
-    }
+    },
+    "wallpaperSubmissionNote": "Les fonds d’écran sélectionnés parmi les contributions de la communauté peuvent être mis à l’honneur sur notre page d’accueil."
   },
   "portfolio": {
     "badge": "Codelume",
@@ -64,24 +66,50 @@
         }
       }
     },
-    "features": {
-      "title": "Fonctionnalités",
-      "intro": "Choisissez un fond d’écran ou gérez une liste de lecture pour chaque écran.",
+    "systemWallpapers": {
+      "title": "Types de fonds d’écran",
+      "still": {
+        "title": "Fonds d’écran fixes",
+        "description": "Définissez un fond d’écran fixe de Codelume comme fond du bureau macOS.",
+        "basic": "Fonction de base"
+      },
+      "video": {
+        "title": "Fonds d’écran vidéo",
+        "description": "Lisez une vidéo en continu sur le bureau. Vous pouvez aussi la convertir en fond d’écran natif de macOS qui ralentit jusqu’à s’arrêter au retour de l’économiseur d’écran. Ce mode nécessite la version du site officiel et macOS 26 ou ultérieur.",
+        "example": "猫伴画姬"
+      },
+      "scene": {
+        "title": "Scènes animées",
+        "description": "Créés avec SpriteKit, les fonds d’écran de scène prennent en charge plusieurs calques, des shaders et des animations. Les éléments peuvent réagir aux mouvements et aux clics de la souris."
+      },
+      "depth": {
+        "title": "Fonds d’écran avec profondeur",
+        "description": "Le premier plan et l’arrière-plan donnent du relief à l’image."
+      },
+      "web": {
+        "title": "Fonds d’écran web",
+        "description": "Affichez du contenu web, des animations et des informations en direct sur le bureau."
+      }
+    },
+    "wallpaperModes": {
+      "title": "Modes de fond d’écran",
       "native": {
-        "title": "Fonds d’écran natifs du Mac",
-        "description": "Choisissez une image ou une vidéo dans Codelume et laissez macOS gérer le fond d’écran."
+        "title": "Fonds d’écran natifs de macOS",
+        "points": [
+          "macOS gère le fond d’écran du bureau.",
+          "Prend en charge les images fixes et la transition depuis un économiseur d’écran animé.",
+          "Au retour sur le bureau, le mouvement ralentit jusqu’à s’arrêter."
+        ],
+        "availability": "Disponible uniquement dans la version du site officiel, sous macOS 26 ou ultérieur. Le bac à sable de la version App Store empêche cette fonction.",
+        "demo": "Aperçu simulé"
       },
-      "extended": {
+      "codelume": {
         "title": "Fonds d’écran Codelume",
-        "description": "Découvrez des vidéos, des images et des scènes personnalisables dans la galerie."
-      },
-      "displays": {
-        "title": "Plusieurs écrans",
-        "description": "Choisissez un fond d’écran et une liste de lecture pour chaque écran."
-      },
-      "playlists": {
-        "title": "Listes de lecture",
-        "description": "Ajoutez vos favoris à une liste pour les afficher à tour de rôle."
+        "points": [
+          "Codelume gère le fond d’écran du bureau.",
+          "Prend en charge les images fixes, les vidéos, les scènes, les effets de profondeur et les contenus web.",
+          "L’animation se poursuit sur le bureau au retour de l’économiseur d’écran."
+        ]
       }
     }
   },

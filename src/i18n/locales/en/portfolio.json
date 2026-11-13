@@ -26,24 +26,50 @@
       }
     }
   },
-  "features": {
-    "title": "Features",
-    "intro": "Set a wallpaper or manage a playlist for each display.",
+  "systemWallpapers": {
+    "title": "Wallpaper types",
+    "still": {
+      "title": "Still wallpapers",
+      "description": "Set any still wallpaper from Codelume as your macOS desktop wallpaper.",
+      "basic": "Basic feature"
+    },
+    "video": {
+      "title": "Video wallpapers",
+      "description": "Keep a video playing on your desktop. You can also convert it to a native macOS wallpaper that slows to a still image when you return from the screen saver. Native mode requires the website edition and macOS 26 or later.",
+      "example": "猫伴画姬"
+    },
+    "scene": {
+      "title": "Scene wallpapers",
+      "description": "Built with SpriteKit, scene wallpapers support multiple layers, shaders, and animations. Scene elements can respond to mouse movement and clicks."
+    },
+    "depth": {
+      "title": "Depth wallpapers",
+      "description": "Separate foreground and background layers give the image a sense of depth."
+    },
+    "web": {
+      "title": "Web wallpapers",
+      "description": "Show web content, animations, and live information on your desktop."
+    }
+  },
+  "wallpaperModes": {
+    "title": "Wallpaper modes",
     "native": {
-      "title": "Native Mac wallpapers",
-      "description": "Set a still image or a video in Codelume and let macOS handle the wallpaper."
+      "title": "Native macOS wallpapers",
+      "points": [
+        "macOS manages your desktop wallpaper.",
+        "Supports still wallpapers and animated screen saver transitions.",
+        "Motion slows to a still image when you return to the desktop."
+      ],
+      "availability": "Available only in the website edition on macOS 26 or later. The App Store edition’s sandbox prevents this feature.",
+      "demo": "Simulated preview"
     },
-    "extended": {
+    "codelume": {
       "title": "Codelume wallpapers",
-      "description": "Browse the wallpaper hub for videos, images, and customizable scenes."
-    },
-    "displays": {
-      "title": "Multiple displays",
-      "description": "Choose a wallpaper and playlist for each display."
-    },
-    "playlists": {
-      "title": "Wallpaper playlists",
-      "description": "Add your favorites to a playlist and rotate them on your desktop."
+      "points": [
+        "Codelume manages your desktop wallpaper.",
+        "Supports still, video, scene, depth, and web wallpapers.",
+        "Supports screen saver integration. Animated wallpapers keep playing on the desktop."
+      ]
     }
   }
 }

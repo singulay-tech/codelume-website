@@ -3,7 +3,8 @@
     "siteTitle": "Codelume — App de papéis de parede para Mac",
     "language": "Idioma",
     "followSystem": "Seguir o sistema",
-    "refundPolicy": "Política de reembolso"
+    "refundPolicy": "Política de reembolso",
+    "close": "Fechar"
   },
   "navigation": {
     "brand": "Codelume",
@@ -34,7 +35,8 @@
     "video": {
       "unsupported": "Seu navegador não oferece suporte a vídeos.",
       "select": "Mostrar o papel de parede {{number}}"
-    }
+    },
+    "wallpaperSubmissionNote": "Papéis de parede selecionados da comunidade podem aparecer na página inicial do site."
   },
   "portfolio": {
     "badge": "Codelume",
@@ -64,24 +66,50 @@
         }
       }
     },
-    "features": {
-      "title": "Recursos",
-      "intro": "Escolha um papel de parede ou gerencie uma lista de reprodução para cada tela.",
+    "systemWallpapers": {
+      "title": "Tipos de papel de parede",
+      "still": {
+        "title": "Papéis de parede estáticos",
+        "description": "Defina um papel de parede estático do Codelume diretamente como papel de parede do macOS.",
+        "basic": "Recurso básico"
+      },
+      "video": {
+        "title": "Papéis de parede em vídeo",
+        "description": "Reproduza um vídeo continuamente na área de trabalho. Você também pode convertê-lo em um papel de parede nativo do macOS que desacelera até parar ao sair do protetor de tela. O modo nativo exige a versão do site oficial e macOS 26 ou posterior.",
+        "example": "猫伴画姬"
+      },
+      "scene": {
+        "title": "Papéis de parede de cena",
+        "description": "Os papéis de parede de cena usam SpriteKit e oferecem suporte a várias camadas, shaders e animações. Os elementos podem reagir aos movimentos e cliques do mouse."
+      },
+      "depth": {
+        "title": "Papéis de parede com profundidade",
+        "description": "Camadas em primeiro e segundo plano dão profundidade à imagem."
+      },
+      "web": {
+        "title": "Papéis de parede da web",
+        "description": "Exiba conteúdo da web, animações e informações em tempo real na área de trabalho."
+      }
+    },
+    "wallpaperModes": {
+      "title": "Modos de papel de parede",
       "native": {
-        "title": "Papéis de parede nativos do Mac",
-        "description": "Escolha uma imagem ou um vídeo no Codelume e deixe o macOS gerenciar o papel de parede."
+        "title": "Papéis de parede nativos do macOS",
+        "points": [
+          "O macOS gerencia o papel de parede da área de trabalho.",
+          "Aceita imagens estáticas e transições a partir do protetor de tela animado.",
+          "Ao voltar à área de trabalho, a animação desacelera até parar."
+        ],
+        "availability": "Disponível apenas na versão do site oficial com macOS 26 ou posterior. As restrições do sandbox impedem esse recurso na versão da App Store.",
+        "demo": "Demonstração simulada"
       },
-      "extended": {
+      "codelume": {
         "title": "Papéis de parede do Codelume",
-        "description": "Encontre vídeos, imagens e cenas personalizáveis na galeria."
-      },
-      "displays": {
-        "title": "Várias telas",
-        "description": "Escolha um papel de parede e uma lista de reprodução para cada tela."
-      },
-      "playlists": {
-        "title": "Listas de reprodução",
-        "description": "Adicione seus favoritos a uma lista para alterná-los na área de trabalho."
+        "points": [
+          "O Codelume gerencia o papel de parede da área de trabalho.",
+          "Aceita imagens, vídeos, cenas, efeitos de profundidade e conteúdo da web.",
+          "Integra-se ao protetor de tela e mantém a animação na área de trabalho."
+        ]
       }
     }
   },

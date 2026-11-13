@@ -3,7 +3,8 @@
     "siteTitle": "Codelume — Wallpaper-App für Mac",
     "language": "Sprache",
     "followSystem": "Systemsprache verwenden",
-    "refundPolicy": "Rückerstattungsrichtlinie"
+    "refundPolicy": "Rückerstattungsrichtlinie",
+    "close": "Schließen"
   },
   "navigation": {
     "brand": "Codelume",
@@ -34,7 +35,8 @@
     "video": {
       "unsupported": "Dein Browser unterstützt keine Videos.",
       "select": "Wallpaper {{number}} anzeigen"
-    }
+    },
+    "wallpaperSubmissionNote": "Ausgewählte Wallpaper aus der Community können auf unserer Startseite gezeigt werden."
   },
   "portfolio": {
     "badge": "Codelume",
@@ -64,24 +66,50 @@
         }
       }
     },
-    "features": {
-      "title": "Funktionen",
-      "intro": "Wähle ein Wallpaper oder verwalte eine Wiedergabeliste für jeden Bildschirm.",
+    "systemWallpapers": {
+      "title": "Wallpaper-Typen",
+      "still": {
+        "title": "Statische Wallpaper",
+        "description": "Lege ein statisches Wallpaper aus Codelume direkt als macOS-Desktop-Wallpaper fest.",
+        "basic": "Grundfunktion"
+      },
+      "video": {
+        "title": "Video-Wallpaper",
+        "description": "Spiele ein Video durchgehend auf dem Desktop ab. Du kannst es auch in ein natives macOS-Wallpaper umwandeln, das beim Verlassen des Bildschirmschoners langsam zum Stillstand kommt. Der native Modus benötigt die Website-Version und macOS 26 oder neuer.",
+        "example": "猫伴画姬"
+      },
+      "scene": {
+        "title": "Szenen-Wallpaper",
+        "description": "Szenen-Wallpaper basieren auf SpriteKit und unterstützen mehrere Ebenen, Shader und Animationen. Elemente können auf Mausbewegungen und Klicks reagieren."
+      },
+      "depth": {
+        "title": "Tiefen-Wallpaper",
+        "description": "Vorder- und Hintergrundebenen verleihen dem Bild räumliche Tiefe."
+      },
+      "web": {
+        "title": "Web-Wallpaper",
+        "description": "Zeige Webinhalte, Animationen und Live-Informationen auf deinem Desktop an."
+      }
+    },
+    "wallpaperModes": {
+      "title": "Wallpaper-Modi",
       "native": {
-        "title": "Native Mac-Wallpaper",
-        "description": "Wähle in Codelume ein Bild oder Video. macOS verwaltet das Wallpaper."
+        "title": "Native macOS-Wallpaper",
+        "points": [
+          "macOS verwaltet dein Desktop-Wallpaper.",
+          "Unterstützt Standbilder und Übergänge aus dem animierten Bildschirmschoner.",
+          "Bei der Rückkehr zum Desktop kommt die Bewegung langsam zum Stillstand."
+        ],
+        "availability": "Nur in der Website-Version ab macOS 26 verfügbar. Die Sandbox der App-Store-Version lässt diese Funktion nicht zu.",
+        "demo": "Simulierte Vorschau"
       },
-      "extended": {
+      "codelume": {
         "title": "Codelume-Wallpaper",
-        "description": "Entdecke Videos, Bilder und anpassbare Szenen in der Galerie."
-      },
-      "displays": {
-        "title": "Mehrere Bildschirme",
-        "description": "Wähle Wallpaper und Wiedergabeliste für jeden Bildschirm einzeln."
-      },
-      "playlists": {
-        "title": "Wallpaper-Wiedergabelisten",
-        "description": "Sammle deine Favoriten und zeige sie abwechselnd auf dem Desktop an."
+        "points": [
+          "Codelume verwaltet dein Desktop-Wallpaper.",
+          "Unterstützt Bilder, Videos, Szenen, Tiefeneffekte und Webinhalte.",
+          "Unterstützt die Bildschirmschoner-Integration. Die Animation läuft auf dem Desktop weiter."
+        ]
       }
     }
   },
