@@ -118,7 +118,7 @@ export function Hero() {
             {/* 导航菜单 */}
             <div className="hidden xl:flex items-center gap-4 2xl:gap-8">
               <a
-                href="/"
+                href="#app-preview"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
                 {t('navigation:brand')}
@@ -208,7 +208,7 @@ export function Hero() {
             {/* 移动端导航链接 */}
             <div className="flex flex-col space-y-4 text-white">
               <a
-                href="/"
+                href="#app-preview"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

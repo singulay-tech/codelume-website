@@ -1,5 +1,6 @@
 import { AppWaveBackground } from '@/components/AppWaveBackground'
 import { Hero } from '@/components/Hero'
+import { AppPreview } from '@/components/AppPreview'
 import { WallpaperModes } from '@/components/WallpaperModes'
 import { SystemWallpapers } from '@/components/SystemWallpapers'
 import { WallpaperAuthoring } from '@/components/WallpaperAuthoring'
@@ -14,6 +15,7 @@ export function HomePage() {
         <section id="hero" aria-label="Hero section">
           <Hero />
         </section>
+        <AppPreview />
         <WallpaperModes />
         <SystemWallpapers />
         <WallpaperAuthoring />
