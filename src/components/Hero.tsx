@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { HeroVideoCarousel } from './HeroVideoCarousel'
 import { LanguageSwitcher } from './LanguageSwitcher'
-import { CODELUME_MAC_APP_STORE_URL } from '@/constants/externalLinks'
 
 export function Hero() {
   const { t } = useTranslation(['hero', 'navigation', 'footer', 'portfolio'])
@@ -70,17 +69,14 @@ export function Hero() {
           <p className="mt-3 max-w-xl text-base leading-relaxed text-[#E4DFE3]">
             {t('hero:subtitle')}
           </p>
-          <a
-            href={CODELUME_MAC_APP_STORE_URL}
-            target="_blank"
-            rel="noreferrer"
+          <Link to="/download"
             className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full border border-white/20 bg-[linear-gradient(110deg,#A54D2D,#954064_52%,#6244A1)] px-5 text-sm font-semibold text-white shadow-[0_4px_16px_#1d102c55] transition-[filter] hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-6"
           >
             <svg className="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.57-2.33 4.5-3.74 4.25z" />
             </svg>
             {t('hero:cta.download')}
-          </a>
+          </Link>
           <p className="mt-2.5 max-w-xl text-xs leading-relaxed text-[#CEC6CD]">
             {t('hero:editionNote')}
           </p>
@@ -120,15 +116,15 @@ export function Hero() {
             <div className="hidden xl:flex items-center gap-4 2xl:gap-8">
               <a
                 href="/"
+                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+              >
+                {t('navigation:brand')}
+              </a>
               <a
                 href="#features"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
                 {t('portfolio:features.title')}
-              </a>
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
-              >
-                {t('navigation:brand')}
               </a>
               <a
                 href="#workshop"
@@ -155,15 +151,12 @@ export function Hero() {
               {/* 语言切换 */}
               <LanguageSwitcher />
 
-              <a
-                href={CODELUME_MAC_APP_STORE_URL}
-                target="_blank"
-                rel="noreferrer"
+              <Link to="/download"
                 className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-full border border-white/40 bg-black/35 px-3 text-xs font-medium text-[#FFF9F4] backdrop-blur-sm transition-colors hover:bg-black/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-4 sm:text-sm"
               >
                 <Download size={15} className="shrink-0" aria-hidden="true" />
-                <span className="sr-only min-[400px]:not-sr-only">{t('hero:cta.download')}</span>
-              </a>
+                <span className="sr-only sm:not-sr-only">{t('hero:cta.download')}</span>
+              </Link>
 
               {/* 移动端汉堡菜单按钮 */}
               <button
@@ -212,18 +205,18 @@ export function Hero() {
             {/* 移动端导航链接 */}
             <div className="flex flex-col space-y-4 text-white">
               <a
-                href="#features"
-                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('portfolio:features.title')}
-              </a>
-              <a
                 href="/"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('navigation:brand')}
+              </a>
+              <a
+                href="#features"
+                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('portfolio:features.title')}
               </a>
               <a
                 href="#workshop"

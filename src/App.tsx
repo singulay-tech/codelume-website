@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { HomePage } from './pages/HomePage'
+import { DownloadPage } from './pages/DownloadPage'
 import { WorkshopPage } from './pages/WorkshopPage'
 import { HelpPage } from './pages/HelpPage'
 import { HelpDocPage } from './pages/HelpDocPage'
@@ -10,6 +11,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/download" element={<DownloadPage />} />
         <Route path="/workshop" element={<WorkshopPage />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/help/wallpaperPolicy" element={<Navigate to="/help/wallpaperProtocol" replace />} />

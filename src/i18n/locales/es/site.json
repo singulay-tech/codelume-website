@@ -15,7 +15,19 @@
     "title": "Un nuevo fondo de pantalla para tu Mac",
     "subtitle": "Configura fondos nativos de Mac o descubre más formatos en Codelume.",
     "cta": {
-      "download": "Descargar Codelume para Mac"
+      "download": "Descargar Codelume para Mac",
+      "appStore": "Versión de App Store",
+      "website": "Versión del sitio web",
+      "comingSoon": "Próximamente",
+      "appStoreDescription": "Instala y actualiza Codelume desde la Mac App Store. Esta versión incluye la mayoría de las funciones.",
+      "websiteDescription": "Descarga el instalador para configurar también fondos nativos de macOS y fondos de la pantalla de bloqueo.",
+      "openAppStore": "Abrir en la App Store",
+      "sharedSubscription": "Ambas versiones ofrecen el mismo plan de suscripción Pro. Cada canal gestiona sus compras y derechos de acceso.",
+      "websiteReason": "Ambas funciones requieren acceso a componentes del sistema que el entorno aislado de la versión de la App Store no permite. En la versión del sitio web, macOS gestiona los fondos nativos para que las transiciones sean más fluidas. Elige la versión que mejor se adapte a tus necesidades.",
+      "systemRequirements": {
+        "title": "Requisitos del sistema",
+        "description": "Recomendamos usar la versión más reciente de macOS. Para configurar fondos nativos del sistema y fondos del salvapantallas se requiere macOS 26 o posterior."
+      }
     },
     "editionNote": "La versión estándar es gratuita. Pro ofrece más funciones.",
     "video": {

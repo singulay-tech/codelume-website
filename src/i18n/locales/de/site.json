@@ -15,7 +15,19 @@
     "title": "Ein neues Wallpaper für deinen Mac",
     "subtitle": "Verwende native Mac-Wallpaper oder entdecke weitere Wallpaper-Formate in Codelume.",
     "cta": {
-      "download": "Codelume für Mac laden"
+      "download": "Codelume für Mac laden",
+      "appStore": "App-Store-Version",
+      "website": "Website-Version",
+      "comingSoon": "Bald verfügbar",
+      "appStoreDescription": "Installation und Updates laufen über den Mac App Store. Diese Version bietet die meisten Codelume-Funktionen.",
+      "websiteDescription": "Mit dem direkten Download kannst du auch native macOS-Wallpaper und Sperrbildschirm-Wallpaper festlegen.",
+      "openAppStore": "Im App Store öffnen",
+      "sharedSubscription": "Beide Versionen bieten dasselbe Pro-Abo. Käufe und Zugriffsrechte werden über den jeweiligen Vertriebskanal verwaltet.",
+      "websiteReason": "Beide Funktionen benötigen Zugriff auf Systemkomponenten, den die Sandbox der App-Store-Version nicht erlaubt. In der Website-Version verwaltet macOS die nativen Wallpaper, damit die Übergänge flüssiger sind. Wähle die Version, die zu deinen Anforderungen passt.",
+      "systemRequirements": {
+        "title": "Systemanforderungen",
+        "description": "Wir empfehlen die neueste macOS-Version. Native System-Wallpaper und Wallpaper für den Bildschirmschoner lassen sich ab macOS 26 einstellen."
+      }
     },
     "editionNote": "Die Standardversion ist kostenlos. Pro bietet weitere Funktionen.",
     "video": {

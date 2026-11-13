@@ -15,7 +15,19 @@
     "title": "Um novo papel de parede para seu Mac",
     "subtitle": "Defina papéis de parede nativos do Mac ou descubra outros formatos no Codelume.",
     "cta": {
-      "download": "Baixar Codelume para Mac"
+      "download": "Baixar Codelume para Mac",
+      "appStore": "Versão da App Store",
+      "website": "Versão do site oficial",
+      "comingSoon": "Em breve",
+      "appStoreDescription": "Instale e atualize o Codelume pela Mac App Store. Esta versão inclui a maioria dos recursos.",
+      "websiteDescription": "Baixe o instalador para definir também papéis de parede nativos do macOS e da tela bloqueada.",
+      "openAppStore": "Abrir na App Store",
+      "sharedSubscription": "As duas versões oferecem o mesmo plano de assinatura Pro. Cada canal gerencia suas compras e permissões de acesso.",
+      "websiteReason": "Esses recursos precisam acessar componentes do sistema que o sandbox da versão da App Store não permite. Na versão do site, o macOS gerencia os papéis de parede nativos para tornar as transições mais fluidas. Escolha a versão que atende às suas necessidades.",
+      "systemRequirements": {
+        "title": "Requisitos do sistema",
+        "description": "Recomendamos usar a versão mais recente do macOS. Para definir papéis de parede nativos do sistema e do protetor de tela, é necessário o macOS 26 ou posterior."
+      }
     },
     "editionNote": "A versão padrão é gratuita. A versão Pro oferece mais recursos.",
     "video": {
