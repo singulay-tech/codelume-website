@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Volume2, VolumeX, Menu, X } from 'lucide-react'
+import { Download, Menu, X } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -23,9 +23,8 @@ const HERO_INITIAL_START_INDEX = Math.floor(
 )
 
 export function Hero() {
-  const { t } = useTranslation(['hero', 'navigation'])
+  const { t } = useTranslation(['hero', 'navigation', 'footer'])
   const heroVideos = HERO_VIDEO_URLS.slice(0, Math.max(1, Math.min(HERO_ACTIVE_VIDEO_COUNT, HERO_VIDEO_URLS.length)))
-  const [isMuted, setIsMuted] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [currentVideoIndex, setCurrentVideoIndex] = useState(HERO_INITIAL_START_INDEX)
@@ -52,25 +51,6 @@ export function Hero() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  // 确保加载时立即静音，避免任何声音
-  useEffect(() => {
-    videoRefs.current.forEach((video) => {
-      if (!video) return
-      video.volume = 0
-      video.muted = true
-      video.defaultMuted = true
-    })
-  }, [])
-
-  // isMuted 变化时更新视频静音状态
-  useEffect(() => {
-    videoRefs.current.forEach((video) => {
-      if (!video) return
-      video.muted = isMuted
-      video.volume = isMuted ? 0 : 0.7
-    })
-  }, [isMuted])
 
   // 始终只播放当前轨道上的那一格视频；
   // 当显示克隆位时，让真正的 video[0] 影子同步播放，以便瞬时复位到 0 时画面无缝衔接（避免“倒回开头”观感）。
@@ -159,110 +139,144 @@ export function Hero() {
 
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black">
-      {/* 背景视频轮播 */}
-      <div
-        className={`absolute inset-0 flex h-full w-full ${
-          isTrackTransitionEnabled ? 'transition-transform duration-1000 ease-in-out' : ''
-        }`}
-        style={{ transform: `translateX(-${trackIndex * 100}%)` }}
-      >
-        {[...heroVideos, heroVideos[0]].map((url, index) => {
-          const logicalIndex = index % heroVideos.length
-          return (
-          <video
-            key={`${url}-${index}`}
-            ref={(el) => {
-              videoRefs.current[index] = el
-            }}
-            preload="auto"
-            onCanPlayThrough={() => {
-              if (index >= heroVideos.length) return
-              setReadyVideos((prev) => {
-                if (prev[logicalIndex]) return prev
-                const next = [...prev]
-                next[logicalIndex] = true
-                return next
-              })
-            }}
-            onEnded={() => {
-              if (!isCarouselReady) return
-              if (index !== trackIndex) return
-              const last = heroVideos.length - 1
-              if (index < last) {
-                setCurrentVideoIndex(index + 1)
-                setTrackIndex(index + 1)
-              } else if (index === last) {
-                setCurrentVideoIndex(0)
-                setTrackIndex(heroVideos.length)
-              } else {
-                setIsTrackTransitionEnabled(false)
-                setTrackIndex(0)
-                setCurrentVideoIndex(0)
-                window.requestAnimationFrame(() => setIsTrackTransitionEnabled(true))
-              }
-            }}
-            onError={() => {
-              if (index !== trackIndex) return
-              const n = heroVideos.length
-              if (index < n - 1) {
-                setCurrentVideoIndex(index + 1)
-                setTrackIndex(index + 1)
-              } else if (index === n - 1) {
-                setCurrentVideoIndex(0)
-                setTrackIndex(n)
-              } else {
-                setIsTrackTransitionEnabled(false)
-                setTrackIndex(0)
-                setCurrentVideoIndex(0)
-                window.requestAnimationFrame(() => setIsTrackTransitionEnabled(true))
-              }
-            }}
-            className="h-full min-w-full flex-shrink-0 object-cover"
-            autoPlay={index === HERO_INITIAL_START_INDEX}
-            muted
-            loop={false}
-            playsInline
-          >
-            <source src={url} />
-            {t('hero:video.unsupported')}
-          </video>
-        )})}
-      </div>
-
-      {/* 轮播指示器：激活点永远居中，其它点跟随轨道左移 */}
-      <div
-        className={`absolute bottom-6 left-1/2 z-50 -translate-x-1/2 overflow-hidden rounded-full bg-black/35 backdrop-blur-sm gentle-animation ${
-          isCarouselReady ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{ width: '6.5rem', height: '1.75rem' }}
-      >
-        {/* 内部轨道：通过 translate 让 active 圆点对齐到容器水平中心；
-            尺寸基于 dot=10px、active=24px、gap=8px，center 偏移 = trackIndex*18 + 12px */}
+    <>
+      <div className="relative isolate grid min-h-screen w-full items-end overflow-hidden bg-black">
+        {/* 背景视频轮播 */}
         <div
-          className={`absolute top-1/2 left-1/2 flex items-center gap-2 ${
-            isTrackTransitionEnabled ? 'transition-transform duration-500 ease-out' : ''
+          className={`absolute inset-0 flex h-full w-full ${
+            isTrackTransitionEnabled ? 'transition-transform duration-1000 ease-in-out' : ''
           }`}
-          style={{ transform: `translate(-${trackIndex * 18 + 12}px, -50%)` }}
+          style={{ transform: `translateX(-${trackIndex * 100}%)` }}
         >
-          {[...heroVideos, heroVideos[0]].map((_, index) => {
-            const isActive = trackIndex === index
+          {[...heroVideos, heroVideos[0]].map((url, index) => {
+            const logicalIndex = index % heroVideos.length
             return (
-              <button
-                key={`hero-indicator-${index}`}
-                type="button"
-                aria-label={`切换到第 ${(index % heroVideos.length) + 1} 张背景`}
-                onClick={() => {
-                  const i = index % heroVideos.length
-                  setCurrentVideoIndex(i)
-                  setTrackIndex(i)
-                }}
-                className={`h-2.5 flex-shrink-0 rounded-full gentle-animation ${
-                  isActive ? 'w-6 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/80'
-                }`}
-              />
-            )
-          })}
+            <video
+              key={`${url}-${index}`}
+              ref={(el) => {
+                videoRefs.current[index] = el
+              }}
+              preload="auto"
+              onCanPlayThrough={() => {
+                if (index >= heroVideos.length) return
+                setReadyVideos((prev) => {
+                  if (prev[logicalIndex]) return prev
+                  const next = [...prev]
+                  next[logicalIndex] = true
+                  return next
+                })
+              }}
+              onEnded={() => {
+                if (!isCarouselReady) return
+                if (index !== trackIndex) return
+                const last = heroVideos.length - 1
+                if (index < last) {
+                  setCurrentVideoIndex(index + 1)
+                  setTrackIndex(index + 1)
+                } else if (index === last) {
+                  setCurrentVideoIndex(0)
+                  setTrackIndex(heroVideos.length)
+                } else {
+                  setIsTrackTransitionEnabled(false)
+                  setTrackIndex(0)
+                  setCurrentVideoIndex(0)
+                  window.requestAnimationFrame(() => setIsTrackTransitionEnabled(true))
+                }
+              }}
+              onError={() => {
+                if (index !== trackIndex) return
+                const n = heroVideos.length
+                if (index < n - 1) {
+                  setCurrentVideoIndex(index + 1)
+                  setTrackIndex(index + 1)
+                } else if (index === n - 1) {
+                  setCurrentVideoIndex(0)
+                  setTrackIndex(n)
+                } else {
+                  setIsTrackTransitionEnabled(false)
+                  setTrackIndex(0)
+                  setCurrentVideoIndex(0)
+                  window.requestAnimationFrame(() => setIsTrackTransitionEnabled(true))
+                }
+              }}
+              className="h-full min-w-full flex-shrink-0 object-cover"
+              autoPlay={index === HERO_INITIAL_START_INDEX}
+              muted
+              loop={false}
+              playsInline
+            >
+              <source src={url} />
+              {t('hero:video.unsupported')}
+            </video>
+          )})}
+        </div>
+
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(37,37,42,0.74),transparent_50%)]"
+        />
+
+        {/* 轮播指示器：激活点永远居中，其它点跟随轨道左移 */}
+        <div
+          className={`absolute bottom-6 left-1/2 z-50 -translate-x-1/2 overflow-hidden rounded-full bg-black/35 backdrop-blur-sm gentle-animation ${
+            isCarouselReady ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ width: '6.5rem', height: '1.75rem' }}
+        >
+          {/* 内部轨道：通过 translate 让 active 圆点对齐到容器水平中心；
+              尺寸基于 dot=10px、active=24px、gap=8px，center 偏移 = trackIndex*18 + 12px */}
+          <div
+            className={`absolute top-1/2 left-1/2 flex items-center gap-2 ${
+              isTrackTransitionEnabled ? 'transition-transform duration-500 ease-out' : ''
+            }`}
+            style={{ transform: `translate(-${trackIndex * 18 + 12}px, -50%)` }}
+          >
+            {[...heroVideos, heroVideos[0]].map((_, index) => {
+              const isActive = trackIndex === index
+              return (
+                <button
+                  key={`hero-indicator-${index}`}
+                  type="button"
+                  aria-label={`切换到第 ${(index % heroVideos.length) + 1} 张背景`}
+                  onClick={() => {
+                    const i = index % heroVideos.length
+                    setCurrentVideoIndex(i)
+                    setTrackIndex(i)
+                  }}
+                  className={`h-2.5 flex-shrink-0 rounded-full gentle-animation ${
+                    isActive ? 'w-6 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/80'
+                  }`}
+                />
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="relative z-40 w-full px-6 pb-[60px] pt-28 sm:px-8 lg:px-12">
+          <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            {t('hero:title')}
+          </h1>
+          <p className="mt-3 text-sm leading-relaxed text-white/90 sm:text-lg">
+            {t('hero:subtitle')}
+          </p>
+          <a
+            href={CODELUME_MAC_APP_STORE_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="relative isolate mt-5 inline-flex min-h-11 items-center gap-2 overflow-hidden rounded-full bg-[#241B35]/60 px-5 backdrop-blur-md text-sm font-semibold text-white hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:min-h-12 sm:px-6 sm:text-base"
+          >
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -inset-2 -z-10 bg-[linear-gradient(110deg,#FBB453,#FA884E_24%,#F85374_46%,#8B58F4_73%,#5D9DF6)] opacity-75 blur-[34px]"
+            />
+            <svg className="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.57-2.33 4.5-3.74 4.25z" />
+            </svg>
+            {t('hero:cta.download')}
+          </a>
+          <p className="mt-3 max-w-xl text-[11px] leading-relaxed text-white/90 sm:text-xs">
+            {t('hero:editionNote')}
+          </p>
         </div>
       </div>
 
@@ -290,18 +304,18 @@ export function Hero() {
               }}
             >
               <div className="flex items-center gap-3">
-                <img src="/codelume-icon.svg" alt={t('navigation:brand')} className="h-7 w-7" />
-                <span className="font-bagel text-white text-xl tracking-wider">{t('navigation:brand')}</span>
+                <img src="/codelume-icon.svg" alt="" className="h-7 w-7" />
+                <span className="font-bagel bg-[linear-gradient(110deg,#FBB453,#FA884E_24%,#F85374_46%,#8B58F4_73%,#5D9DF6)] bg-clip-text text-xl tracking-wider text-transparent forced-colors:text-[CanvasText]">{t('footer:brand')}</span>
               </div>
             </motion.div>
 
             {/* 导航菜单 */}
             <div className="hidden md:flex items-center space-x-8">
               <a
-                href="#portfolio"
+                href="#hero"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                {t('navigation:work')}
+                {t('navigation:brand')}
               </a>
               <a
                 href="#workshop"
@@ -323,39 +337,20 @@ export function Hero() {
               </Link>
             </div>
 
-            {/* 右侧 - 语言切换 + 视频控制 + 行动按钮 + 移动菜单 */}
+            {/* 右侧 - 语言切换 + 下载按钮 + 移动菜单 */}
             <div className="flex items-center space-x-3 relative">
               {/* 语言切换 */}
               <LanguageSwitcher />
 
-              {/* 带提示的音量控制 */}
-              <div className="relative">
-                <button
-                  onClick={() => setIsMuted(!isMuted)}
-                  className="glass-effect p-3 rounded-full text-white hover:bg-white/20 gentle-animation cursor-pointer"
-                >
-                  {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-                </button>
-
-                {/* 提示开启声音 - 仅在静音时显示 */}
-                {isMuted && (
-                  <div className="absolute -bottom-10 right-0 flex items-center text-white/80">
-                    <span className="whitespace-nowrap font-medium text-sm mr-2">{t('hero:cta.soundOn')}</span>
-                    <span className="text-lg">↗</span>
-                  </div>
-                )}
-              </div>
-
-              <motion.a
+              <a
                 href={CODELUME_MAC_APP_STORE_URL}
                 target="_blank"
                 rel="noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex shrink-0 items-center justify-center bg-red-600 backdrop-blur-sm text-white font-semibold px-3 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm rounded-md hover:bg-red-700 gentle-animation ml-2 sm:ml-4"
+                className="inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-full bg-[#B49CE8] px-3 text-xs font-semibold text-white hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-5 sm:text-sm"
               >
+                <Download size={15} className="shrink-0" aria-hidden="true" />
                 {t('hero:cta.download')}
-              </motion.a>
+              </a>
 
               {/* 移动端汉堡菜单按钮 */}
               <button
@@ -404,11 +399,11 @@ export function Hero() {
             {/* 移动端导航链接 */}
             <div className="flex flex-col space-y-4 text-white">
               <a
-                href="#portfolio"
+                href="#hero"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation:work')}
+                {t('navigation:brand')}
               </a>
               <a
                 href="#workshop"
@@ -435,26 +430,6 @@ export function Hero() {
           </div>
         </div>
       </motion.div>
-
-
-
-      {/* 大标题 - 左下角 */}
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-12 left-6 sm:left-8 lg:left-12 z-40"
-      >
-        <div className="max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight text-white">
-            <span className="block">{t('hero:title.line1')}</span>
-            <span className="block">{t('hero:title.line2')}</span>
-            <span className="block">{t('hero:title.line3')}</span>
-          </h1>
-        </div>
-      </motion.div>
-
-
-    </div>
+    </>
   )
 }

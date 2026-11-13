@@ -1,14 +1,11 @@
 {
-  "title": {
-    "line1": "シーン",
-    "line2": "ダイナミック壁紙",
-    "line3": "macOS向け"
-  },
+  "title": "macOSのための壁紙アプリ",
   "cta": {
-    "download": "码镜をダウンロード",
-    "soundOn": "サウンドオン"
+    "download": "Mac版Codelumeをダウンロード"
   },
   "video": {
     "unsupported": "お使いのブラウザは動画タグに対応していません。"
-  }
+  },
+  "subtitle": "macOS標準の壁紙とCodelume独自の壁紙に対応。",
+  "editionNote": "通常版は無料で使えます。Proではさらに多くの機能が使えます。"
 }

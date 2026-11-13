@@ -1,14 +1,11 @@
 {
-  "title": {
-    "line1": "SCENE",
-    "line2": "DYNAMIC WALLPAPER",
-    "line3": "FOR MACOS"
-  },
+  "title": "A wallpaper app made for macOS",
   "cta": {
-    "download": "Download Ma Jing",
-    "soundOn": "Sound On"
+    "download": "Download Codelume for Mac"
   },
   "video": {
     "unsupported": "Your browser does not support the video tag."
-  }
+  },
+  "subtitle": "Native macOS wallpapers and extended formats from Codelume.",
+  "editionNote": "Standard is free to use. Pro offers more features."
 }

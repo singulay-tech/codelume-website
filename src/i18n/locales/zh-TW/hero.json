@@ -1,14 +1,11 @@
 {
-  "title": {
-    "line1": "专为 Mac OS",
-    "line2": "设计的",
-    "line3": "場景動態壁紙"
-  },
+  "title": "專為 macOS 打造的壁紙 App",
   "cta": {
-    "download": "下載碼鏡",
-    "soundOn": "开启声音"
+    "download": "下載 Mac 版碼鏡"
   },
   "video": {
     "unsupported": "您的浏览器不支持视频播放。"
-  }
+  },
+  "subtitle": "支援 macOS 原生壁紙與碼鏡擴充壁紙。",
+  "editionNote": "一般版可免費使用，Pro 提供更多功能。"
 }
