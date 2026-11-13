@@ -530,28 +530,3 @@ html {
     object-position: center center;
   }
 }
-
-@media (min-width: 769px) and (min-height: 720px) and (prefers-reduced-motion: no-preference) {
-  body:has(.wallpaper-scroll-track) {
-    overflow-x: clip;
-  }
-
-  .wallpaper-scroll-track::after {
-    content: "";
-    display: block;
-    height: 230svh;
-  }
-
-  .wallpaper-scroll-stage {
-    --wallpaper-stage-top: 5.75rem;
-    position: sticky;
-    top: var(--wallpaper-stage-top);
-    display: flex;
-    min-height: calc(100svh - var(--wallpaper-stage-top) - var(--wallpaper-gutter));
-    flex-direction: column;
-  }
-
-  .wallpaper-scroll-card {
-    max-width: calc((100svh - var(--wallpaper-stage-top) - var(--wallpaper-gutter) - 12rem) * 16 / 9);
-  }
-}
