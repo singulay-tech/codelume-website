@@ -174,28 +174,6 @@
       "versionNote": "Les fonctionnalités peuvent varier selon la version."
     }
   },
-  "aboutUs": {
-    "badge": "Fonds d’écran et collaboration",
-    "title": "Fonds d’écran et collaboration",
-    "highlights": {
-      "hub": {
-        "title": "Créateurs et galerie",
-        "description": "Explorez notre sélection et proposez vos créations par e-mail."
-      },
-      "formats": {
-        "title": "Formats pris en charge",
-        "description": "Exportez vos fonds d’écran au format .bundle dans Codelume Studio."
-      },
-      "community": {
-        "title": "Actualités",
-        "description": "Suivez les nouveaux fonds d’écran et les mises à jour sur Douyin."
-      },
-      "rights": {
-        "title": "Droits et attribution",
-        "description": "Contactez-nous par e-mail pour toute question sur les droits ou l’attribution."
-      }
-    }
-  },
   "footer": {
     "description": "Une application de fonds d’écran animés pour macOS, conçue pour une lecture fluide.",
     "legal": {

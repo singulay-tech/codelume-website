@@ -174,28 +174,6 @@
       "versionNote": "Der Funktionsumfang kann je nach Version variieren."
     }
   },
-  "aboutUs": {
-    "badge": "Wallpaper & Zusammenarbeit",
-    "title": "Wallpaper & Zusammenarbeit",
-    "highlights": {
-      "hub": {
-        "title": "Kreative und Wallpaper-Galerie",
-        "description": "Entdecke unsere Auswahl und reiche deine Werke per E-Mail ein."
-      },
-      "formats": {
-        "title": "Unterstützte Formate",
-        "description": "Exportiere Wallpaper aus Codelume Studio als .bundle."
-      },
-      "community": {
-        "title": "Neuigkeiten",
-        "description": "Neue Wallpaper und Updates findest du auf Douyin."
-      },
-      "rights": {
-        "title": "Rechte und Urheberschaft",
-        "description": "Bei Fragen zu Rechten oder Namensnennung erreichst du uns per E-Mail."
-      }
-    }
-  },
   "footer": {
     "description": "Eine macOS-App für dynamische Wallpaper mit flüssiger Wiedergabe.",
     "legal": {

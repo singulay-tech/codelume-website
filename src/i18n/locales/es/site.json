@@ -174,28 +174,6 @@
       "versionNote": "Las funciones pueden variar según la versión."
     }
   },
-  "aboutUs": {
-    "badge": "Fondos y colaboración",
-    "title": "Fondos y colaboración",
-    "highlights": {
-      "hub": {
-        "title": "Creadores y galería",
-        "description": "Descubre nuestra selección y envíanos tus creaciones por correo."
-      },
-      "formats": {
-        "title": "Formatos compatibles",
-        "description": "Exporta tus fondos desde Codelume Studio en formato .bundle."
-      },
-      "community": {
-        "title": "Novedades",
-        "description": "Encuentra nuevos fondos y actualizaciones en Douyin."
-      },
-      "rights": {
-        "title": "Derechos y atribución",
-        "description": "Escríbenos si tienes dudas sobre derechos o atribución."
-      }
-    }
-  },
   "footer": {
     "description": "Una app de fondos animados para macOS con reproducción fluida.",
     "legal": {

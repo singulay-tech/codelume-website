@@ -174,28 +174,6 @@
       "versionNote": "Os recursos podem variar conforme a versão."
     }
   },
-  "aboutUs": {
-    "badge": "Papéis de parede e colaboração",
-    "title": "Papéis de parede e colaboração",
-    "highlights": {
-      "hub": {
-        "title": "Criadores e galeria",
-        "description": "Explore nossa seleção e envie suas criações por e-mail."
-      },
-      "formats": {
-        "title": "Formatos compatíveis",
-        "description": "Exporte papéis de parede do Codelume Studio no formato .bundle."
-      },
-      "community": {
-        "title": "Novidades",
-        "description": "Veja novos papéis de parede e atualizações no Douyin."
-      },
-      "rights": {
-        "title": "Direitos e atribuição",
-        "description": "Envie um e-mail se tiver dúvidas sobre direitos ou atribuição."
-      }
-    }
-  },
   "footer": {
     "description": "Um app de papéis de parede animados para macOS, com reprodução fluida.",
     "legal": {

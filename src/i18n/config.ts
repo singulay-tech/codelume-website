@@ -33,20 +33,3 @@ export function getLanguagePreference(): SupportedLanguage | null {
     return null
   }
 }
-
-export const namespaces = [
-  'common',
-  'navigation',
-  'hero',
-  'portfolio',
-  'team',
-  'contact',
-  'aboutUs',
-  'workshop',
-  'help',
-  'footer',
-  'awards',
-  'errors'
-] as const
-
-export type Namespace = (typeof namespaces)[number]

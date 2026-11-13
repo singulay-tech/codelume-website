@@ -1,38 +1,5 @@
 import 'i18next'
 
-// Import English language packs as type source (for reference only)
-import type common from './locales/en/common.json'
-import type navigation from './locales/en/navigation.json'
-import type hero from './locales/en/hero.json'
-import type portfolio from './locales/en/portfolio.json'
-import type team from './locales/en/team.json'
-import type contact from './locales/en/contact.json'
-import type footer from './locales/en/footer.json'
-import type awards from './locales/en/awards.json'
-import type aboutUs from './locales/en/aboutUs.json'
-import type workshop from './locales/en/workshop.json'
-import type help from './locales/en/help.json'
-import type errors from './locales/en/errors.json'
-
-// Type definitions for language resources (for documentation purposes)
-export interface I18nResources {
-  common: typeof common
-  navigation: typeof navigation
-  hero: typeof hero
-  portfolio: typeof portfolio
-  team: typeof team
-  contact: typeof contact
-  footer: typeof footer
-  awards: typeof awards
-  aboutUs: typeof aboutUs
-  workshop: typeof workshop
-  help: typeof help
-  errors: typeof errors
-}
-
-// Namespace keys for useTranslation hook
-export type I18nNamespace = keyof I18nResources
-
 declare module 'i18next' {
   interface CustomTypeOptions {
     defaultNS: 'common'
