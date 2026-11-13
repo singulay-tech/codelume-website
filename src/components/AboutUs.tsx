@@ -8,7 +8,7 @@ export function AboutUs() {
   const { t } = useTranslation('aboutUs')
 
   return (
-    <section id="about-us" className="relative py-24 bg-background">
+    <section id="about-us" className="relative py-24">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="mb-10 flex flex-col items-center text-center">
           <div className="mb-3 inline-flex items-center justify-center gap-3">

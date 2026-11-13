@@ -6,7 +6,7 @@ export function Portfolio() {
   const { t } = useTranslation('portfolio')
 
   return (
-    <section id="portfolio" className="relative py-24 bg-background">
+    <section id="portfolio" className="relative py-24">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         {/* 区块标题 */}
         <div className="text-center mb-[30px]">

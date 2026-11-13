@@ -7,7 +7,7 @@ export function WorkshopTeaser() {
   const { t } = useTranslation('workshop')
 
   return (
-    <section id="workshop" className="relative py-24 bg-gradient-to-b from-background via-card/30 to-background">
+    <section id="workshop" className="relative py-24">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-[30px]">
           <div className="inline-flex items-center gap-3">
