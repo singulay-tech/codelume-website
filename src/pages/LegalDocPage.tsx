@@ -56,7 +56,7 @@ export function LegalDocPage() {
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
               {t('legal:docNavToc')}
             </p>
-            <nav className="flex flex-row gap-2 overflow-x-auto pb-1 lg:flex-col lg:gap-1 lg:overflow-visible lg:sticky lg:top-28">
+            <nav className="flex flex-row gap-2 overflow-x-auto pb-1 lg:flex-col lg:gap-1 lg:overflow-visible">
               {navItems.map((item) => (
                 <a
                   key={item.id}
