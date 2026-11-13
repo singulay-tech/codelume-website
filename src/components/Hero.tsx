@@ -135,10 +135,10 @@ export function Hero() {
                 {t('portfolio:systemWallpapers.title')}
               </a>
               <a
-                href="#wallpaper-authoring"
+                href="#community"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                {t('portfolio:wallpaperAuthoring.title')}
+                {t('portfolio:community.title')}
               </a>
               <a
                 href="#pricing"
@@ -228,11 +228,11 @@ export function Hero() {
                 {t('portfolio:systemWallpapers.title')}
               </a>
               <a
-                href="#wallpaper-authoring"
+                href="#community"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('portfolio:wallpaperAuthoring.title')}
+                {t('portfolio:community.title')}
               </a>
               <a
                 href="#pricing"

@@ -120,13 +120,6 @@
         ]
       }
     },
-    "wallpaperAuthoring": {
-      "title": "Criar papéis de parede",
-      "headline": "Crie papéis de parede do Codelume com seu agente",
-      "intro": "Transformamos a especificação de pacotes do Codelume em Skills de código aberto. Um agente compatível pode usá-las para transformar suas ideias e recursos em arquivos .bundle verificados e prontos para importar.",
-      "repository": "Ver repositório",
-      "pending": "Link do repositório em breve"
-    },
     "pricing": {
       "title": "Preços do Codelume",
       "standard": {
@@ -150,6 +143,10 @@
         ],
         "availability": "O modo nativo e os papéis de parede da tela bloqueada exigem Pro na versão do site oficial e macOS 26 ou posterior."
       }
+    },
+    "community": {
+      "title": "Comunidade",
+      "pending": "A comunidade chega em breve."
     }
   },
   "workshop": {

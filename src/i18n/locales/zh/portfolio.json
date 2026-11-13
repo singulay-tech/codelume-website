@@ -79,13 +79,6 @@
       ]
     }
   },
-  "wallpaperAuthoring": {
-    "title": "壁纸制作",
-    "headline": "用 Agent 制作码镜壁纸",
-    "intro": "我们把码镜壁纸包协议整理成了开源 Skills。装入兼容的 Agent 后，它就能根据你的想法和素材，制作并检查可导入码镜的 .bundle 壁纸包。",
-    "repository": "查看开源仓库",
-    "pending": "开源仓库链接即将提供"
-  },
   "pricing": {
     "title": "码镜定价",
     "standard": {
@@ -109,5 +102,9 @@
       ],
       "availability": "原生壁纸模式与锁屏壁纸需使用官网版 Pro，并运行 macOS 26 或更高版本。"
     }
+  },
+  "community": {
+    "title": "社区",
+    "pending": "社区即将上线。"
   }
 }

@@ -120,13 +120,6 @@
         ]
       }
     },
-    "wallpaperAuthoring": {
-      "title": "Wallpaper erstellen",
-      "headline": "Erstelle Codelume-Wallpaper mit deinem Agenten",
-      "intro": "Aus der Codelume-Spezifikation für Wallpaper-Pakete haben wir Open-Source-Skills erstellt. Damit kann ein kompatibler Agent aus deinen Ideen und Medien geprüfte .bundle-Dateien für Codelume erstellen.",
-      "repository": "Repository ansehen",
-      "pending": "Repository-Link folgt"
-    },
     "pricing": {
       "title": "Codelume-Preise",
       "standard": {
@@ -150,6 +143,10 @@
         ],
         "availability": "Nativer Wallpaper-Modus und Sperrbildschirm-Wallpaper erfordern Pro in der Website-Version und macOS 26 oder neuer."
       }
+    },
+    "community": {
+      "title": "Community",
+      "pending": "Die Community startet in Kürze."
     }
   },
   "workshop": {

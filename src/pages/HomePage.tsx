@@ -3,7 +3,7 @@ import { Hero } from '@/components/Hero'
 import { AppPreview } from '@/components/AppPreview'
 import { WallpaperModes } from '@/components/WallpaperModes'
 import { SystemWallpapers } from '@/components/SystemWallpapers'
-import { WallpaperAuthoring } from '@/components/WallpaperAuthoring'
+import { Community } from '@/components/Community'
 import { Pricing } from '@/components/Pricing'
 import { Footer } from '@/components/Footer'
 
@@ -18,7 +18,7 @@ export function HomePage() {
         <AppPreview />
         <WallpaperModes />
         <SystemWallpapers />
-        <WallpaperAuthoring />
+        <Community />
         <Pricing />
       </main>
       <Footer />

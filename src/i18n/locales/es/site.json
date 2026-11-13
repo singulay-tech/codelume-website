@@ -120,13 +120,6 @@
         ]
       }
     },
-    "wallpaperAuthoring": {
-      "title": "Crear fondos",
-      "headline": "Crea fondos de Codelume con tu agente",
-      "intro": "Convertimos la especificación de paquetes de Codelume en Skills de código abierto. Un agente compatible puede usarlas para convertir tus ideas y recursos en archivos .bundle verificados y listos para importar.",
-      "repository": "Ver repositorio",
-      "pending": "Enlace al repositorio próximamente"
-    },
     "pricing": {
       "title": "Precios de Codelume",
       "standard": {
@@ -150,6 +143,10 @@
         ],
         "availability": "El modo nativo y los fondos de la pantalla de bloqueo requieren Pro en la versión del sitio web y macOS 26 o posterior."
       }
+    },
+    "community": {
+      "title": "Comunidad",
+      "pending": "La comunidad estará disponible pronto."
     }
   },
   "workshop": {

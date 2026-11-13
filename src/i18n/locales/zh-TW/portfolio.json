@@ -79,13 +79,6 @@
       ]
     }
   },
-  "wallpaperAuthoring": {
-    "title": "壁紙製作",
-    "headline": "用 Agent 製作碼鏡壁紙",
-    "intro": "我們把碼鏡壁紙包協定整理成開源 Skills。加入相容的 Agent 後，它就能依照你的構想和素材，製作並檢查可匯入碼鏡的 .bundle 壁紙包。",
-    "repository": "查看開源儲存庫",
-    "pending": "開源儲存庫連結即將提供"
-  },
   "pricing": {
     "title": "碼鏡定價",
     "standard": {
@@ -109,5 +102,9 @@
       ],
       "availability": "原生壁紙模式與鎖定畫面壁紙需使用官網版 Pro，並執行 macOS 26 或更新版本。"
     }
+  },
+  "community": {
+    "title": "社群",
+    "pending": "社群即將上線。"
   }
 }

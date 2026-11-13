@@ -120,13 +120,6 @@
         ]
       }
     },
-    "wallpaperAuthoring": {
-      "title": "Créer des fonds d’écran",
-      "headline": "Créez des fonds d’écran Codelume avec votre agent",
-      "intro": "Nous avons transformé la spécification des packs Codelume en Skills open source. Un agent compatible peut les utiliser pour créer et vérifier des fichiers .bundle à partir de vos idées et ressources.",
-      "repository": "Voir le dépôt",
-      "pending": "Lien vers le dépôt bientôt disponible"
-    },
     "pricing": {
       "title": "Tarifs de Codelume",
       "standard": {
@@ -150,6 +143,10 @@
         ],
         "availability": "Le mode natif et les fonds d’écran de verrouillage nécessitent Pro dans la version du site officiel, sous macOS 26 ou ultérieur."
       }
+    },
+    "community": {
+      "title": "Communauté",
+      "pending": "La communauté arrive bientôt."
     }
   },
   "workshop": {

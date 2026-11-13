@@ -4,5 +4,3 @@ export const CODELUME_MAC_APP_STORE_URL =
 
 // Set this to the public installer URL once the website edition is available.
 export const CODELUME_WEBSITE_DOWNLOAD_URL: string | null = null
-
-export const CODELUME_WALLPAPER_SKILLS_URL: string | null = null

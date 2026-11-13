@@ -79,13 +79,6 @@
       ]
     }
   },
-  "wallpaperAuthoring": {
-    "title": "Create wallpapers",
-    "headline": "Create Codelume wallpapers with your agent",
-    "intro": "We turned the Codelume wallpaper bundle specification into open-source Skills. A compatible agent can use them to turn your ideas and assets into checked .bundle files ready to import into Codelume.",
-    "repository": "View the repository",
-    "pending": "Repository link coming soon"
-  },
   "pricing": {
     "title": "Codelume pricing",
     "standard": {
@@ -109,5 +102,9 @@
       ],
       "availability": "Native wallpaper mode and lock screen wallpapers require Pro in the website edition on macOS 26 or later."
     }
+  },
+  "community": {
+    "title": "Community",
+    "pending": "The community is coming soon."
   }
 }
