@@ -8,3 +8,5 @@ export const CODELUME_WEBSITE_DOWNLOAD_URL: string | null = null
 /** cn 区 Mac App Store：码镜工坊（Codelume Studio）；slug 可省略，仅用 id 即可 */
 export const CODELUME_STUDIO_MAC_APP_STORE_URL =
   'https://apps.apple.com/cn/app/id6762631154?mt=12'
+
+export const CODELUME_WALLPAPER_SKILLS_URL: string | null = null

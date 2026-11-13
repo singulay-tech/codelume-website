@@ -2,6 +2,7 @@ import { AppWaveBackground } from '@/components/AppWaveBackground'
 import { Hero } from '@/components/Hero'
 import { WallpaperModes } from '@/components/WallpaperModes'
 import { SystemWallpapers } from '@/components/SystemWallpapers'
+import { WallpaperAuthoring } from '@/components/WallpaperAuthoring'
 import { Footer } from '@/components/Footer'
 
 export function HomePage() {
@@ -14,6 +15,7 @@ export function HomePage() {
         </section>
         <WallpaperModes />
         <SystemWallpapers />
+        <WallpaperAuthoring />
       </main>
       <Footer />
     </div>

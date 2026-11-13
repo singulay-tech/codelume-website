@@ -111,6 +111,13 @@
           "Integra-se ao protetor de tela e mantém a animação na área de trabalho."
         ]
       }
+    },
+    "wallpaperAuthoring": {
+      "title": "Criar papéis de parede",
+      "headline": "Crie papéis de parede do Codelume com seu agente",
+      "intro": "Transformamos a especificação de pacotes do Codelume em Skills de código aberto. Um agente compatível pode usá-las para transformar suas ideias e recursos em arquivos .bundle verificados e prontos para importar.",
+      "repository": "Ver repositório",
+      "pending": "Link do repositório em breve"
     }
   },
   "workshop": {

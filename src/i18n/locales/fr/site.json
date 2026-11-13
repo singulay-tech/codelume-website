@@ -111,6 +111,13 @@
           "L’animation se poursuit sur le bureau au retour de l’économiseur d’écran."
         ]
       }
+    },
+    "wallpaperAuthoring": {
+      "title": "Créer des fonds d’écran",
+      "headline": "Créez des fonds d’écran Codelume avec votre agent",
+      "intro": "Nous avons transformé la spécification des packs Codelume en Skills open source. Un agent compatible peut les utiliser pour créer et vérifier des fichiers .bundle à partir de vos idées et ressources.",
+      "repository": "Voir le dépôt",
+      "pending": "Lien vers le dépôt bientôt disponible"
     }
   },
   "workshop": {

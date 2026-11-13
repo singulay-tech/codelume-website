@@ -71,5 +71,12 @@
         "화면 보호기와 연동되며 데스크톱으로 돌아와도 재생이 계속됩니다."
       ]
     }
+  },
+  "wallpaperAuthoring": {
+    "title": "배경화면 만들기",
+    "headline": "에이전트로 Codelume 배경화면 만들기",
+    "intro": "Codelume 배경화면 번들 사양을 오픈 소스 Skills로 정리했습니다. 호환되는 에이전트는 아이디어와 소재를 바탕으로 Codelume에서 가져올 수 있는 .bundle을 만들고 검사할 수 있습니다.",
+    "repository": "저장소 보기",
+    "pending": "저장소 링크 공개 예정"
   }
 }

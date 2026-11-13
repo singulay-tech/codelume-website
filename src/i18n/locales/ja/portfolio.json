@@ -71,5 +71,12 @@
         "スクリーンセーバーと連動し、デスクトップに戻っても再生が続きます。"
       ]
     }
+  },
+  "wallpaperAuthoring": {
+    "title": "壁紙を作る",
+    "headline": "エージェントと Codelume の壁紙を作る",
+    "intro": "Codelume の壁紙パック仕様をオープンソースの Skills にまとめました。対応するエージェントで使えば、アイデアや素材から Codelume に読み込める .bundle を作成・検証できます。",
+    "repository": "リポジトリを見る",
+    "pending": "リポジトリのリンクは近日公開"
   }
 }

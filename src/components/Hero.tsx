@@ -135,6 +135,12 @@ export function Hero() {
               >
                 {t('portfolio:systemWallpapers.title')}
               </a>
+              <a
+                href="#wallpaper-authoring"
+                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+              >
+                {t('portfolio:wallpaperAuthoring.title')}
+              </a>
             </div>
 
             {/* 右侧 - 语言切换 + 下载按钮 + 移动菜单 */}
@@ -215,6 +221,13 @@ export function Hero() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('portfolio:systemWallpapers.title')}
+              </a>
+              <a
+                href="#wallpaper-authoring"
+                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('portfolio:wallpaperAuthoring.title')}
               </a>
             </div>
           </div>

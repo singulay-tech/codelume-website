@@ -71,5 +71,12 @@
         "支持屏保联动，动态壁纸回到桌面后继续播放。"
       ]
     }
+  },
+  "wallpaperAuthoring": {
+    "title": "壁纸制作",
+    "headline": "用 Agent 制作码镜壁纸",
+    "intro": "我们把码镜壁纸包协议整理成了开源 Skills。装入兼容的 Agent 后，它就能根据你的想法和素材，制作并检查可导入码镜的 .bundle 壁纸包。",
+    "repository": "查看开源仓库",
+    "pending": "开源仓库链接即将提供"
   }
 }

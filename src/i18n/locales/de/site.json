@@ -111,6 +111,13 @@
           "Unterstützt die Bildschirmschoner-Integration. Die Animation läuft auf dem Desktop weiter."
         ]
       }
+    },
+    "wallpaperAuthoring": {
+      "title": "Wallpaper erstellen",
+      "headline": "Erstelle Codelume-Wallpaper mit deinem Agenten",
+      "intro": "Aus der Codelume-Spezifikation für Wallpaper-Pakete haben wir Open-Source-Skills erstellt. Damit kann ein kompatibler Agent aus deinen Ideen und Medien geprüfte .bundle-Dateien für Codelume erstellen.",
+      "repository": "Repository ansehen",
+      "pending": "Repository-Link folgt"
     }
   },
   "workshop": {

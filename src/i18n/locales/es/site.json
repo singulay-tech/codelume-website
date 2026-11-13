@@ -111,6 +111,13 @@
           "Se integra con el salvapantallas y la animación continúa en el escritorio."
         ]
       }
+    },
+    "wallpaperAuthoring": {
+      "title": "Crear fondos",
+      "headline": "Crea fondos de Codelume con tu agente",
+      "intro": "Convertimos la especificación de paquetes de Codelume en Skills de código abierto. Un agente compatible puede usarlas para convertir tus ideas y recursos en archivos .bundle verificados y listos para importar.",
+      "repository": "Ver repositorio",
+      "pending": "Enlace al repositorio próximamente"
     }
   },
   "workshop": {

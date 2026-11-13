@@ -71,5 +71,12 @@
         "Supports screen saver integration. Animated wallpapers keep playing on the desktop."
       ]
     }
+  },
+  "wallpaperAuthoring": {
+    "title": "Create wallpapers",
+    "headline": "Create Codelume wallpapers with your agent",
+    "intro": "We turned the Codelume wallpaper bundle specification into open-source Skills. A compatible agent can use them to turn your ideas and assets into checked .bundle files ready to import into Codelume.",
+    "repository": "View the repository",
+    "pending": "Repository link coming soon"
   }
 }
