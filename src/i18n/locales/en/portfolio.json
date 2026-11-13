@@ -25,5 +25,25 @@
         "value": "Language / Theme / Launch at startup / Playback controls"
       }
     }
+  },
+  "features": {
+    "title": "Features",
+    "intro": "Set a wallpaper or manage a playlist for each display.",
+    "native": {
+      "title": "Native Mac wallpapers",
+      "description": "Set a still image or a video in Codelume and let macOS handle the wallpaper."
+    },
+    "extended": {
+      "title": "Codelume wallpapers",
+      "description": "Browse the wallpaper hub for videos, images, and customizable scenes."
+    },
+    "displays": {
+      "title": "Multiple displays",
+      "description": "Choose a wallpaper and playlist for each display."
+    },
+    "playlists": {
+      "title": "Wallpaper playlists",
+      "description": "Add your favorites to a playlist and rotate them on your desktop."
+    }
   }
 }

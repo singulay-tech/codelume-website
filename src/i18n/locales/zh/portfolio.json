@@ -25,5 +25,25 @@
         "value": "语言/主题/开机自启/播放控制"
       }
     }
+  },
+  "features": {
+    "title": "功能",
+    "intro": "从设置一张壁纸，到管理每块屏幕的播放列表。",
+    "native": {
+      "title": "Mac 原生壁纸",
+      "description": "用码镜设置静态图片或动态视频，交给 macOS 管理桌面壁纸。"
+    },
+    "extended": {
+      "title": "码镜扩展壁纸",
+      "description": "浏览码镜壁纸中心，探索视频、图片和可调节的场景壁纸。"
+    },
+    "displays": {
+      "title": "多显示器",
+      "description": "分别为每块屏幕选择壁纸和播放列表。"
+    },
+    "playlists": {
+      "title": "壁纸播放列表",
+      "description": "把喜欢的壁纸加入列表，让它们轮流出现在桌面上。"
+    }
   }
 }

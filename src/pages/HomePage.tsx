@@ -1,5 +1,6 @@
 import { AppWaveBackground } from '@/components/AppWaveBackground'
 import { Hero } from '@/components/Hero'
+import { Features } from '@/components/Features'
 import { Portfolio } from '@/components/Portfolio'
 import { WorkshopTeaser } from '@/components/WorkshopTeaser'
 import { AboutUs } from '@/components/AboutUs'
@@ -13,6 +14,7 @@ export function HomePage() {
         <section id="hero" aria-label="Hero section">
           <Hero />
         </section>
+        <Features />
         <Portfolio />
         <WorkshopTeaser />
         <AboutUs />

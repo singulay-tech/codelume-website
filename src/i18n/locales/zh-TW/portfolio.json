@@ -25,5 +25,25 @@
         "value": "語言/主題/開機自啟/播放控制"
       }
     }
+  },
+  "features": {
+    "title": "功能",
+    "intro": "從設定一張壁紙，到管理每個顯示器的播放清單。",
+    "native": {
+      "title": "Mac 原生壁紙",
+      "description": "用碼鏡設定靜態圖片或動態影片，交由 macOS 管理桌面壁紙。"
+    },
+    "extended": {
+      "title": "碼鏡擴充壁紙",
+      "description": "瀏覽碼鏡壁紙中心，探索影片、圖片和可調整的場景壁紙。"
+    },
+    "displays": {
+      "title": "多顯示器",
+      "description": "為每個顯示器分別選擇壁紙與播放清單。"
+    },
+    "playlists": {
+      "title": "壁紙播放清單",
+      "description": "把喜歡的壁紙加入清單，讓它們輪流出現在桌面上。"
+    }
   }
 }
