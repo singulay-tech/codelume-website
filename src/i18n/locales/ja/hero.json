@@ -8,11 +8,11 @@
     "appStoreDescription": "Mac App Storeからインストール・更新できます。Codelumeのほとんどの機能に対応します。",
     "websiteDescription": "公式サイトからダウンロードでき、macOS標準の壁紙やロック画面の壁紙も設定できます。",
     "openAppStore": "App Storeで開く",
-    "sharedSubscription": "両バージョンでProを提供します。購入と利用資格の確認は各配布元で行います。",
+    "existingAccount": "アカウントをお持ちの方は、公式サイト版で既存のアカウントにサインインし、プロフィールのアカウント設定からログイン用メールアドレスを登録してください。公式サイト版のPro利用資格はそのアカウントに引き継がれます。",
     "websiteReason": "これらの機能には、App Store版のサンドボックスでは許可されないシステムの壁紙コンポーネントへのアクセスが必要です。公式サイト版ではmacOSが標準壁紙を管理するため、切り替えがよりスムーズです。用途に合ったバージョンをお選びください。",
     "systemRequirements": {
       "title": "システム要件",
-      "description": "最新バージョンのmacOSを推奨します。macOS標準の壁紙とスクリーンセーバー用の壁紙を設定するには、macOS 26以降が必要です。"
+      "description": "公式サイト版にはmacOS 14.6以降が必要です。Appleシリコン搭載MacとIntel搭載Macに対応しています。macOS標準の壁紙とスクリーンセーバー用の壁紙にはmacOS 26以降が必要です。"
     }
   },
   "video": {

@@ -25,11 +25,11 @@
       "appStoreDescription": "Installation und Updates laufen über den Mac App Store. Diese Version bietet die meisten Codelume-Funktionen.",
       "websiteDescription": "Mit dem direkten Download kannst du auch native macOS-Wallpaper und Sperrbildschirm-Wallpaper festlegen.",
       "openAppStore": "Im App Store öffnen",
-      "sharedSubscription": "Beide Versionen bieten Pro. Käufe und Zugriffsrechte werden über den jeweiligen Vertriebskanal verwaltet.",
+      "existingAccount": "Melde dich in der Website-Version zuerst mit deinem vorhandenen Konto an. Hinterlege dann in den Kontoeinstellungen deines Profils deine E-Mail-Adresse für die Anmeldung. Dein Pro-Zugriff für die Website-Version bleibt mit diesem Konto verknüpft.",
       "websiteReason": "Beide Funktionen benötigen Zugriff auf Systemkomponenten, den die Sandbox der App-Store-Version nicht erlaubt. In der Website-Version verwaltet macOS die nativen Wallpaper, damit die Übergänge flüssiger sind. Wähle die Version, die zu deinen Anforderungen passt.",
       "systemRequirements": {
         "title": "Systemanforderungen",
-        "description": "Wir empfehlen die neueste macOS-Version. Native System-Wallpaper und Wallpaper für den Bildschirmschoner lassen sich ab macOS 26 einstellen."
+        "description": "Die Website-Version benötigt macOS 14.6 oder neuer und unterstützt Macs mit Apple-Chip oder Intel-Prozessor. Native System-Wallpaper und Bildschirmschoner-Wallpaper benötigen macOS 26 oder neuer."
       }
     },
     "editionNote": "Die Standardversion ist kostenlos. Pro bietet weitere Funktionen.",

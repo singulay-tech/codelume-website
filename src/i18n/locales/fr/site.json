@@ -25,11 +25,11 @@
       "appStoreDescription": "Installez et mettez à jour Codelume via le Mac App Store. Cette version inclut la plupart des fonctionnalités.",
       "websiteDescription": "Téléchargez le programme d’installation pour définir aussi des fonds d’écran natifs de macOS et des fonds d’écran de verrouillage.",
       "openAppStore": "Ouvrir dans l’App Store",
-      "sharedSubscription": "Les deux versions proposent Pro. Chaque canal gère les achats et les droits d’accès.",
+      "existingAccount": "Si vous possédez déjà un compte, connectez-vous à ce compte dans la version du site. Ajoutez ensuite votre adresse de connexion dans les paramètres de compte de votre profil. Votre accès à Pro pour cette version reste lié à ce compte.",
       "websiteReason": "Ces deux fonctions nécessitent un accès à des composants système que le bac à sable de la version App Store ne permet pas. Dans la version du site officiel, macOS gère les fonds d’écran natifs pour des transitions plus fluides. Choisissez la version adaptée à vos besoins.",
       "systemRequirements": {
         "title": "Configuration requise",
-        "description": "Nous recommandons la dernière version de macOS. La configuration des fonds d’écran natifs et des fonds d’écran de l’économiseur d’écran nécessite macOS 26 ou une version ultérieure."
+        "description": "La version du site nécessite macOS 14.6 ou ultérieur et prend en charge les Mac avec puce Apple ou processeur Intel. Les fonds d’écran natifs et les fonds d’écran de l’économiseur d’écran nécessitent macOS 26 ou ultérieur."
       }
     },
     "editionNote": "La version standard est gratuite. Pro offre plus de fonctionnalités.",

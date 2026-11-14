@@ -8,11 +8,11 @@
     "appStoreDescription": "透過 Mac App Store 安裝與更新，支援碼鏡的大部分功能。",
     "websiteDescription": "從官網下載安裝套件，另外支援設定 macOS 原生壁紙與鎖定畫面壁紙。",
     "openAppStore": "在 App Store 中開啟",
-    "sharedSubscription": "兩版均提供 Pro，購買與權益驗證由各自通路處理。",
+    "existingAccount": "已有帳號的使用者請先在官網版登入原帳號，再到「我的首頁」→「帳號設定」→「登入信箱」綁定常用信箱。官網版的 Pro 權益會隨該帳號保留。",
     "websiteReason": "這兩項功能需要存取系統壁紙元件，超出 App Store 版的沙盒權限。官網版的原生壁紙由 macOS 管理，切換更流暢，可依需求選擇。",
     "systemRequirements": {
       "title": "系統需求",
-      "description": "建議使用最新版 macOS。設定系統原生壁紙與螢幕保護程式壁紙需要 macOS 26 或更新版本。"
+      "description": "官網版需要 macOS 14.6 或更新版本，支援 Apple 晶片和 Intel 晶片。系統原生壁紙與螢幕保護程式壁紙需要 macOS 26 或更新版本。"
     }
   },
   "video": {

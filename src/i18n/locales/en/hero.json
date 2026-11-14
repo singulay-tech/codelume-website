@@ -8,11 +8,11 @@
     "appStoreDescription": "Install and update through the Mac App Store. This edition includes most Codelume features.",
     "websiteDescription": "Download the installer directly to also set native macOS wallpapers and lock screen wallpapers.",
     "openAppStore": "Open in the App Store",
-    "sharedSubscription": "Both editions offer Pro. Purchases and entitlements are handled by each channel.",
+    "existingAccount": "If you already have an account, sign in to it in the website version first. Then open My Profile → Account Settings → Sign-in Email to add your email. Your website-version Pro access stays with that account.",
     "websiteReason": "Both features need access to system wallpaper components beyond what the App Store edition’s sandbox allows. Native wallpapers in the website edition are managed by macOS for smoother transitions. Choose the edition that suits your needs.",
     "systemRequirements": {
       "title": "System requirements",
-      "description": "We recommend using the latest version of macOS. Setting native system wallpapers and screensaver wallpapers requires macOS 26 or later."
+      "description": "The website version requires macOS 14.6 or later and supports Apple silicon and Intel Macs. Native system wallpapers and screensaver wallpapers require macOS 26 or later."
     }
   },
   "video": {

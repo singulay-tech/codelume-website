@@ -79,10 +79,12 @@ export function DownloadPage() {
             )}
           </article>
         </div>
-        <p className="mt-4 flex items-start gap-2 rounded-xl border border-border bg-background px-4 py-3 text-sm leading-relaxed text-foreground/80">
-          <Info size={16} className="mt-0.5 shrink-0 text-foreground/70" aria-hidden="true" />
-          <span>{t('hero:cta.sharedSubscription')}</span>
-        </p>
+        {CODELUME_WEBSITE_DOWNLOAD_URL && (
+          <p className="mt-4 flex items-start gap-2 rounded-xl border border-border bg-background px-4 py-3 text-sm leading-relaxed text-foreground/80">
+            <Info size={16} className="mt-0.5 shrink-0 text-foreground/70" aria-hidden="true" />
+            <span>{t('hero:cta.existingAccount')}</span>
+          </p>
+        )}
         <section aria-labelledby="download-system-requirements" className="mt-4 rounded-xl border border-border bg-background px-4 py-3 text-sm leading-relaxed">
           <h2 id="download-system-requirements" className="font-semibold">
             {t('hero:cta.systemRequirements.title')}
