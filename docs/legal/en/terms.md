@@ -2,7 +2,7 @@
 
 **Version: 2026.05.18**  
 **Effective date: May 18, 2026**  
-**Operator: Singulay Technology Co., Ltd.** (“we”, “us”, or “our”)
+**Operator: Beijing Xingjieli Technology Co., Ltd.** (“we”, “us”, or “our”)
 
 Welcome to Codelume and related services. By using the Codelume macOS app, visiting codelume.cn, or using online features tied to your account, you confirm that you have read and agree to these Terms.
 

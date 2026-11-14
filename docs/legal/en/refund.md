@@ -1,6 +1,6 @@
 # Codelume Refund Policy
 
-This policy covers payments for Codelume Pro. Check your receipt and request a refund from the provider that charged you. Codelume is operated by Singulay Technology Co., Ltd.
+This policy covers payments for Codelume Pro. Check your receipt and request a refund from the provider that charged you. Codelume is operated by Beijing Xingjieli Technology Co., Ltd.
 
 ## Direct payments through Paddle
 
