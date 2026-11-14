@@ -27,6 +27,12 @@
       "openAppStore": "Abrir en la App Store",
       "existingAccount": "Si ya tienes una cuenta, inicia sesión primero con ella en la versión del sitio web. Luego, añade tu correo de inicio de sesión en los ajustes de cuenta de tu perfil. El acceso a Pro de la versión del sitio web seguirá vinculado a esa cuenta.",
       "websiteReason": "Ambas funciones requieren acceso a componentes del sistema que el entorno aislado de la versión de la App Store no permite. En la versión del sitio web, macOS gestiona los fondos nativos para que las transiciones sean más fluidas. Elige la versión que mejor se adapte a tus necesidades.",
+      "pro": {
+        "title": "Pro para la versión del sitio web",
+        "price": "38 CNY, pago único",
+        "features": "Desbloquea varias pantallas, fondos web y de escenas, y fondos y salvapantallas nativos de macOS.",
+        "purchase": "Compra Pro en la versión de Codelume del sitio web. El importe final se muestra al pagar."
+      },
       "systemRequirements": {
         "title": "Requisitos del sistema",
         "description": "La versión del sitio web requiere macOS 14.6 o posterior y es compatible con Mac con chip de Apple o procesador Intel. Los fondos nativos del sistema y del salvapantallas requieren macOS 26 o posterior."

@@ -27,6 +27,12 @@
       "openAppStore": "Ouvrir dans l’App Store",
       "existingAccount": "Si vous possédez déjà un compte, connectez-vous à ce compte dans la version du site. Ajoutez ensuite votre adresse de connexion dans les paramètres de compte de votre profil. Votre accès à Pro pour cette version reste lié à ce compte.",
       "websiteReason": "Ces deux fonctions nécessitent un accès à des composants système que le bac à sable de la version App Store ne permet pas. Dans la version du site officiel, macOS gère les fonds d’écran natifs pour des transitions plus fluides. Choisissez la version adaptée à vos besoins.",
+      "pro": {
+        "title": "Pro pour la version du site",
+        "price": "38 CNY, paiement unique",
+        "features": "Débloquez plusieurs écrans, les fonds d’écran Web et de scènes, ainsi que les fonds d’écran et économiseurs natifs de macOS.",
+        "purchase": "Achetez Pro dans la version de Codelume du site. Le montant final s’affiche au paiement."
+      },
       "systemRequirements": {
         "title": "Configuration requise",
         "description": "La version du site nécessite macOS 14.6 ou ultérieur et prend en charge les Mac avec puce Apple ou processeur Intel. Les fonds d’écran natifs et les fonds d’écran de l’économiseur d’écran nécessitent macOS 26 ou ultérieur."

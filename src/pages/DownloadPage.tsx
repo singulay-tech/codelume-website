@@ -6,6 +6,7 @@ import { AppWaveBackground } from '@/components/AppWaveBackground'
 import { Footer } from '@/components/Footer'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { CODELUME_MAC_APP_STORE_URL, CODELUME_WEBSITE_DOWNLOAD_URL } from '@/constants/externalLinks'
+import { legalDocPath } from '@/constants/legalDocs'
 
 export function DownloadPage() {
   const { t } = useTranslation(['hero', 'help'])
@@ -79,6 +80,15 @@ export function DownloadPage() {
             )}
           </article>
         </div>
+        <section aria-labelledby="download-pro" className="mt-4 rounded-xl border border-border bg-background px-4 py-3 text-sm leading-relaxed">
+          <h2 id="download-pro" className="font-semibold">{t('hero:cta.pro.title')}</h2>
+          <p className="mt-1 font-medium">{t('hero:cta.pro.price')}</p>
+          <p className="mt-1 text-foreground/80">{t('hero:cta.pro.features')}</p>
+          <p className="mt-1 text-foreground/80">{t('hero:cta.pro.purchase')}</p>
+          <Link to={legalDocPath('refund')} className="mt-2 inline-block text-foreground underline underline-offset-4">
+            {t('common:refundPolicy')}
+          </Link>
+        </section>
         {CODELUME_WEBSITE_DOWNLOAD_URL && (
           <p className="mt-4 flex items-start gap-2 rounded-xl border border-border bg-background px-4 py-3 text-sm leading-relaxed text-foreground/80">
             <Info size={16} className="mt-0.5 shrink-0 text-foreground/70" aria-hidden="true" />
