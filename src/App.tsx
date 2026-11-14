@@ -5,6 +5,7 @@ import { WorkshopPage } from './pages/WorkshopPage'
 import { HelpPage } from './pages/HelpPage'
 import { HelpDocPage } from './pages/HelpDocPage'
 import { LegalDocPage } from './pages/LegalDocPage'
+import { CheckoutPage } from './pages/CheckoutPage'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/download" element={<DownloadPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/workshop" element={<WorkshopPage />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/help/wallpaperPolicy" element={<Navigate to="/help/wallpaperProtocol" replace />} />
