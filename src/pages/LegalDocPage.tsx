@@ -5,7 +5,8 @@ import { HelpBundleProtocolDoc } from '@/components/HelpBundleProtocolDoc'
 import { getBundleProtocolNavItems, getMarkdownH1Title } from '@/lib/bundleProtocolMarkdown'
 import { getLegalMarkdown } from '@/lib/legalMarkdown'
 import {
-  isLegalDocKey,
+  resolveLegalDocKey,
+  legalDocPath,
   LEGAL_DOC_KEYS,
   LEGAL_DOC_VERSION,
   REFUND_POLICY_VERSION,
@@ -13,15 +14,17 @@ import {
 } from '@/constants/legalDocs'
 
 export function LegalDocPage() {
-  const { docKey = '' } = useParams<{ docKey: string }>()
+  const { docKey: docPath = '', version } = useParams<{ docKey: string; version: string }>()
+  const docKey = resolveLegalDocKey(docPath)
   const { t, i18n } = useTranslation(['legal', 'navigation', 'common'])
 
-  if (!isLegalDocKey(docKey)) {
+  if (!docKey) {
     return <Navigate to="/" replace />
   }
 
   const contentLocale = resolveLegalContentLocale(i18n.language)
-  const markdown = getLegalMarkdown(docKey, contentLocale)
+  const markdown = getLegalMarkdown(docKey, contentLocale, version)
+  if (markdown === null) return <Navigate to={legalDocPath(docKey)} replace />
   const navItems = getBundleProtocolNavItems(markdown)
   const pageTitle = getMarkdownH1Title(markdown) ?? docKey
   const localeBanner =
@@ -37,7 +40,7 @@ export function LegalDocPage() {
           </Link>
           <div className="flex flex-wrap items-center justify-end gap-3 sm:gap-4">
             <span className="text-xs text-muted-foreground">
-              {t('legal:versionLabel')} {docKey === 'refund' ? REFUND_POLICY_VERSION : LEGAL_DOC_VERSION}
+              {t('legal:versionLabel')} {docKey === 'refund' ? REFUND_POLICY_VERSION : version ?? LEGAL_DOC_VERSION}
             </span>
             <LanguageSwitcher variant="onSurface" />
             <Link
@@ -74,7 +77,7 @@ export function LegalDocPage() {
               {LEGAL_DOC_KEYS.map((key) => (
                 <Link
                   key={key}
-                  to={`/legal/${key}`}
+                  to={legalDocPath(key)}
                   className={
                     key === docKey
                       ? 'block font-semibold text-foreground'

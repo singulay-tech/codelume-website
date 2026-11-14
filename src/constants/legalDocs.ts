@@ -19,3 +19,14 @@ export function resolveLegalContentLocale(lng: string): LegalContentLocale {
 
 export const LEGAL_DOC_VERSION = '2026.05.18'
 export const REFUND_POLICY_VERSION = '2026.11.13'
+
+export const DIRECT_LEGAL_DOC_VERSION = '2026.11.13'
+
+export function legalDocPath(docKey: LegalDocKey): string {
+  return docKey === 'refund' ? '/legal/refund' : `/legal/${docKey}/${DIRECT_LEGAL_DOC_VERSION}`
+}
+
+export function resolveLegalDocKey(value: string): LegalDocKey | undefined {
+  if (value === 'purchases') return 'refund'
+  return isLegalDocKey(value) ? value : undefined
+}

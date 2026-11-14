@@ -1,5 +1,6 @@
 'use client'
 
+import { legalDocPath } from '@/constants/legalDocs'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
@@ -77,17 +78,17 @@ export function Footer() {
             <h2 className="mb-3 text-sm font-semibold leading-6 text-foreground">{t('legal.title')}</h2>
             <ul className="space-y-1 text-sm">
               <li>
-                <Link to="/legal/terms" className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                <Link to={legalDocPath('terms')} className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                   {t('legal.terms')}
                 </Link>
               </li>
               <li>
-                <Link to="/legal/privacy" className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                <Link to={legalDocPath('privacy')} className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                   {t('legal.privacy')}
                 </Link>
               </li>
               <li>
-                <Link to="/legal/ugc" className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                <Link to={legalDocPath('ugc')} className="inline-block rounded py-1 leading-5 text-foreground/80 underline-offset-4 hover:text-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                   {t('legal.ugc')}
                 </Link>
               </li>

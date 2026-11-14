@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/help" element={<HelpPage />} />
         <Route path="/help/wallpaperPolicy" element={<Navigate to="/help/wallpaperProtocol" replace />} />
         <Route path="/help/:docKey" element={<HelpDocPage />} />
-        <Route path="/legal/:docKey" element={<LegalDocPage />} />
+        <Route path="/legal/:docKey/:version?" element={<LegalDocPage />} />
       </Routes>
     </BrowserRouter>
   )
